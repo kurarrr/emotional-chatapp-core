@@ -1,14 +1,14 @@
 
 # coding: utf-8
 
-# In[5]:
+# In[3]:
 
 
 # %%bash
 # pip install gensim
 
 
-# In[1]:
+# In[4]:
 
 
 import torch
@@ -27,43 +27,44 @@ from sklearn.model_selection import train_test_split
 from sklearn.utils import shuffle
 
 from nltk.corpus import wordnet
+import json
 
 
-# In[2]:
+# In[5]:
 
 
 import gensim
-gensim_model = gensim.models.KeyedVectors.load_word2vec_format('./data.bin', binary=True)
+gensim_model = gensim.models.KeyedVectors.load_word2vec_format('./word2vec/data.bin', binary=True)
 
 
-# In[3]:
+# In[6]:
 
 
 weights = gensim_model.wv.syn0
 # weights.shape
 
 
-# In[4]:
+# In[7]:
 
 
 vocab_size = weights.shape[0]
 embedding_dim = weights.shape[1]
 
 
-# In[5]:
+# In[8]:
 
 
 weights = np.append(weights,np.zeros((1,embedding_dim)),axis=0)
 # 末尾にunknown_wordを追加
 
 
-# In[6]:
+# In[9]:
 
 
 vocab_size = weights.shape[0]
 
 
-# In[7]:
+# In[10]:
 
 
 # # wordのindexを取得
@@ -72,13 +73,13 @@ vocab_size = weights.shape[0]
 # print(gensim_model.wv.index2word[100])
 
 
-# In[23]:
+# In[11]:
 
 
-#cuda = torch.cuda.is_available()
-cuda = True
+cuda = torch.cuda.is_available()
 
-# In[8]:
+
+# In[12]:
 
 
 import re
@@ -86,7 +87,7 @@ import nltk
 from nltk import word_tokenize
 
 
-# In[30]:
+# In[13]:
 
 
 def prepare_sequence(seq):
@@ -98,7 +99,7 @@ def prepare_sequence(seq):
     return res
 
 
-# In[10]:
+# In[14]:
 
 
 def sentence2vec(sentence,debug=False):
@@ -110,17 +111,17 @@ def sentence2vec(sentence,debug=False):
     return res_seq
 
 
-# In[11]:
+# In[15]:
 
 
 # s = "I'm always fucking dogs."
 # sentence2vec(s,debug=True)
 
 
-# In[78]:
+# In[25]:
 
 
-def make_model_and_train(hidden_dim):
+def make_model_and_train(hidden_dim,overwrite=False):
     
     class LSTMTagger(nn.Module):
 
@@ -166,11 +167,29 @@ def make_model_and_train(hidden_dim):
     if cuda:
         model.cuda()
 
-    # 学習済みパラメータ
-    pretrained_weights = torch.from_numpy(weights).float()
-    if cuda:
-        pretrained_weights = pretrained_weights.cuda()
-    model.word_embeddings = nn.Embedding.from_pretrained(pretrained_weights)
+    json_name = './dat/loss_data_{0}.json'.format(hidden_dim)
+    model_name = './dat/model_data_{0}'.format(hidden_dim)
+    
+    if overwrite:
+        # 上書きする
+        model.load_state_dict(torch.load(model_name))
+        
+        with open(json_name,'r') as f:
+            dat = json.load(f)
+            
+        train_loss = dat['train']
+        dev_loss = dat['dev']
+    else:
+        # 学習済みパラメータ
+        pretrained_weights = torch.from_numpy(weights).float()
+        if cuda:
+            pretrained_weights = pretrained_weights.cuda()
+        model.word_embeddings = nn.Embedding.from_pretrained(pretrained_weights)
+        
+        train_loss = []
+        dev_loss = []
+
+        
 
     loss_function = nn.MSELoss()
     optimizer = optim.SGD(filter(lambda p: p.requires_grad, model.parameters()), lr=0.01)
@@ -210,10 +229,7 @@ def make_model_and_train(hidden_dim):
     X_train, X_rest, Y_train, Y_rest = train_test_split(X, Y, test_size=1-train_size)
     X_dev, X_test, Y_dev, Y_test = train_test_split(X_rest,Y_rest,test_size=1-(train_size+dev_size))
 
-    epochs = 30
-
-    train_loss = []
-    dev_loss = []
+    epochs = 20
 
     # import time
     # t1 = time.time()
@@ -279,31 +295,30 @@ def make_model_and_train(hidden_dim):
         print("epoch {0}: loss {1}".format(epoch,train_loss_sum/len(X_train)))
 
 
-        train_loss.append(loss_sum/len(X_train))
+        train_loss.append(train_loss_sum/len(X_train))
 
     # t2 = time.time()
 
     # print(t2-t1)
 
-    if hidden_dim >= 16:
-        torch.save(model.state_dict(),'./dat/model_data_{0}'.format(hidden_dim))
+    if True:
+        torch.save(model.state_dict(),model_name)
 
 #     print(train_loss)
 #     print(dev_loss)
-    import json
+
     loss_data = {
         'train' : train_loss,
         'dev' : dev_loss
     }
-    json_name = './dat/loss_data_{0}.json'.format(hidden_dim)
     with open(json_name,'w') as f:
         json.dump(loss_data,f)
 
 
-# In[73]:
+# In[26]:
 
 
 hidden_dims = [6]
 for hidden_dim in hidden_dims:
-    make_model_and_train(hidden_dim)
+    make_model_and_train(hidden_dim,overwrite=True)
 

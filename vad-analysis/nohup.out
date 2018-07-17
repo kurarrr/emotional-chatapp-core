@@ -1,22 +1,24 @@
-[I 14:28:03.259 NotebookApp] Using EnvironmentKernelSpecManager...
-[I 14:28:03.259 NotebookApp] Started periodic updates of the kernel list (every 3 minutes).
-[W 14:28:03.436 NotebookApp] WARNING: The notebook server is listening on all IP addresses and not using encryption. This is not recommended.
-[I 14:28:03.437 NotebookApp] The port 8888 is already in use, trying another port.
-[I 14:28:03.437 NotebookApp] The port 8889 is already in use, trying another port.
-[I 14:28:03.465 NotebookApp] JupyterLab beta preview extension loaded from /home/ubuntu/anaconda3/lib/python3.6/site-packages/jupyterlab
-[I 14:28:03.465 NotebookApp] JupyterLab application directory is /home/ubuntu/anaconda3/share/jupyter/lab
-[I 14:28:03.621 NotebookApp] [nb_conda] enabled
-/home/ubuntu/anaconda3/lib/python3.6/site-packages/matplotlib/__init__.py:1067: UserWarning: Duplicate key in file "/home/ubuntu/.config/matplotlib/matplotlibrc", line #2
+/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/matplotlib/__init__.py:1067: UserWarning: Duplicate key in file "/home/ubuntu/.config/matplotlib/matplotlibrc", line #2
   (fname, cnt))
-/home/ubuntu/anaconda3/lib/python3.6/site-packages/matplotlib/__init__.py:1067: UserWarning: Duplicate key in file "/home/ubuntu/.config/matplotlib/matplotlibrc", line #3
+/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/matplotlib/__init__.py:1067: UserWarning: Duplicate key in file "/home/ubuntu/.config/matplotlib/matplotlibrc", line #3
   (fname, cnt))
-[I 14:28:03.927 NotebookApp] sparkmagic extension enabled!
-[I 14:28:03.929 NotebookApp] Serving notebooks from local directory: /home/ubuntu/emotional-chatapp/vad-analysis
-[I 14:28:03.929 NotebookApp] 0 active kernels
-[I 14:28:03.929 NotebookApp] The Jupyter Notebook is running at:
-[I 14:28:03.929 NotebookApp] http://[all ip addresses on your system]:8890/
-[I 14:28:03.929 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
-[I 14:28:03.930 NotebookApp] Starting initial scan of virtual environments...
-[I 14:28:05.661 NotebookApp] Found new kernels in environments: conda_theano_p36, conda_pytorch_p27, conda_pytorch_p36, conda_cntk_p36, conda_python2, conda_theano_p27, conda_caffe2_p27, conda_python3, conda_caffe_p27, conda_caffe_p35, conda_chainer_p36, conda_cntk_p27, conda_tensorflow_p36, conda_tensorflow_p27, conda_mxnet_p27, conda_anaconda3, conda_mxnet_p36, conda_chainer_p27
-[C 14:30:30.812 NotebookApp] received signal 15, stopping
-[I 14:30:30.814 NotebookApp] Shutting down 0 kernels
+epoch 0: loss 0.029863520973603987
+epoch 1: loss 0.029652385329356684
+epoch 2: loss 0.02951079372146566
+epoch 3: loss 0.029329293185360893
+epoch 4: loss 0.029110800858684456
+epoch 5: loss 0.02892211449201203
+epoch 6: loss 0.028679401819187586
+epoch 7: loss 0.028443110270527802
+epoch 8: loss 0.028189080777638244
+epoch 9: loss 0.027935671979637807
+epoch 10: loss 0.027722335816601978
+epoch 11: loss 0.02747626660206347
+epoch 12: loss 0.02727135727455231
+epoch 13: loss 0.027031146168787455
+epoch 14: loss 0.02685142676625685
+epoch 15: loss 0.02667496647474633
+epoch 16: loss 0.026504738892715547
+epoch 17: loss 0.026343605849281346
+epoch 18: loss 0.02616550144608169
+epoch 19: loss 0.026008075462152166
