@@ -1,23 +1,13 @@
 
 # coding: utf-8
 
-# In[3]:
-
-
-# %%bash
-# pip install gensim
-
-
-# In[4]:
+# In[21]:
 
 
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
-from torch.autograd import Variable
-
-torch.manual_seed(1)
 
 import numpy as np
 import pandas as pd
@@ -26,54 +16,48 @@ from sklearn import datasets
 from sklearn.model_selection import train_test_split
 from sklearn.utils import shuffle
 
-from nltk.corpus import wordnet
 import json
 
 
-# In[5]:
+# In[2]:
 
 
 import gensim
 gensim_model = gensim.models.KeyedVectors.load_word2vec_format('./word2vec/data.bin', binary=True)
 
 
-# In[6]:
+# In[3]:
 
 
 weights = gensim_model.wv.syn0
-# weights.shape
 
 
-# In[7]:
+# In[4]:
 
 
-vocab_size = weights.shape[0]
 embedding_dim = weights.shape[1]
 
 
-# In[8]:
+# In[5]:
 
 
 weights = np.append(weights,np.zeros((1,embedding_dim)),axis=0)
 # 末尾にunknown_wordを追加
 
 
-# In[9]:
+# In[6]:
 
 
 vocab_size = weights.shape[0]
 
 
-# In[10]:
+# In[7]:
 
 
-# # wordのindexを取得
-# print(gensim_model.wv.vocab["'d"].index)
-# # 100番目のwordを取得
-# print(gensim_model.wv.index2word[100])
+out_size = 3
 
 
-# In[11]:
+# In[8]:
 
 
 cuda = torch.cuda.is_available()
@@ -82,12 +66,20 @@ cuda = torch.cuda.is_available()
 # In[12]:
 
 
+# wordのindexを取得
+# print(gensim_model.wv.vocab['always'].index)
+# 100番目のwordを取得
+# print(gensim_model.wv.index2word[100])
+
+
+# In[9]:
+
+
 import re
 import nltk
-from nltk import word_tokenize
 
 
-# In[13]:
+# In[10]:
 
 
 def prepare_sequence(seq):
@@ -99,137 +91,135 @@ def prepare_sequence(seq):
     return res
 
 
+# In[11]:
+
+
+def sentence2vec(sentence):
+    w_list = sentence.split()
+    res_seq = prepare_sequence(w_list)
+    return res_seq
+
+
+# In[17]:
+
+
+# s = "I'm always fucking you."
+# sentence2vec(s)
+
+
+# In[12]:
+
+
+class LSTMTagger(nn.Module):
+    def __init__(self, embedding_dim, hidden_dim, vocab_size, tagset_size):
+        super(LSTMTagger, self).__init__()
+        self.hidden_dim = hidden_dim
+
+        self.word_embeddings = nn.Embedding(vocab_size, embedding_dim)
+
+        # The LSTM takes word embeddings as inputs, and outputs hidden states
+        # with dimensionality hidden_dim.
+        self.lstm = nn.LSTM(embedding_dim, hidden_dim)
+
+        # The linear layer that maps from hidden state space to tag space
+        self.out = nn.Linear(hidden_dim, tagset_size)
+        self.hidden = self.init_hidden()
+
+    def init_hidden(self):
+        # Before we've done anything, we dont have any hidden state.
+        # Refer to the Pytorch documentation to see exactly
+        # why they have this dimensionality.
+        # The axes semantics are (num_layers, minibatch_size, hidden_dim)
+        h = torch.zeros(1, 1, self.hidden_dim)
+        c = torch.zeros(1, 1, self.hidden_dim)
+        if cuda:
+            h = h.cuda()
+            c = c.cuda()
+        return (h,c)
+
+    def forward(self, sentence):
+        embeds = self.word_embeddings(sentence)
+#         print(embeds.size())
+
+        lstm_output, self.hidden = self.lstm(
+            embeds.view(len(sentence),1,-1), self.hidden)
+
+        output = self.out(lstm_output.view(len(sentence),-1))
+        output = F.tanh(output)
+        return output
+
+
+# In[13]:
+
+
+# model.state_dict().keys()
+
+
 # In[14]:
 
 
-def sentence2vec(sentence,debug=False):
-    w_list = word_tokenize(sentence)
-    w_list = [wordnet.morphy(w) if wordnet.morphy(w) is not None else w for w in w_list]
-    if debug:
-        print(w_list)
-    res_seq = prepare_sequence(w_list)
-    return res_seq
+def make_model(hidden_dim):
+    # 学習済みパラメータ
+    torch.manual_seed(1)
+    model = LSTMTagger(embedding_dim, hidden_dim, vocab_size, out_size)
+    model.word_embeddings = nn.Embedding.from_pretrained(torch.from_numpy(weights).float())
+    return model
 
 
 # In[15]:
 
 
-# s = "I'm always fucking dogs."
-# sentence2vec(s,debug=True)
+def save_model(model,model_name):
+    model_state_dict = model.state_dict()
+    model_state_dict.pop('word_embeddings.weight')
+    torch.save(model_state_dict,model_name)
 
 
-# In[25]:
+# In[16]:
 
 
-def make_model_and_train(hidden_dim,overwrite=False):
-    
-    class LSTMTagger(nn.Module):
-
-        def __init__(self, embedding_dim, hidden_dim, vocab_size, tagset_size):
-            super(LSTMTagger, self).__init__()
-            self.hidden_dim = hidden_dim
-
-            self.word_embeddings = nn.Embedding(vocab_size, embedding_dim)
-
-            # The LSTM takes word embeddings as inputs, and outputs hidden states
-            # with dimensionality hidden_dim.
-            self.lstm = nn.LSTM(embedding_dim, hidden_dim)
-
-            # The linear layer that maps from hidden state space to tag space
-            self.out = nn.Linear(hidden_dim, tagset_size)
-            self.hidden = self.init_hidden()
-
-        def init_hidden(self):
-            # Before we've done anything, we dont have any hidden state.
-            # Refer to the Pytorch documentation to see exactly
-            # why they have this dimensionality.
-            # The axes semantics are (num_layers, minibatch_size, hidden_dim)
-            h = torch.zeros(1, 1, self.hidden_dim)
-            c = torch.zeros(1, 1, self.hidden_dim)
-            if cuda:
-                h = h.cuda()
-                c = c.cuda()
-            return (h,c)
-
-        def forward(self, sentence):
-            embeds = self.word_embeddings(sentence)
-    #         print(embeds.size())
-
-            lstm_output, self.hidden = self.lstm(
-                embeds.view(len(sentence),1,-1), self.hidden)
-
-            output = self.out(lstm_output.view(len(sentence),-1))
-            output = F.tanh(output)
-            return output
-
-    out_size = 3
+def load_model(hidden_dim,model_name):
+    torch.manual_seed(1)
     model = LSTMTagger(embedding_dim, hidden_dim, vocab_size, out_size)
+    model_state_dict = torch.load(model_name)
+    model_state_dict['word_embeddings.weight'] = torch.from_numpy(weights).float()
+    model.load_state_dict(model_state_dict)
+    model.word_embeddings.weight.requires_grad = False
+    return model
+
+def make_model_and_train(hidden_dim,overwrite=False,model_name=""):
+
+    json_name = './dat/loss_data_{0}.json'.format(hidden_dim)
+    base_model_name = './dat/model_data_{0}'.format(hidden_dim)
+
+    if not overwrite:
+        model = make_model(hidden_dim)
+        train_loss = []
+        dev_loss = []
+    else:
+        model = load_model(hidden_dim,model_name)
+        with open(json_name,'r') as f:
+            dat = json.load(f)            
+        train_loss = dat['train']
+        dev_loss = dat['dev']
+
     if cuda:
         model.cuda()
 
-    json_name = './dat/loss_data_{0}.json'.format(hidden_dim)
-    model_name = './dat/model_data_{0}'.format(hidden_dim)
-    
-    if overwrite:
-        # 上書きする
-        model.load_state_dict(torch.load(model_name))
-        
-        with open(json_name,'r') as f:
-            dat = json.load(f)
-            
-        train_loss = dat['train']
-        dev_loss = dat['dev']
-    else:
-        # 学習済みパラメータ
-        pretrained_weights = torch.from_numpy(weights).float()
-        if cuda:
-            pretrained_weights = pretrained_weights.cuda()
-        model.word_embeddings = nn.Embedding.from_pretrained(pretrained_weights)
-        
-        train_loss = []
-        dev_loss = []
+    data_cut = pd.read_csv('./data_cut.csv',encoding='utf-16')
+    data_cut = data_cut[data_cut['words']>=2]
 
-        
+    X_train = data_cut[data_cut['data_type']=='train']['reg'].as_matrix()
+    X_dev   = data_cut[data_cut['data_type']=='dev']['reg'].as_matrix()
+    X_test  = data_cut[data_cut['data_type']=='test']['reg'].as_matrix()
+    Y_train = data_cut[data_cut['data_type']=='train'][['Valence_reg','Arousal_reg','Dominance_reg']].as_matrix()
+    Y_dev   = data_cut[data_cut['data_type']=='dev'][['Valence_reg','Arousal_reg','Dominance_reg']].as_matrix()
+    Y_test  = data_cut[data_cut['data_type']=='test'][['Valence_reg','Arousal_reg','Dominance_reg']].as_matrix()
 
     loss_function = nn.MSELoss()
     optimizer = optim.SGD(filter(lambda p: p.requires_grad, model.parameters()), lr=0.01)
-
-    # sample = [
-    #     "I'm always fucking you hey",
-    #     "oh my godness"
-    # ] 
-
-    # # forwardのsample
-    # with torch.no_grad():
-    #     inputs = sentence2vec(sample[0])
-    #     output = model(inputs)
-    # #     print(output[-1,:])
-
-    # dataのload
-    data_pre = pd.read_csv('./data_preprocessed.csv')
-
-    # 2word以上のsentence
-    data_pre = data_pre[data_pre['words']>=2]
-
-    X_orig = data_pre['reg'].as_matrix()
-    Y_v = data_pre['Valence'].as_matrix()
-    Y_a = data_pre['Arousal'].as_matrix()
-    Y_d = data_pre['Dominance'].as_matrix()
-    Y_orig = np.c_[Y_v,Y_a,Y_d]
-    a=1
-    b=5
-    Y_orig = (2*(Y_orig-a)/(b-a))-1
-    # [-1,1]で正規化
-
-    X = X_orig
-    Y = Y_orig
-
-    train_size = 0.7
-    dev_size = 0.2
-    X_train, X_rest, Y_train, Y_rest = train_test_split(X, Y, test_size=1-train_size)
-    X_dev, X_test, Y_dev, Y_test = train_test_split(X_rest,Y_rest,test_size=1-(train_size+dev_size))
-
-    epochs = 20
+    
+    epochs = 60
 
     # import time
     # t1 = time.time()
@@ -238,23 +228,10 @@ def make_model_and_train(hidden_dim,overwrite=False):
         train_loss_sum = 0
         X_train,Y_train = shuffle(X_train,Y_train)
         for sentence, target in zip(X_train,Y_train):
-            # Step 1. Remember that Pytorch accumulates gradients.
-            # We need to clear them out before each instance
             model.zero_grad()
-
-            # Also, we need to clear out the hidden state of the LSTM,
-            # detaching it from its history on the last instance.
             model.hidden = model.init_hidden()
-
-            # Step 2. Get our inputs ready for the network, that is, turn them into
-            # Tensors of word indices.
             sentence_in = sentence2vec(sentence)
-
-            # Step 3. Run our forward pass.
             y = model(sentence_in)[-1,:]
-
-            # Step 4. Compute the loss, gradients, and update the parameters by
-            #  calling optimizer.step()
             y_hat = torch.tensor(target, dtype=torch.float)
             if cuda:
                 y_hat = y_hat.cuda()
@@ -266,23 +243,10 @@ def make_model_and_train(hidden_dim,overwrite=False):
         if (epoch+1)%5==0:
             dev_loss_sum = 0
             for sentence, target in zip(X_dev,Y_dev):
-                # Step 1. Remember that Pytorch accumulates gradients.
-                # We need to clear them out before each instance
                 model.zero_grad()
-
-                # Also, we need to clear out the hidden state of the LSTM,
-                # detaching it from its history on the last instance.
                 model.hidden = model.init_hidden()
-
-                # Step 2. Get our inputs ready for the network, that is, turn them into
-                # Tensors of word indices.
                 sentence_in = sentence2vec(sentence)
-
-                # Step 3. Run our forward pass.
                 y = model(sentence_in)[-1,:]
-
-                # Step 4. Compute the loss, gradients, and update the parameters by
-                #  calling optimizer.step()
                 y_hat = torch.tensor(target, dtype=torch.float)
                 if cuda:
                     y_hat = y_hat.cuda()
@@ -291,21 +255,17 @@ def make_model_and_train(hidden_dim,overwrite=False):
 
             dev_loss_av = dev_loss_sum / len(X_dev)
             dev_loss.append(dev_loss_av)
-
-        print("epoch {0}: loss {1}".format(epoch,train_loss_sum/len(X_train)))
-
-
-        train_loss.append(train_loss_sum/len(X_train))
+          
+        if (epoch+1)%10==0:
+            save_model(model,base_model_name+"_epoch_{0}".format(epoch))
+        
+        train_loss_av = train_loss_sum/len(X_train)
+        print("epoch {0}: loss {1}".format(epoch,train_loss_av))
+        train_loss.append(train_loss_av)
 
     # t2 = time.time()
 
     # print(t2-t1)
-
-    if True:
-        torch.save(model.state_dict(),model_name)
-
-#     print(train_loss)
-#     print(dev_loss)
 
     loss_data = {
         'train' : train_loss,
@@ -315,10 +275,11 @@ def make_model_and_train(hidden_dim,overwrite=False):
         json.dump(loss_data,f)
 
 
-# In[26]:
+def main():
+    hidden_dims = [3,6]
+    for hidden_dim in hidden_dims:
+        make_model_and_train(hidden_dim,overwrite=False)
+#     make_model_and_train(hidden_dim,overwrite=True,model_name='./dat/model_data_2_epoch_0')
 
-
-hidden_dims = [6]
-for hidden_dim in hidden_dims:
-    make_model_and_train(hidden_dim,overwrite=True)
-
+if __name__=='__main__':
+    main()
