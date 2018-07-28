@@ -187,7 +187,7 @@ def load_model(hidden_dim,model_name):
     model.word_embeddings.weight.requires_grad = False
     return model
 
-def make_model_and_train(hidden_dim,overwrite=False,model_name=""):
+def make_model_and_train(hidden_dim,epochs,overwrite=False,model_name=""):
 
     json_name = './dat/loss_data_{0}.json'.format(hidden_dim)
     base_model_name = './dat/model_data_{0}'.format(hidden_dim)
@@ -219,7 +219,6 @@ def make_model_and_train(hidden_dim,overwrite=False,model_name=""):
     loss_function = nn.MSELoss()
     optimizer = optim.SGD(filter(lambda p: p.requires_grad, model.parameters()), lr=0.01)
     
-    epochs = 60
 
     # import time
     # t1 = time.time()
@@ -278,7 +277,11 @@ def make_model_and_train(hidden_dim,overwrite=False,model_name=""):
 def main():
     hidden_dims = [3,6]
     for hidden_dim in hidden_dims:
-        make_model_and_train(hidden_dim,overwrite=False)
+        make_model_and_train(hidden_dim,60,overwrite=True,model_name="./dat/model_data_{0}_epoch_59".format(hidden_dim))
+    
+    hidden_dims = [12, 24]
+    for hidden_dim in hidden_dims:
+        make_model_and_train(hidden_dim,100,overwrite=False)
 #     make_model_and_train(hidden_dim,overwrite=True,model_name='./dat/model_data_2_epoch_0')
 
 if __name__=='__main__':
