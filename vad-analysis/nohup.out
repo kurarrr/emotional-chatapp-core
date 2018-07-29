@@ -446,3 +446,11 @@ epoch 96: loss 0.02692130992511334
 epoch 97: loss 0.026826173483343457
 epoch 98: loss 0.026762248408609916
 epoch 99: loss 0.02676633872623132
+Traceback (most recent call last):
+  File "lstm_word2vec_analysis_to1dim.py", line 7, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "lstm_word2vec_analysis_to1dim.py", line 7, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'

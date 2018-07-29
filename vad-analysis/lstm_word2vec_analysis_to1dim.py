@@ -285,7 +285,7 @@ def make_model_and_train(hidden_dim,epochs,vad_type,overwrite=False,model_name="
 
 
 vad_types = ['Valence','Arousal','Dominance']
-hidden_dims = [4,8,16,32,64,128]
+hidden_dims = [192,256]
 for hidden_dim in hidden_dims:
     for vad_type in vad_types:
         epoch_num = 100
