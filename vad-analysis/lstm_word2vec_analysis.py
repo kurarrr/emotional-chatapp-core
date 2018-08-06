@@ -187,7 +187,43 @@ def load_model(hidden_dim,model_name):
     model.word_embeddings.weight.requires_grad = False
     return model
 
-def make_model_and_train(hidden_dim,epochs,overwrite=False,model_name=""):
+
+# In[37]:
+
+
+sample1 = make_model(3)
+sample1.cuda()
+
+
+# In[40]:
+
+
+sample1(sentence2vec('thank you hoge'))[-1]
+
+
+# In[42]:
+
+
+save_model(sample1,'./sample')
+
+
+# In[47]:
+
+
+sample2 = load_model(3,'./sample')
+
+
+# In[49]:
+
+
+sample2.cuda()
+sample2(sentence2vec('thank you hoge'))[-1]
+
+
+# In[1]:
+
+
+def make_model_and_train(hidden_dim,overwrite=False,model_name=""):
 
     json_name = './dat/loss_data_{0}.json'.format(hidden_dim)
     base_model_name = './dat/model_data_{0}'.format(hidden_dim)
@@ -219,6 +255,7 @@ def make_model_and_train(hidden_dim,epochs,overwrite=False,model_name=""):
     loss_function = nn.MSELoss()
     optimizer = optim.SGD(filter(lambda p: p.requires_grad, model.parameters()), lr=0.01)
     
+    epochs = 40
 
     # import time
     # t1 = time.time()
@@ -256,6 +293,7 @@ def make_model_and_train(hidden_dim,epochs,overwrite=False,model_name=""):
             dev_loss.append(dev_loss_av)
           
         if (epoch+1)%10==0:
+            # TODO: 上書きされる
             save_model(model,base_model_name+"_epoch_{0}".format(epoch))
         
         train_loss_av = train_loss_sum/len(X_train)
@@ -274,15 +312,11 @@ def make_model_and_train(hidden_dim,epochs,overwrite=False,model_name=""):
         json.dump(loss_data,f)
 
 
-def main():
-    hidden_dims = [3,6]
-    for hidden_dim in hidden_dims:
-        make_model_and_train(hidden_dim,60,overwrite=True,model_name="./dat/model_data_{0}_epoch_59".format(hidden_dim))
-    
-    hidden_dims = [12, 24]
-    for hidden_dim in hidden_dims:
-        make_model_and_train(hidden_dim,100,overwrite=False)
+# In[28]:
+
+
+hidden_dims = [3,6]
+for hidden_dim in hidden_dims:
+    make_model_and_train(hidden_dim,overwrite=False)
 #     make_model_and_train(hidden_dim,overwrite=True,model_name='./dat/model_data_2_epoch_0')
 
-if __name__=='__main__':
-    main()
