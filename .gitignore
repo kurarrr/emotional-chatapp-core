@@ -1,6 +1,4 @@
-vad-analysis/dat/
-vad-analysis/dat_to1/
-vad-analysis/dat_to1_2/
-vad-analysis/dat_to1_3/
+vad-analysis/dat_model_json/
+vad-analysis/image/
 vad-analysis/word2vec/
 vad-analysis/.ipynb_checkpoints/
