@@ -1,0 +1,32 @@
+[debug] [2018-09-04T09:26:52.814Z] ----------------------------------------------------------------------
+[debug] [2018-09-04T09:26:52.818Z] Command:       /usr/local/Cellar/node/9.5.0/bin/node /usr/local/bin/firebase serve
+[debug] [2018-09-04T09:26:52.818Z] CLI Version:   4.2.1
+[debug] [2018-09-04T09:26:52.818Z] Platform:      darwin
+[debug] [2018-09-04T09:26:52.818Z] Node Version:  v9.5.0
+[debug] [2018-09-04T09:26:52.819Z] Time:          Tue Sep 04 2018 18:26:52 GMT+0900 (JST)
+[debug] [2018-09-04T09:26:52.819Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-09-04T09:26:52.841Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-09-04T09:26:52.842Z] > authorizing via signed-in user
+[debug] [2018-09-04T09:26:52.845Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/chatapp-1e75b  
+ 
+[debug] [2018-09-04T09:26:53.642Z] <<< HTTP RESPONSE 200
+[debug] [2018-09-04T09:26:53.643Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/chatapp-1e75b  
+ 
+[debug] [2018-09-04T09:26:54.945Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/ryota/emotion-chat/webapp/webapp'...
+[info] 
+[info] i  functions: Preparing to emulate functions.
+[debug] [2018-09-04T09:26:56.351Z] Fetching environment
+[debug] [2018-09-04T09:26:56.357Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/452273142264:getServerAppConfig  
+ 
+[debug] [2018-09-04T09:26:56.358Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/452273142264/clients/_:getWebAppConfig  
+ 
+[debug] [2018-09-04T09:26:57.127Z] <<< HTTP RESPONSE 200
+[info] i  hosting[chatapp-1e75b]: Serving hosting files from: ./
+[info] ✔  hosting[chatapp-1e75b]: Local server: http://localhost:5000
+[debug] [2018-09-04T09:27:03.127Z] <<< HTTP RESPONSE 200
+[debug] [2018-09-04T09:27:03.127Z] Starting @google-cloud/functions-emulator
+[debug] [2018-09-04T09:27:06.230Z] Parsing function triggers
+[info] i  functions: No HTTPS functions found. Use firebase functions:shell if you would like to emulate other types of functions.
