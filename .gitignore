@@ -2,4 +2,4 @@ vad-analysis/dat_model_json/
 vad-analysis/image/
 vad-analysis/word2vec/
 vad-analysis/.ipynb_checkpoints/
-api/__pycache__/
+__pycache__/
