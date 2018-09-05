@@ -33,7 +33,6 @@ api.add_route('/prediction_api', ItemsResource())
 if __name__ == "__main__":
     from wsgiref import simple_server
 
-    # modelの読み込み
     print('model loading...')
     base_path = './analysis/dat_model_json/'
     model_path = {
@@ -51,5 +50,5 @@ if __name__ == "__main__":
 
 
 
-    httpd = simple_server.make_server("127.0.0.1", 80, api)
+    httpd = simple_server.make_server("127.0.0.1", 8000, api)
     httpd.serve_forever()
