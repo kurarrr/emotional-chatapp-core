@@ -43,6 +43,7 @@ if __name__ == "__main__":
 
     va = ['Valence','Arousal']
     hidden_dim = 32
+    model = {}
     for va_type in va:
         model[va_type] = analysis.load_model(hidden_dim,model_path[va_type])
 

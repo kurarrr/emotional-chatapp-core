@@ -25,7 +25,7 @@ import json,sys,os
 print('word2vec loading ...')
 
 import gensim
-base_dir_word2vec = os.getcwd()
+base_dir_word2vec = os.path.dirname(os.path.abspath(__file__))
 gensim_model = gensim.models.KeyedVectors.load_word2vec_format(\
     base_dir_word2vec+'/word2vec/data.bin', binary=True)
 
@@ -205,7 +205,7 @@ def sentence2vec(sentence,debug=False):
 def load_model(hidden_dim,model_name):
     torch.manual_seed(1)
     model = LSTMTagger(embedding_dim, hidden_dim, vocab_size, out_size)
-    model_state_dict = torch.load(model_name)
+    model_state_dict = torch.load(model_name,map_location=lambda storage, loc:storage)
     model_state_dict['word_embeddings.weight'] = weights_tensor
     model.load_state_dict(model_state_dict)
     model.word_embeddings.weight.requires_grad = False
