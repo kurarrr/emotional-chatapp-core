@@ -226,9 +226,9 @@ def make_pred(model,sentences):
     return y.cpu().detach().numpy()
 
 
-def make_pred_va(sentences):
-    v = make_pred(model['Valence'],sentences)
-    a = make_pred(model['Arousal'],sentences)
+def make_pred_va(models,sentences):
+    v = make_pred(models['Valence'],sentences)
+    a = make_pred(models['Arousal'],sentences)
     res = np.r_['1',v,a]
     # res : list of [v,a] for sentences
     return res

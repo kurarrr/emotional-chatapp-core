@@ -7,6 +7,23 @@ from analysis import make_pred_to1dim as analysis
 
 class ItemsResource:
 
+    def __init__(self):
+        print('model loading...')
+        base_path = './analysis/dat_model_json/'
+        self.model_path = {
+            'Valence' : base_path + 'model_Valence_hidden_dim_32_batch_8_lr_0.005_epoch_50',
+            'Arousal' : base_path + 'model_Arousal_hidden_dim_32_batch_8_lr_0.005_epoch_50',
+        }
+
+        va = ['Valence','Arousal']
+        hidden_dim = 32
+        self.models = {}
+        for va_type in va:
+            self.models[va_type] = analysis.load_model(hidden_dim,model_path[va_type])
+
+        print('model loaded')
+
+
     def on_post(self, req, resp):
         """
         params
@@ -19,7 +36,7 @@ class ItemsResource:
         }
         """
         
-        va_numpy = analysis.make_pred_va([msg])
+        va_numpy = analysis.make_pred_va(self.models,[msg])
         print(va_numpy)
         
 
@@ -28,25 +45,11 @@ class ItemsResource:
         resp.body = json.dumps(items,ensure_ascii=False)
 
 api = falcon.API()
-api.add_route('/prediction_api', ItemsResource())
+itemResource = ItemsResource()
+api.add_route('/prediction_api',itemResource)
 
 if __name__ == "__main__":
     from wsgiref import simple_server
-
-    print('model loading...')
-    base_path = './analysis/dat_model_json/'
-    model_path = {
-        'Valence' : base_path + 'model_Valence_hidden_dim_32_batch_8_lr_0.005_epoch_50',
-        'Arousal' : base_path + 'model_Arousal_hidden_dim_32_batch_8_lr_0.005_epoch_50',
-    }
-
-    va = ['Valence','Arousal']
-    hidden_dim = 32
-    model = {}
-    for va_type in va:
-        model[va_type] = analysis.load_model(hidden_dim,model_path[va_type])
-
-    print('model loaded')
 
 
 
