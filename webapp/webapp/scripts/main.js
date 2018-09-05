@@ -78,7 +78,7 @@ FriendlyChat.prototype.loadMessages = function() {
   // Loads the last 12 messages and listen for new ones.
   var setMessage = function(data) {
     var val = data.val();
-    var effectCss = 'effect-none';
+    var effectCss = '';
     if(val.effect){
       // 付与するeffectが存在する
       var userAttr = this.userAttr;
@@ -114,13 +114,16 @@ FriendlyChat.prototype.saveMessage = function(e) {
       // effect : msg_effect
     }).then(function(msgRef) {
       // Clear message text field and SEND button state.
-      FriendlyChat.resetMaterialTextfield(this.messageInput);
       this.toggleButton();
+      
       var msgId = msgRef.key;
       var dat = {
         msg : this.messageInput.value,
         msg_user_attr : this.userAttr
       };
+      FriendlyChat.resetMaterialTextfield(this.messageInput);
+      var self = this;
+      // console.log(dat);
       $.ajax({
         url : CORPUS_API_URL,
         type : 'POST',
@@ -129,8 +132,10 @@ FriendlyChat.prototype.saveMessage = function(e) {
         data : JSON.stringify(dat)
       }).done(function(res){
         // res.responseJSON.effect
-        console.log(res);
-        var effect = res.effect;
+        // console.log(res);
+        // API response
+        var msgEffect = res.effect;
+        self.database.ref('messages/' + msgId + '/effect').update(msgEffect);
       }).fail(function(){
 
       });
@@ -318,7 +323,10 @@ FriendlyChat.prototype.displayMessage = function(key, name, text, picUrl, imageU
     // Replace all line breaks by <br>.
     messageElement.innerHTML = messageElement.innerHTML.replace(/\n/g, '<br>');
     // effect-cssの付加
-    messageElement.classList.add(effectCss);
+    console.log(messageElement.classList);
+    if(effectCss !== ''){
+      messageElement.classList.add(effectCss);
+    }
   } else if (imageUri) { // If the message is an image.
     var image = document.createElement('img');
     image.addEventListener('load', function() {
