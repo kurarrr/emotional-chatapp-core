@@ -3,7 +3,7 @@
 import falcon
 import json,os,sys
 import numpy as np
-from vad-analysis.make_pred_to1dim import *
+from analysis import make_pred_to1dim
 
 class ItemsResource:
 
