@@ -1,0 +1,38 @@
+.effect-blue{
+  color: blue;
+}
+.effect-red{
+  color: red;
+}
+
+.effect-happiness{
+  font-size: 40px;
+  line-height: 30px;
+  /*font-family: 'happiness';*/
+}
+.effect-sadness{
+  font-size: 60px;
+  line-height: 50px;
+  /*font-family: 'sadness';*/
+}
+.effect-anger{
+  font-size: 70px;
+  line-height: 60px;
+  color : red;
+  /*font-family: 'anger';*/
+}
+.effect-disgust{
+  font-size: 60px;
+  line-height: 50px;
+  /*font-family: 'disgust';*/
+}
+.effect-fear{
+  font-size: 60px;
+  line-height: 50px;
+  /*font-family: 'fear';*/
+}
+.effect-surprise{
+  font-size: 40px;
+  line-height: 30px;
+  /*font-family: 'surprise';*/
+}
