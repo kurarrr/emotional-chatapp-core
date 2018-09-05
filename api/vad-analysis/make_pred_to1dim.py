@@ -25,7 +25,7 @@ import json,os,sys
 print('word2vec loading ...')
 
 import gensim
-base_dir_word2vec = os.getcwd()
+base_dir_word2vec = './'
 gensim_model = gensim.models.KeyedVectors.load_word2vec_format(\
     base_dir_word2vec+'/word2vec/data.bin', binary=True)
 
