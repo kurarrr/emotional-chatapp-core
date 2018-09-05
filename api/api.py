@@ -3,7 +3,7 @@
 import falcon
 import json,os,sys
 import numpy as np
-from analysis import make_pred_to1dim
+from analysis import make_pred_to1dim as analysis
 
 class ItemsResource:
 
@@ -19,7 +19,7 @@ class ItemsResource:
         }
         """
         
-        va_numpy = make_pred_va([msg])
+        va_numpy = analysis.make_pred_va([msg])
         print(va_numpy)
         
 
@@ -44,7 +44,7 @@ if __name__ == "__main__":
     va = ['Valence','Arousal']
     hidden_dim = 32
     for va_type in va:
-        model[va_type] = load_model(hidden_dim,model_path[va_type])
+        model[va_type] = analysis.load_model(hidden_dim,model_path[va_type])
 
     print('model loaded')
 
