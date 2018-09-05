@@ -35,7 +35,7 @@ if __name__ == "__main__":
 
     # modelの読み込み
     print('model loading...')
-    base_path = './vad-analysis/dat_model_json/'
+    base_path = './analysis/dat_model_json/'
     model_path = {
         'Valence' : base_path + 'model_Valence_hidden_dim_32_batch_8_lr_0.005_epoch_50',
         'Arousal' : base_path + 'model_Arousal_hidden_dim_32_batch_8_lr_0.005_epoch_50',
