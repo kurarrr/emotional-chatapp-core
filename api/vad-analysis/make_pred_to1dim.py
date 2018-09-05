@@ -19,7 +19,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.utils import shuffle
 
 from nltk.corpus import wordnet
-import json
+import json,os,sys
 
 
 print('word2vec loading ...')
