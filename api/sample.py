@@ -7,7 +7,9 @@ import numpy as np
 class ItemsResource:
 
     def on_post(self, req, resp):
-        
+        body = req.stream.read()
+        data = json.loads(body)
+        print(data)
         items = {
           'message' : 'ok'
         }

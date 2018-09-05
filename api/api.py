@@ -19,7 +19,7 @@ class ItemsResource:
         hidden_dim = 32
         self.models = {}
         for va_type in va:
-            self.models[va_type] = analysis.load_model(hidden_dim,model_path[va_type])
+            self.models[va_type] = analysis.load_model(hidden_dim,self.model_path[va_type])
 
         print('model loaded')
 
@@ -36,9 +36,12 @@ class ItemsResource:
         }
         """
         
+        body = req.stream.read()
+        data = json.loads(body)
+        msg = data['msg']
         va_numpy = analysis.make_pred_va(self.models,[msg])
         print(va_numpy)
-        
+        items = { }
 
         resp.status = falcon.HTTP_200
         resp.content_type = 'text/plain'
