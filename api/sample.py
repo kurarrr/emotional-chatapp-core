@@ -11,7 +11,7 @@ class ItemsResource:
         data = json.loads(body)
         print(data)
         items = {
-          'message' : 'ok'
+          'effect' : {'native' : 'font-967-ttf'}
         }
 
         resp.status = falcon.HTTP_200
@@ -22,9 +22,13 @@ class ItemsResource:
 class CORSMiddleware:
     def process_request(self, req, resp):
         resp.set_header('Access-Control-Allow-Origin', '*')
+        resp.set_header('Access-Control-Allow-Methods', '*')
+        resp.set_header('Access-Control-Allow-Headers', '*')
+        resp.set_header('Access-Control-Max-Age', 1728000)
 
 
 api = falcon.API(middleware=[CORSMiddleware()])
+#api = falcon.API()
 api.add_route('/prediction_api', ItemsResource())
 
 if __name__ == "__main__":
