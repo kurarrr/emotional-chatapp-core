@@ -135,7 +135,8 @@ FriendlyChat.prototype.saveMessage = function(e) {
         // res = string
         var dat = JSON.parse(res);
         var msgEffect = dat.effect;
-        self.messagesRef.child('/'+msgId+'/effect').set(msgEffect);
+        var updates = {effect : dat};
+        self.messagesRef.child('/'+msgId).update(updates);
       }).fail(function(){
 
       });
