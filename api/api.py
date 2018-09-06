@@ -23,13 +23,13 @@ class ItemsResource:
 
         print('model loaded')
 
-        json_path = os.path.dirname(os.path.abspath(__file__))+'/analysis/font100_vad.json'
+        json_path = os.path.dirname(os.path.abspath(__file__))+'/analysis/font100_vad_reg.json'
         with open(json_path,'r') as fp:
-            dat = json.load(fp)
+            self.dat = json.load(fp)
         ary = []
-        for dic in dat:
-            ary.append([dic['Valence'],dic['Arousal']])
-        ary_np = np.array(ary)
+        for dic in self.dat:
+            ary.append([float(dic['Valence']),float(dic['Arousal'])])
+        self.ary_np = np.array(ary)
         print('VA value loaded')
 
 
@@ -48,9 +48,15 @@ class ItemsResource:
         body = req.stream.read()
         data = json.loads(body)
         msg = data['msg']
-        va_numpy = analysis.make_pred_va(self.models,[msg])
-        print(va_numpy)
-        items = { }
+        idx = analysis.most_closest(self.models,msg,self.ary_np)
+        font_name = self.dat[idx]['name']
+        msg_user_attr = data['msg_user_attr']
+        attr = ''
+        if msg_user_attr == 'native':
+            attr = 'non-native'
+        else:
+            attr = 'native'
+        items = { attr : 'font-'+font_name.replace('.','-')}
 
         resp.status = falcon.HTTP_200
         resp.content_type = 'text/plain'
