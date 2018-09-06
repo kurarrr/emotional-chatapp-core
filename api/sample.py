@@ -18,16 +18,13 @@ class ItemsResource:
         resp.content_type = 'text/plain'
         resp.body = json.dumps(items,ensure_ascii=False)
 
-json_path = os.path.dirname(os.path.abspath(__file__))+'/analysis/font100_vad.json'
-with open(json_path,'r') as fp:
-    dat = json.load(fp)
-ary = []
-for dic in dat:
-    ary.append([dic['Valence'],dic['Arousal']])
 
-ary_np = np.array(ary)
+class CORSMiddleware:
+    def process_request(self, req, resp):
+        resp.set_header('Access-Control-Allow-Origin', '*')
 
-api = falcon.API()
+
+api = falcon.API(middleware=[CORSMiddleware()])
 api.add_route('/prediction_api', ItemsResource())
 
 if __name__ == "__main__":

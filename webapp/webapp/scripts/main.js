@@ -16,7 +16,9 @@
 'use strict';
 
 // Initializes FriendlyChat.
-var CORPUS_API_URL = 'https://qg9sadekbk.execute-api.ap-northeast-1.amazonaws.com/api/';
+// var CORPUS_API_URL = 'https://qg9sadekbk.execute-api.ap-northeast-1.amazonaws.com/api/';
+var CORPUS_API_URL = 'http://127.0.0.1:8000/prediction_api';
+
 
 function FriendlyChat() {
   this.checkSetup();
@@ -132,7 +134,7 @@ FriendlyChat.prototype.saveMessage = function(e) {
         data : JSON.stringify(dat)
       }).done(function(res){
         // res.responseJSON.effect
-        // console.log(res);
+        console.log(res);
         // API response
         var msgEffect = res.effect;
         self.database.ref('messages/' + msgId + '/effect').update(msgEffect);
@@ -323,7 +325,7 @@ FriendlyChat.prototype.displayMessage = function(key, name, text, picUrl, imageU
     // Replace all line breaks by <br>.
     messageElement.innerHTML = messageElement.innerHTML.replace(/\n/g, '<br>');
     // effect-cssの付加
-    console.log(messageElement.classList);
+    // console.log(messageElement.classList);
     if(effectCss !== ''){
       messageElement.classList.add(effectCss);
     }

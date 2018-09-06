@@ -62,8 +62,11 @@ class ItemsResource:
         resp.content_type = 'text/plain'
         resp.body = json.dumps(items,ensure_ascii=False)
 
+class CORSMiddleware:
+    def process_request(self, req, resp):
+        resp.set_header('Access-Control-Allow-Origin', '*')
 
-api = falcon.API()
+api = falcon.API(middleware=[CORSMiddleware()])
 itemResource = ItemsResource()
 api.add_route('/prediction_api',itemResource)
 
