@@ -233,3 +233,13 @@ def make_pred_va(models,sentences):
     # res : list of [v,a] for sentences
     return res
 
+def most_closest(models,sentence,ary_np):
+    """
+    args - sentence, numpy ary of va
+    res  - index of most closest point
+    """
+    sentence_np = make_pred_va(models,[sentence])
+    dist = ary_np - sentence_np
+    dist = (dist[:,0])**2 + (dist[:,1])**2
+    dist = dist.reshape(-1)
+    return dist.argmin()

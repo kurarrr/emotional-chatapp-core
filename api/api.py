@@ -23,6 +23,15 @@ class ItemsResource:
 
         print('model loaded')
 
+        json_path = os.path.dirname(os.path.abspath(__file__))+'/analysis/font100_vad.json'
+        with open(json_path,'r') as fp:
+            dat = json.load(fp)
+        ary = []
+        for dic in dat:
+            ary.append([dic['Valence'],dic['Arousal']])
+        ary_np = np.array(ary)
+        print('VA value loaded')
+
 
     def on_post(self, req, resp):
         """
@@ -46,6 +55,7 @@ class ItemsResource:
         resp.status = falcon.HTTP_200
         resp.content_type = 'text/plain'
         resp.body = json.dumps(items,ensure_ascii=False)
+
 
 api = falcon.API()
 itemResource = ItemsResource()
