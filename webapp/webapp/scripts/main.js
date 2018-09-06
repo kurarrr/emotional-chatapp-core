@@ -105,15 +105,11 @@ FriendlyChat.prototype.saveMessage = function(e) {
 
     // 一旦pushしてid取得
     // -> 非同期通信してDBのidにeffectを加える
-    // var msg_effect = get_msg_effect();
-    var msg_effect = "effect-none";
-  
     this.messagesRef.push({
       name: currentUser.displayName,
       text: this.messageInput.value,
       photoUrl: currentUser.photoURL || '/images/profile_placeholder.png',
       userAttr: this.userAttr,
-      // effect : msg_effect
     }).then(function(msgRef) {
       // Clear message text field and SEND button state.
       this.toggleButton();
@@ -131,13 +127,15 @@ FriendlyChat.prototype.saveMessage = function(e) {
         type : 'POST',
         contentType: 'application/json',
         async : true,
-        data : JSON.stringify(dat)
+        data : JSON.stringify(dat),
+        xhrFields: {
+          withCredentials: false
+        }
       }).done(function(res){
-        // res.responseJSON.effect
-        console.log(res);
-        // API response
-        var msgEffect = res.effect;
-        self.database.ref('messages/' + msgId + '/effect').update(msgEffect);
+        // res = string
+        var dat = JSON.parse(res);
+        var msgEffect = dat.effect;
+        self.messagesRef.child('/'+msgId+'/effect').set(msgEffect);
       }).fail(function(){
 
       });
