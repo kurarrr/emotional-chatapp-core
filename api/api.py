@@ -23,40 +23,25 @@ class ItemsResource:
 
         print('model loaded')
 
-        json_path = os.path.dirname(os.path.abspath(__file__))+'/analysis/font100_vad_reg.json'
-        with open(json_path,'r') as fp:
-            self.dat = json.load(fp)
-        ary = []
-        for dic in self.dat:
-            ary.append([float(dic['Valence']),float(dic['Arousal'])])
-        self.ary_np = np.array(ary)
-        print('VA value loaded')
 
 
-    def on_post(self, req, resp):
+    def on_get(self, req, resp):
         """
         params
-        - {  msg           : message
-             msg_user_attr : native or non-native  }
+        - { msg : message}
         reponse
-        - {
-        effect : 
-            { native or non-native : css_class_name }
-        }
+        - { Valence, Arousal }
         """
         
         body = req.stream.read()
         data = json.loads(body)
         msg = data['msg']
-        idx = analysis.most_closest(self.models,msg,self.ary_np)
-        font_name = self.dat[idx]['name']
-        msg_user_attr = data['msg_user_attr']
-        attr = ''
-        if msg_user_attr == 'native':
-            attr = 'non-native'
-        else:
-            attr = 'native'
-        items = { attr : 'font-'+font_name.replace('.','-')}
+        valence, arousal = analysis.make_pred_va_sentence(self.models,msg)
+
+        items = {
+            'Valence' : valence,
+            'Arousal' : arousal
+        }
 
         resp.status = falcon.HTTP_200
         resp.content_type = 'text/plain'

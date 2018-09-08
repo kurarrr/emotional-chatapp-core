@@ -6,13 +6,15 @@ import numpy as np
 
 class ItemsResource:
 
-    def on_post(self, req, resp):
+    def on_get(self, req, resp):
         body = req.stream.read()
         data = json.loads(body)
         print(data)
         items = {
-          'effect' : {'native' : 'font-967-ttf'}
+		'Valence' : 0.5,
+		'Arousal' : 0.45
         }
+
 
         resp.status = falcon.HTTP_200
         resp.content_type = 'text/plain'

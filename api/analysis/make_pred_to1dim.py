@@ -230,8 +230,14 @@ def make_pred_va(models,sentences):
     v = make_pred(models['Valence'],sentences)
     a = make_pred(models['Arousal'],sentences)
     res = np.r_['1',v,a]
-    # res : list of [v,a] for sentences
+    # res : nparray of [v,a] for sentences
     return res
+
+def make_pred_va_sentence(models, sentence):
+    v = float(make_pred(models['Valence'],[sentence]))
+    a = float(make_pred(models['Arousal'],[sentence]))
+    # res : float value of v,a
+    return v,a
 
 def most_closest(models,sentence,ary_np):
     """
