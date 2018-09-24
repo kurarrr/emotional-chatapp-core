@@ -58,6 +58,7 @@ function FriendlyChat() {
   this.mediaCapture.addEventListener('change', this.saveImageMessage.bind(this));
 
   this.initFirebase();
+  this.loadFontData();
 }
 
 // Sets up shortcuts to Firebase features and initiate firebase auth.
@@ -68,6 +69,17 @@ FriendlyChat.prototype.initFirebase = function() {
   this.storage = firebase.storage();
   // Initiates Firebase auth and listen to auth state changes.
   this.auth.onAuthStateChanged(this.onAuthStateChanged.bind(this));
+};
+
+FriendlyChat.prototype.loadFontData = function() {
+  var vaRef = this.database.ref('va');
+  var self = this;
+  vaRef.on('value',function(res){
+    self.vaVal = res.val();
+    // console.log(self.vaVal);
+  },function(error){
+    console.log(error);
+  });
 };
 
 // Loads chat messages history and listens for upcoming ones.
@@ -115,27 +127,51 @@ FriendlyChat.prototype.saveMessage = function(e) {
       this.toggleButton();
       
       var msgId = msgRef.key;
+      var userAttr = this.userAttr;
+
       var dat = {
         msg : this.messageInput.value,
-        msg_user_attr : this.userAttr
       };
       FriendlyChat.resetMaterialTextfield(this.messageInput);
       var self = this;
       // console.log(dat);
       $.ajax({
         url : CORPUS_API_URL,
-        type : 'POST',
+        type : 'GET',
         contentType: 'application/json',
         async : true,
-        data : JSON.stringify(dat),
+        data :  dat,
         xhrFields: {
           withCredentials: false
         }
       }).done(function(res){
         // res = string
-        var dat = JSON.parse(res);
-        var msgEffect = dat.effect;
-        var updates = {effect : dat};
+        var opUserAttr = "";
+        if(userAttr=="native") opUserAttr = "non-native";
+        else opUserAttr = "native";
+        var getFont = function(dat){
+          // select the nearest font
+          var distmin = 100;
+          var argmin = -1;
+          for(var idx = 0; idx < self.vaVal.length; idx++){
+            var temp = (dat['Valence'] - self.vaVal[idx]['Valence']) * (dat['Valence'] - self.vaVal[idx]['Valence'])
+                     + (dat['Arousal'] - self.vaVal[idx]['Arousal']) * (dat['Arousal'] - self.vaVal[idx]['Arousal']);
+            if(temp<distmin){
+              distmin = temp;
+              argmin = idx;
+            }
+          }
+          return self.vaVal[argmin]['name'];
+        };
+        var msgEffect = {};
+        msgEffect[opUserAttr] = getFont(res);
+        var updates = {
+          effect : msgEffect,
+          Valence : res['Valence'],
+          Arousal : res['Arousal']
+        };
+
+        // console.log(updates);
         self.messagesRef.child('/'+msgId).update(updates);
       }).fail(function(){
 

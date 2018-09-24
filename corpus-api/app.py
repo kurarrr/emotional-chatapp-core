@@ -4,7 +4,7 @@ from chalice import Chalice,BadRequestError
 app = Chalice(app_name='corpus-api')
 
 
-@app.route('/',methods=['GET'], cors=True)
+@app.route('/prediction_api',methods=['GET'], cors=True)
 def index():
     req = app.current_request
     data = req.query_params
