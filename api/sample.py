@@ -9,6 +9,8 @@ class ItemsResource:
     def on_get(self, req, resp):
         params = req.params
         print(params)
+        data = json.loads(body)
+
         items = {
 		'Valence' : 0.5,
 		'Arousal' : 0.45
