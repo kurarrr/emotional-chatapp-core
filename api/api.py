@@ -33,8 +33,9 @@ class ItemsResource:
         - { Valence, Arousal }
         """
         
-        body = req.stream.read()
-        data = json.loads(body)
+        # data : dict
+        data = req.params
+
         msg = data['msg']
         valence, arousal = analysis.make_pred_va_sentence(self.models,msg)
 
