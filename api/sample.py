@@ -9,11 +9,11 @@ class ItemsResource:
     def on_get(self, req, resp):
         params = req.params
         print(params)
-        data = json.loads(params)
 
         items = {
-		'Valence' : 0.5,
-		'Arousal' : 0.45
+            'msg' : params['msg'],
+            'Valence' : 0.5,
+            'Arousal' : 0.45
         }
 
         resp.status = falcon.HTTP_200
