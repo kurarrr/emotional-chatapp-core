@@ -16,8 +16,15 @@
 'use strict';
 
 // Initializes FriendlyChat.
-// var CORPUS_API_URL = 'https://qg9sadekbk.execute-api.ap-northeast-1.amazonaws.com/api/';
-var CORPUS_API_URL = 'http://127.0.0.1:8000/prediction_api';
+
+// sample chalice
+// var CORPUS_API_URL = 'https://qg9sadekbk.execute-api.ap-northeast-1.amazonaws.com/api/prediction_api';
+
+// local
+// var CORPUS_API_URL = 'http://127.0.0.1:8000/prediction_api';
+
+// aws
+var CORPUS_API_URL = 'http://18.182.248.131/prediction_api';
 
 
 function FriendlyChat() {
@@ -100,7 +107,13 @@ FriendlyChat.prototype.loadMessages = function() {
         effectCss = val.effect[userAttr];
       }
     }
-    this.displayMessage(data.key, val.name, val.text, val.photoUrl, val.imageUrl, effectCss);
+    var valence,arousal;
+    valence = arousal = 0.5;
+    if(val.Arousal && val.Valence){
+      valence = val.Valence;
+      arousal = val.Arousal;
+    }
+    this.displayMessage(data.key, val.name, val.text, val.photoUrl, val.imageUrl, effectCss, valence, arousal);
   }.bind(this);
   this.messagesRef.limitToLast(12).on('child_added', setMessage);
   this.messagesRef.limitToLast(12).on('child_changed', setMessage);
@@ -164,7 +177,7 @@ FriendlyChat.prototype.saveMessage = function(e) {
           return self.vaVal[argmin]['name'];
         };
         var msgEffect = {};
-        msgEffect[opUserAttr] = getFont(res);
+        msgEffect[opUserAttr] = 'font-' + getFont(res).replace('.','-');
         var updates = {
           effect : msgEffect,
           Valence : res['Valence'],
@@ -334,13 +347,14 @@ FriendlyChat.MESSAGE_TEMPLATE =
       '<div class="spacing"><div class="pic"></div></div>' +
       '<div class="message"></div>' +
       '<div class="name"></div>' +
+      '<div class="valence-arousal"></div>' +
     '</div>';
 
 // A loading image URL.
 FriendlyChat.LOADING_IMAGE_URL = 'https://www.google.com/images/spin-32.gif';
 
 // Displays a Message in the UI.
-FriendlyChat.prototype.displayMessage = function(key, name, text, picUrl, imageUri, effectCss) {
+FriendlyChat.prototype.displayMessage = function(key, name, text, picUrl, imageUri, effectCss, valence, arousal) {
   var div = document.getElementById(key);
   // If an element for that message does not exists yet we create it.
   if (!div) {
@@ -354,6 +368,9 @@ FriendlyChat.prototype.displayMessage = function(key, name, text, picUrl, imageU
     div.querySelector('.pic').style.backgroundImage = 'url(' + picUrl + ')';
   }
   div.querySelector('.name').textContent = name;
+  div.querySelector('.valence-arousal').textContent
+  = 'Valence : ' + valence.toFixed(3) + ', Arousal : ' + arousal.toFixed(3); 
+
   var messageElement = div.querySelector('.message');
   if (text) { // If the message is text.
     messageElement.textContent = text;

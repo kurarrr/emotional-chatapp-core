@@ -4,6 +4,10 @@
       ".read": "auth !== null",
       ".write": "auth !== null"
     },
+    "va": {
+      ".read": "auth !== null",
+      ".write": "auth !== null"
+    },
     "fcmTokens": {
       "$token": {
         // Users can only read their own device tokens
