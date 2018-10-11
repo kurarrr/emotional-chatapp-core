@@ -8,3 +8,4 @@ vad-analysis/word2vec/
 vad-analysis/.ipynb_checkpoints/
 __pycache__/
 webapp/webapp/firebase-debug.log
+webapp/webapp/.firebase
