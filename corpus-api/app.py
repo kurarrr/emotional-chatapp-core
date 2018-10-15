@@ -1,44 +1,25 @@
-import json
+import json,random
 from chalice import Chalice,BadRequestError
 
 app = Chalice(app_name='corpus-api')
 
 
-@app.route('/',methods=['POST'], cors=True)
+@app.route('/prediction_api',methods=['GET'], cors=True)
 def index():
-    data = app.current_request.json_body
+    req = app.current_request
+    data = req.query_params
+
     try:
         msg = data['msg']
-        msg_user_attr = data['msg_user_attr']
     except:
-        raise BadRequestError("Keys [msg,msg_user_attr] are necessary")
+        raise BadRequestError("Keys [msg] are necessary")
 
-    res = {}
+    res = {
+        'Valence' : random.random(),
+        'Arousal' : random.random()
+    }
 
-    if msg_user_attr == 'native':
-        effect_to = 'non-native'
-    elif msg_user_attr == 'non-native':
-        effect_to = 'native'
-
-    # ここでメッセージを処理する
-    if 'happy' in msg or 'happiness' in msg:
-        effect = 'happiness'
-    elif 'sad' in msg:
-        effect = 'sadness'
-    elif 'anger' in msg or 'angry' in msg:
-        effect = 'anger'
-    elif 'disgust' in msg:
-        effect = 'disgust'
-    elif 'fear' in msg:
-        effect = 'fear'
-    elif 'surprise' in msg:
-        effect = 'surprise'
-    else:
-        effect = 'none'
-    
-    res[effect_to] = 'effect-'+effect
-
-    return { 'effect' : res }
+    return res
 
 
 # The view function above will return {"hello": "world"}

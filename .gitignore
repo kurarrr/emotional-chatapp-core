@@ -1,9 +1,11 @@
-api/vad-analysis/dat_model_json/
-api/vad-analysis/image/
-api/vad-analysis/word2vec/
-api/vad-analysis/.ipynb_checkpoints/
+api/analysis/dat_model_json/
+api/analysis/image/
+api/analysis/word2vec/
+api/analysis/.ipynb_checkpoints/
 vad-analysis/dat_model_json/
 vad-analysis/image/
 vad-analysis/word2vec/
 vad-analysis/.ipynb_checkpoints/
 __pycache__/
+webapp/webapp/firebase-debug.log
+webapp/webapp/.firebase
