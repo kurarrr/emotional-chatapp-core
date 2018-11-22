@@ -1,0 +1,214 @@
+[I 20:46:53.365 LabApp] Using EnvironmentKernelSpecManager...
+[I 20:46:53.366 LabApp] Started periodic updates of the kernel list (every 3 minutes).
+[I 20:46:53.371 LabApp] Writing notebook server cookie secret to /run/user/1000/jupyter/notebook_cookie_secret
+[W 20:46:53.546 LabApp] WARNING: The notebook server is listening on all IP addresses and not using encryption. This is not recommended.
+[I 20:46:53.555 LabApp] JupyterLab beta preview extension loaded from /home/ubuntu/anaconda3/lib/python3.6/site-packages/jupyterlab
+[I 20:46:53.555 LabApp] JupyterLab application directory is /home/ubuntu/anaconda3/share/jupyter/lab
+[I 20:46:53.715 LabApp] [nb_conda] enabled
+/home/ubuntu/anaconda3/lib/python3.6/site-packages/matplotlib/__init__.py:1067: UserWarning: Duplicate key in file "/home/ubuntu/.config/matplotlib/matplotlibrc", line #2
+  (fname, cnt))
+/home/ubuntu/anaconda3/lib/python3.6/site-packages/matplotlib/__init__.py:1067: UserWarning: Duplicate key in file "/home/ubuntu/.config/matplotlib/matplotlibrc", line #3
+  (fname, cnt))
+[I 20:46:54.021 LabApp] sparkmagic extension enabled!
+[I 20:46:54.023 LabApp] Serving notebooks from local directory: /home/ubuntu/emotional-chatapp
+[I 20:46:54.023 LabApp] 0 active kernels
+[I 20:46:54.023 LabApp] The Jupyter Notebook is running at:
+[I 20:46:54.023 LabApp] http://[all ip addresses on your system]:8888/
+[I 20:46:54.023 LabApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 20:46:54.024 LabApp] Starting initial scan of virtual environments...
+[I 20:46:55.781 LabApp] Found new kernels in environments: conda_mxnet_p27, conda_python2, conda_anaconda3, conda_caffe2_p27, conda_chainer_p36, conda_cntk_p36, conda_tensorflow_p27, conda_pytorch_p27, conda_cntk_p27, conda_tensorflow_p36, conda_theano_p36, conda_caffe_p35, conda_caffe_p27, conda_python3, conda_mxnet_p36, conda_theano_p27, conda_chainer_p27, conda_pytorch_p36
+[I 20:47:01.766 LabApp] 302 GET / (127.0.0.1) 0.88ms
+[I 20:47:02.182 LabApp] 302 GET /lab? (127.0.0.1) 1.36ms
+[I 20:47:29.631 LabApp] 302 POST /login?next=%2Flab%3F (127.0.0.1) 1.29ms
+[W 20:47:30.953 LabApp] Could not determine jupyterlab build status without nodejs
+[W 20:47:31.677 LabApp] 404 GET /api/contents/emotional-chatapp/api/analysis?1542541651824 (127.0.0.1): No such file or directory: emotional-chatapp/api/analysis
+[W 20:47:31.677 LabApp] No such file or directory: emotional-chatapp/api/analysis
+[W 20:47:31.677 LabApp] 404 GET /api/contents/emotional-chatapp/api/analysis?1542541651824 (127.0.0.1) 1.42ms referer=http://localhost:8888/lab?
+[W 20:47:31.678 LabApp] 404 GET /api/contents/emotional-chatapp/api/analysis/train_to1dim_wordcut_ver_ops.ipynb?content=0&1542541651826 (127.0.0.1): No such file or directory: emotional-chatapp/api/analysis/train_to1dim_wordcut_ver_ops.ipynb
+[W 20:47:31.679 LabApp] No such file or directory: emotional-chatapp/api/analysis/train_to1dim_wordcut_ver_ops.ipynb
+[W 20:47:31.679 LabApp] 404 GET /api/contents/emotional-chatapp/api/analysis/train_to1dim_wordcut_ver_ops.ipynb?content=0&1542541651826 (127.0.0.1) 0.94ms referer=http://localhost:8888/lab?
+[W 20:47:31.681 LabApp] 404 GET /api/contents/emotional-chatapp/api/analysis/plot.ipynb?content=0&1542541651827 (127.0.0.1): No such file or directory: emotional-chatapp/api/analysis/plot.ipynb
+[W 20:47:31.681 LabApp] No such file or directory: emotional-chatapp/api/analysis/plot.ipynb
+[W 20:47:31.681 LabApp] 404 GET /api/contents/emotional-chatapp/api/analysis/plot.ipynb?content=0&1542541651827 (127.0.0.1) 0.93ms referer=http://localhost:8888/lab?
+[W 20:47:31.684 LabApp] 404 GET /api/contents/emotional-chatapp/api/analysis/make_pred_to1dim_wordcut_to_csv.ipynb?content=0&1542541651828 (127.0.0.1): No such file or directory: emotional-chatapp/api/analysis/make_pred_to1dim_wordcut_to_csv.ipynb
+[W 20:47:31.684 LabApp] No such file or directory: emotional-chatapp/api/analysis/make_pred_to1dim_wordcut_to_csv.ipynb
+[W 20:47:31.684 LabApp] 404 GET /api/contents/emotional-chatapp/api/analysis/make_pred_to1dim_wordcut_to_csv.ipynb?content=0&1542541651828 (127.0.0.1) 0.99ms referer=http://localhost:8888/lab?
+[I 20:48:21.471 LabApp] Kernel started: 6d13d8a9-a96c-4e13-b0ec-a96af82027c3
+[I 20:48:21.984 LabApp] Adapting to protocol v5.1 for kernel 6d13d8a9-a96c-4e13-b0ec-a96af82027c3
+[I 20:48:22.152 LabApp] Adapting to protocol v5.1 for kernel 6d13d8a9-a96c-4e13-b0ec-a96af82027c3
+[I 20:48:42.977 LabApp] Kernel started: 440b0ff0-06c2-447a-bdf7-605683858355
+[I 20:48:43.462 LabApp] Adapting to protocol v5.1 for kernel 440b0ff0-06c2-447a-bdf7-605683858355
+[I 20:50:44.157 LabApp] Saving file at /api/analysis/plot.ipynb
+[I 20:52:46.190 LabApp] Saving file at /api/analysis/plot.ipynb
+[I 20:54:46.994 LabApp] Saving file at /api/analysis/plot.ipynb
+[I 20:56:47.408 LabApp] Saving file at /api/analysis/plot.ipynb
+[I 20:58:47.798 LabApp] Saving file at /api/analysis/plot.ipynb
+[I 21:00:48.196 LabApp] Saving file at /api/analysis/plot.ipynb
+[I 21:02:48.619 LabApp] Saving file at /api/analysis/plot.ipynb
+[I 21:04:56.923 LabApp] Saving file at /api/analysis/plot.ipynb
+[I 21:38:57.635 LabApp] Saving file at /api/analysis/plot.ipynb
+[I 21:40:58.063 LabApp] Saving file at /api/analysis/plot.ipynb
+[I 21:42:59.268 LabApp] Saving file at /api/analysis/plot.ipynb
+[I 21:44:59.702 LabApp] Saving file at /api/analysis/plot.ipynb
+[I 21:47:00.513 LabApp] Saving file at /api/analysis/plot.ipynb
+[I 22:21:02.260 LabApp] Saving file at /api/analysis/plot.ipynb
+[I 22:36:06.116 LabApp] Kernel started: b604bafb-6597-4c78-8ef0-886a1db48868
+[I 22:36:06.556 LabApp] Adapting to protocol v5.1 for kernel b604bafb-6597-4c78-8ef0-886a1db48868
+[I 22:36:22.873 LabApp] Kernel started: e8e85bb5-6a33-4544-aed3-98d9ae64b2d9
+[I 22:36:23.319 LabApp] Adapting to protocol v5.1 for kernel e8e85bb5-6a33-4544-aed3-98d9ae64b2d9
+[I 22:36:46.707 LabApp] Copying api/analysis/make_pred_to1dim_wordcut_to_csv.ipynb to /api/analysis
+[I 22:38:23.295 LabApp] Saving file at /api/analysis/make_pred_to1dim_wordcut_to_csv.ipynb
+[I 22:38:36.033 LabApp] Saving file at /api/analysis/train_to1dim_wordcut_ver_ops.ipynb
+[I 22:40:24.314 LabApp] Saving file at /api/analysis/make_pred_to1dim_wordcut_to_csv.ipynb
+[I 22:42:24.966 LabApp] Saving file at /api/analysis/make_pred_to1dim_wordcut_to_csv.ipynb
+[I 22:46:25.593 LabApp] Saving file at /api/analysis/make_pred_to1dim_wordcut_to_csv.ipynb
+[I 22:48:26.016 LabApp] Saving file at /api/analysis/make_pred_to1dim_wordcut_to_csv.ipynb
+[I 22:50:26.637 LabApp] Saving file at /api/analysis/make_pred_to1dim_wordcut_to_csv.ipynb
+[I 22:51:15.568 LabApp] Saving file at /api/analysis/make_pred_to1dim_wordcut_to_csv.ipynb
+[I 22:53:16.224 LabApp] Saving file at /api/analysis/make_pred_to1dim_wordcut_to_csv.ipynb
+[I 22:55:16.643 LabApp] Saving file at /api/analysis/make_pred_to1dim_wordcut_to_csv.ipynb
+[I 22:57:17.059 LabApp] Saving file at /api/analysis/make_pred_to1dim_wordcut_to_csv.ipynb
+[I 22:59:17.519 LabApp] Saving file at /api/analysis/make_pred_to1dim_wordcut_to_csv.ipynb
+[I 23:01:17.958 LabApp] Saving file at /api/analysis/make_pred_to1dim_wordcut_to_csv.ipynb
+[I 23:03:18.380 LabApp] Saving file at /api/analysis/make_pred_to1dim_wordcut_to_csv.ipynb
+[I 23:07:18.907 LabApp] Saving file at /api/analysis/make_pred_to1dim_wordcut_to_csv.ipynb
+[I 23:11:19.345 LabApp] Saving file at /api/analysis/make_pred_to1dim_wordcut_to_csv.ipynb
+[I 23:13:19.966 LabApp] Saving file at /api/analysis/make_pred_to1dim_wordcut_to_csv.ipynb
+[I 23:43:04.251 LabApp] Saving file at /api/analysis/plot.ipynb
+[I 23:43:20.543 LabApp] Saving file at /api/analysis/make_pred_to1dim_wordcut_to_csv.ipynb
+[I 23:45:15.112 LabApp] Saving file at /api/analysis/plot.ipynb
+[I 23:45:20.949 LabApp] Saving file at /api/analysis/make_pred_to1dim_wordcut_to_csv.ipynb
+[I 23:47:21.354 LabApp] Saving file at /api/analysis/make_pred_to1dim_wordcut_to_csv.ipynb
+[I 23:49:21.761 LabApp] Saving file at /api/analysis/make_pred_to1dim_wordcut_to_csv.ipynb
+[I 23:57:22.173 LabApp] Saving file at /api/analysis/make_pred_to1dim_wordcut_to_csv.ipynb
+[I 23:59:22.579 LabApp] Saving file at /api/analysis/make_pred_to1dim_wordcut_to_csv.ipynb
+[I 00:01:22.992 LabApp] Saving file at /api/analysis/make_pred_to1dim_wordcut_to_csv.ipynb
+[I 00:03:23.402 LabApp] Saving file at /api/analysis/make_pred_to1dim_wordcut_to_csv.ipynb
+[I 00:54:08.889 LabApp] 302 GET / (198.108.66.192) 0.49ms
+[I 00:54:08.919 LabApp] 302 GET /lab? (198.108.66.192) 0.73ms
+[I 01:05:24.527 LabApp] Saving file at /api/analysis/make_pred_to1dim_wordcut_to_csv.ipynb
+[I 01:07:25.060 LabApp] Saving file at /api/analysis/make_pred_to1dim_wordcut_to_csv.ipynb
+[I 01:13:25.604 LabApp] Saving file at /api/analysis/make_pred_to1dim_wordcut_to_csv.ipynb
+[I 01:15:25.985 LabApp] Saving file at /api/analysis/make_pred_to1dim_wordcut_to_csv.ipynb
+[I 01:43:26.450 LabApp] Saving file at /api/analysis/make_pred_to1dim_wordcut_to_csv.ipynb
+[I 01:57:26.943 LabApp] Saving file at /api/analysis/make_pred_to1dim_wordcut_to_csv.ipynb
+[I 02:31:25.792 LabApp] Saving file at /api/analysis/plot.ipynb
+[I 02:31:27.445 LabApp] Saving file at /api/analysis/make_pred_to1dim_wordcut_to_csv.ipynb
+[I 02:33:28.386 LabApp] Saving file at /api/analysis/make_pred_to1dim_wordcut_to_csv.ipynb
+[I 02:33:33.052 LabApp] Saving file at /api/analysis/plot.ipynb
+[I 02:37:28.800 LabApp] Saving file at /api/analysis/make_pred_to1dim_wordcut_to_csv.ipynb
+[I 02:37:43.655 LabApp] Saving file at /api/analysis/plot.ipynb
+[I 02:39:29.212 LabApp] Saving file at /api/analysis/make_pred_to1dim_wordcut_to_csv.ipynb
+[I 02:39:50.639 LabApp] Saving file at /api/analysis/plot.ipynb
+[I 02:41:29.745 LabApp] Saving file at /api/analysis/make_pred_to1dim_wordcut_to_csv.ipynb
+[I 02:42:01.194 LabApp] Saving file at /api/analysis/plot.ipynb
+[I 02:43:30.166 LabApp] Saving file at /api/analysis/make_pred_to1dim_wordcut_to_csv.ipynb
+[I 02:48:02.014 LabApp] Saving file at /api/analysis/plot.ipynb
+[I 02:49:30.644 LabApp] Saving file at /api/analysis/make_pred_to1dim_wordcut_to_csv.ipynb
+[I 02:50:03.907 LabApp] Saving file at /api/analysis/plot.ipynb
+[I 02:56:38.691 LabApp] 302 GET /login?next=%2Flab%3F (127.0.0.1) 0.78ms
+[I 02:56:38.947 LabApp] Starting buffering for b604bafb-6597-4c78-8ef0-886a1db48868:92fcb2dcf9203dfc50abd0176e5dae9f
+[I 02:56:38.948 LabApp] Starting buffering for 440b0ff0-06c2-447a-bdf7-605683858355:670d73132427621553c9d0f111db1527
+[I 02:56:38.949 LabApp] Starting buffering for 6d13d8a9-a96c-4e13-b0ec-a96af82027c3:3b164b4fc8206ab35a667fe856253501
+[I 02:56:38.949 LabApp] Starting buffering for e8e85bb5-6a33-4544-aed3-98d9ae64b2d9:43b5a40dd0fb78f1dc8511d868843b9a
+[W 02:56:39.868 LabApp] Could not determine jupyterlab build status without nodejs
+[I 02:56:40.493 LabApp] Adapting to protocol v5.1 for kernel e8e85bb5-6a33-4544-aed3-98d9ae64b2d9
+[I 02:56:42.013 LabApp] Starting buffering for e8e85bb5-6a33-4544-aed3-98d9ae64b2d9:3d99ed11a5021884f1854217b63c27a4
+[I 02:56:44.000 LabApp] Adapting to protocol v5.1 for kernel 6d13d8a9-a96c-4e13-b0ec-a96af82027c3
+[I 02:56:44.283 LabApp] Adapting to protocol v5.1 for kernel 440b0ff0-06c2-447a-bdf7-605683858355
+[I 02:56:44.338 LabApp] Adapting to protocol v5.1 for kernel e8e85bb5-6a33-4544-aed3-98d9ae64b2d9
+[W 02:56:58.181 LabApp] Notebook api/analysis/make_pred_to1dim.ipynb is not trusted
+[I 02:56:59.675 LabApp] Kernel started: f34b3840-4198-4ec0-a42a-ffe7c71623c7
+[I 02:57:00.199 LabApp] Adapting to protocol v5.1 for kernel f34b3840-4198-4ec0-a42a-ffe7c71623c7
+[I 02:57:11.855 LabApp] Adapting to protocol v5.1 for kernel b604bafb-6597-4c78-8ef0-886a1db48868
+[I 02:57:55.946 LabApp] Kernel started: a40c7bbd-6dad-43ca-8ce9-36e541b24b50
+[I 02:57:56.450 LabApp] Adapting to protocol v5.1 for kernel a40c7bbd-6dad-43ca-8ce9-36e541b24b50
+[I 02:59:31.042 LabApp] Adapting to protocol v5.1 for kernel 440b0ff0-06c2-447a-bdf7-605683858355
+[I 03:04:43.431 LabApp] Starting buffering for 6d13d8a9-a96c-4e13-b0ec-a96af82027c3:1d1c89a480eb5ae3cbab94c1017821b5
+[I 03:04:43.433 LabApp] Starting buffering for e8e85bb5-6a33-4544-aed3-98d9ae64b2d9:bd3540e8bbd769c5f1e41ff6e87d5cb8
+[I 03:04:43.433 LabApp] Starting buffering for f34b3840-4198-4ec0-a42a-ffe7c71623c7:3da1cae9cedc4af2ff68a8aad4e2dabf
+[I 03:04:43.434 LabApp] Starting buffering for b604bafb-6597-4c78-8ef0-886a1db48868:01fb62d73a08fb0e14c9dfe1fdb92ff7
+[I 03:04:43.434 LabApp] Starting buffering for a40c7bbd-6dad-43ca-8ce9-36e541b24b50:0774018f30fcb2d6af489b4f57c00512
+[I 03:04:43.434 LabApp] Starting buffering for 440b0ff0-06c2-447a-bdf7-605683858355:3110ce6140d8a32cbf032235cd81362d
+[I 01:39:35.989 LabApp] 302 GET / (172.105.238.87) 0.76ms
+[I 15:36:45.111 LabApp] 302 GET / (196.52.43.57) 0.85ms
+[I 19:40:20.325 LabApp] 302 GET / (139.162.83.10) 0.75ms
+[I 14:31:10.594 LabApp] 302 GET / (127.0.0.1) 0.72ms
+[W 14:31:12.440 LabApp] Could not determine jupyterlab build status without nodejs
+[I 14:31:12.931 LabApp] Adapting to protocol v5.1 for kernel a40c7bbd-6dad-43ca-8ce9-36e541b24b50
+[W 14:31:13.327 LabApp] Notebook api/analysis/make_pred_to1dim.ipynb is not trusted
+[I 14:31:14.879 LabApp] Starting buffering for a40c7bbd-6dad-43ca-8ce9-36e541b24b50:ec35184eea8055416a63b5123002a19f
+[I 14:31:15.516 LabApp] Adapting to protocol v5.1 for kernel b604bafb-6597-4c78-8ef0-886a1db48868
+[I 14:31:15.825 LabApp] Adapting to protocol v5.1 for kernel e8e85bb5-6a33-4544-aed3-98d9ae64b2d9
+[I 14:31:15.846 LabApp] Adapting to protocol v5.1 for kernel 440b0ff0-06c2-447a-bdf7-605683858355
+[I 14:31:16.154 LabApp] Adapting to protocol v5.1 for kernel f34b3840-4198-4ec0-a42a-ffe7c71623c7
+[I 14:31:16.176 LabApp] Adapting to protocol v5.1 for kernel a40c7bbd-6dad-43ca-8ce9-36e541b24b50
+[I 15:36:12.960 LabApp] Starting buffering for e8e85bb5-6a33-4544-aed3-98d9ae64b2d9:40cd7c4336726391444b011be57d9a42
+[I 15:36:12.960 LabApp] Starting buffering for 440b0ff0-06c2-447a-bdf7-605683858355:23b43cfc2e53ac1dd345c5f037a9303a
+[I 15:36:12.961 LabApp] Starting buffering for f34b3840-4198-4ec0-a42a-ffe7c71623c7:abf9a81af4853c3deb23864597ac166a
+[I 15:36:12.961 LabApp] Starting buffering for a40c7bbd-6dad-43ca-8ce9-36e541b24b50:f2dabaefa8df9b3ca6db46b959413c80
+[I 15:36:12.962 LabApp] Starting buffering for b604bafb-6597-4c78-8ef0-886a1db48868:d6acafcebff082517a0700b9e6432fb3
+[I 14:51:57.572 LabApp] 302 GET / (127.0.0.1) 0.69ms
+[W 14:51:59.750 LabApp] Could not determine jupyterlab build status without nodejs
+[I 14:52:00.636 LabApp] Adapting to protocol v5.1 for kernel a40c7bbd-6dad-43ca-8ce9-36e541b24b50
+[I 14:52:01.489 LabApp] Starting buffering for a40c7bbd-6dad-43ca-8ce9-36e541b24b50:f8fd81f97caf3c0cacb46fb291993864
+[W 14:52:03.010 LabApp] Notebook api/analysis/make_pred_to1dim.ipynb is not trusted
+[I 14:52:04.976 LabApp] Adapting to protocol v5.1 for kernel e8e85bb5-6a33-4544-aed3-98d9ae64b2d9
+[I 14:52:05.279 LabApp] Adapting to protocol v5.1 for kernel b604bafb-6597-4c78-8ef0-886a1db48868
+[I 14:52:05.300 LabApp] Adapting to protocol v5.1 for kernel f34b3840-4198-4ec0-a42a-ffe7c71623c7
+[I 14:52:05.627 LabApp] Adapting to protocol v5.1 for kernel a40c7bbd-6dad-43ca-8ce9-36e541b24b50
+[I 14:53:17.819 LabApp] Kernel started: 63e4f2d1-2536-49f6-ab85-7a1201a01d7b
+[I 14:53:18.277 LabApp] Adapting to protocol v5.1 for kernel 63e4f2d1-2536-49f6-ab85-7a1201a01d7b
+[I 14:55:18.511 LabApp] Saving file at /api/analysis/plot_preprocess_data.ipynb
+[I 14:58:56.075 LabApp] Kernel started: 4bf812e7-d7b9-4ab7-aff1-e1f283c7f7b7
+[I 14:58:56.561 LabApp] Adapting to protocol v5.1 for kernel 4bf812e7-d7b9-4ab7-aff1-e1f283c7f7b7
+[I 15:00:56.425 LabApp] Saving file at /api/analysis/preprocess_vad_respectively.ipynb
+[I 15:01:01.123 LabApp] Saving file at /api/analysis/preprocess_vad_respectively.ipynb
+[I 15:01:18.929 LabApp] Saving file at /api/analysis/plot_preprocess_data.ipynb
+[I 15:03:19.366 LabApp] Saving file at /api/analysis/plot_preprocess_data.ipynb
+[I 15:07:19.785 LabApp] Saving file at /api/analysis/plot_preprocess_data.ipynb
+[I 15:11:20.194 LabApp] Saving file at /api/analysis/plot_preprocess_data.ipynb
+[I 15:12:08.653 LabApp] Saving file at /api/analysis/plot_preprocess_data.ipynb
+[I 15:12:24.762 LabApp] Kernel shutdown: 440b0ff0-06c2-447a-bdf7-605683858355
+[I 15:12:27.726 LabApp] Kernel shutdown: 4bf812e7-d7b9-4ab7-aff1-e1f283c7f7b7
+[I 15:12:34.615 LabApp] Kernel shutdown: 63e4f2d1-2536-49f6-ab85-7a1201a01d7b
+[I 15:13:02.072 LabApp] Kernel shutdown: b604bafb-6597-4c78-8ef0-886a1db48868
+[I 15:13:03.279 LabApp] Kernel shutdown: e8e85bb5-6a33-4544-aed3-98d9ae64b2d9
+[I 15:13:03.565 LabApp] Kernel shutdown: f34b3840-4198-4ec0-a42a-ffe7c71623c7
+[I 15:13:04.163 LabApp] Kernel shutdown: a40c7bbd-6dad-43ca-8ce9-36e541b24b50
+[I 15:13:14.755 LabApp] Copying api/analysis/train_to1dim_wordcut_ver_ops.ipynb to /api/analysis
+[I 15:13:44.824 LabApp] Kernel started: ec59875c-ab02-449b-8344-0d531fe4ea9e
+[I 15:13:45.283 LabApp] Adapting to protocol v5.1 for kernel ec59875c-ab02-449b-8344-0d531fe4ea9e
+[I 15:15:45.229 LabApp] Saving file at /api/analysis/train_to1dim_ops_wordcut_only.ipynb
+[I 15:17:37.367 LabApp] Kernel started: 8cf94e5a-7b42-4ccc-9769-c7a5e954d0a6
+[I 15:17:37.875 LabApp] Adapting to protocol v5.1 for kernel 8cf94e5a-7b42-4ccc-9769-c7a5e954d0a6
+[I 15:17:45.601 LabApp] Saving file at /api/analysis/train_to1dim_ops_wordcut_only.ipynb
+[I 15:18:14.345 LabApp] Saving file at /api/analysis/plot_preprocess_data.ipynb
+[I 15:25:46.001 LabApp] Saving file at /api/analysis/train_to1dim_ops_wordcut_only.ipynb
+[I 15:27:46.375 LabApp] Saving file at /api/analysis/train_to1dim_ops_wordcut_only.ipynb
+[I 15:28:37.675 LabApp] Saving file at /api/analysis/plot_preprocess_data.ipynb
+[I 15:29:46.757 LabApp] Saving file at /api/analysis/train_to1dim_ops_wordcut_only.ipynb
+[I 15:33:47.136 LabApp] Saving file at /api/analysis/train_to1dim_ops_wordcut_only.ipynb
+[I 15:35:47.521 LabApp] Saving file at /api/analysis/train_to1dim_ops_wordcut_only.ipynb
+[I 15:37:27.801 LabApp] Kernel started: bce4c984-61c7-45c0-8455-0cf2b75b9f95
+[I 15:37:28.283 LabApp] Adapting to protocol v5.1 for kernel bce4c984-61c7-45c0-8455-0cf2b75b9f95
+[I 15:37:47.893 LabApp] Saving file at /api/analysis/train_to1dim_ops_wordcut_only.ipynb
+[I 15:39:48.274 LabApp] Saving file at /api/analysis/train_to1dim_ops_wordcut_only.ipynb
+[I 15:41:48.658 LabApp] Saving file at /api/analysis/train_to1dim_ops_wordcut_only.ipynb
+[I 15:43:49.370 LabApp] Saving file at /api/analysis/train_to1dim_ops_wordcut_only.ipynb
+[I 15:45:49.747 LabApp] Saving file at /api/analysis/train_to1dim_ops_wordcut_only.ipynb
+[I 15:46:29.509 LabApp] Saving file at /api/analysis/plot_preprocess_data.ipynb
+[I 15:47:50.119 LabApp] Saving file at /api/analysis/train_to1dim_ops_wordcut_only.ipynb
+[I 15:49:50.507 LabApp] Saving file at /api/analysis/train_to1dim_ops_wordcut_only.ipynb
+[I 15:51:50.900 LabApp] Saving file at /api/analysis/train_to1dim_ops_wordcut_only.ipynb
+[I 16:30:44.936 LabApp] 302 GET / (139.162.83.10) 0.53ms
+[I 16:37:56.074 LabApp] Saving file at /api/analysis/train_to1dim_ops_wordcut_only.ipynb
+[I 16:39:56.466 LabApp] Saving file at /api/analysis/train_to1dim_ops_wordcut_only.ipynb
+[I 16:41:56.841 LabApp] Saving file at /api/analysis/train_to1dim_ops_wordcut_only.ipynb
+[I 16:45:57.374 LabApp] Saving file at /api/analysis/train_to1dim_ops_wordcut_only.ipynb
+[I 16:46:06.703 LabApp] Saving file at /api/analysis/train_to1dim_ops_wordcut_only.ipynb
+[I 16:46:48.862 LabApp] Saving file at /api/analysis/train_to1dim_ops_wordcut_only.ipynb
+[I 16:48:18.279 LabApp] Kernel interrupted: ec59875c-ab02-449b-8344-0d531fe4ea9e
+[I 16:48:49.267 LabApp] Saving file at /api/analysis/train_to1dim_ops_wordcut_only.ipynb
+[I 16:49:24.355 LabApp] Saving file at /api/analysis/train_to1dim_ops_wordcut_only.ipynb
+[I 16:50:36.902 LabApp] Saving file at /api/analysis/train_to1dim_ops_wordcut_only.ipynb
