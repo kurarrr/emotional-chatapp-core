@@ -502,9 +502,9 @@ def make_model_and_train_cross_validation_option(option,epochs,vad_type,csv_path
 # In[44]:
 
 
-vad_types = ['Valence']
+vad_types = ['Valence','Arousal']
 bss = [4,8]
-lrs = [1e-5,2e-5]
+lrs = [1e-5,2e-5,4e-5]
 
 options = []
 
@@ -528,7 +528,7 @@ for vad_type in vad_types:
     for lr in lrs:
         for bs in bss:
             for option in options:
-                epoch_num = 1
+                epoch_num = 50
                 make_model_and_train_cross_validation_option(option,epoch_num,vad_type,metric='L1Loss',csv_path='./data_cut_only.csv',
                             save_dir='./dat_model_json/dat_cross_valid_word_cut_only/',
                             learning_rate=lr,batch_size=bs,print_result=False)

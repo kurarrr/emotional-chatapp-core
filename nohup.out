@@ -212,3 +212,191 @@
 [I 16:48:49.267 LabApp] Saving file at /api/analysis/train_to1dim_ops_wordcut_only.ipynb
 [I 16:49:24.355 LabApp] Saving file at /api/analysis/train_to1dim_ops_wordcut_only.ipynb
 [I 16:50:36.902 LabApp] Saving file at /api/analysis/train_to1dim_ops_wordcut_only.ipynb
+[I 16:52:05.128 LabApp] Saving file at /api/analysis/train_to1dim_ops_wordcut_only.ipynb
+[I 16:54:05.504 LabApp] Saving file at /api/analysis/train_to1dim_ops_wordcut_only.ipynb
+[I 16:55:55.351 LabApp] Saving file at /api/analysis/train_to1dim_ops_wordcut_only.ipynb
+[W 18:41:07.877 LabApp] WebSocket ping timeout after 119843 ms.
+[I 18:41:12.879 LabApp] Starting buffering for 8cf94e5a-7b42-4ccc-9769-c7a5e954d0a6:171117a23e95d283f36d298fef74dc97
+[W 18:41:15.286 LabApp] WebSocket ping timeout after 119842 ms.
+[I 18:41:20.288 LabApp] Starting buffering for ec59875c-ab02-449b-8344-0d531fe4ea9e:958ceebccb4f48cca8c55ad875798617
+[W 18:41:28.285 LabApp] WebSocket ping timeout after 119844 ms.
+[I 18:41:33.286 LabApp] Starting buffering for bce4c984-61c7-45c0-8455-0cf2b75b9f95:16ee759616b722deb3444c2906bfb2dc
+[I 19:15:33.058 LabApp] 302 GET / (196.52.43.128) 0.85ms
+[I 20:46:27.064 LabApp] 302 GET / (172.105.238.87) 0.78ms
+[I 18:59:24.335 LabApp] Adapting to protocol v5.1 for kernel ec59875c-ab02-449b-8344-0d531fe4ea9e
+[I 18:59:24.639 LabApp] Adapting to protocol v5.1 for kernel 8cf94e5a-7b42-4ccc-9769-c7a5e954d0a6
+[I 18:59:24.692 LabApp] Adapting to protocol v5.1 for kernel bce4c984-61c7-45c0-8455-0cf2b75b9f95
+[I 18:59:29.926 LabApp] 302 GET / (127.0.0.1) 0.57ms
+[W 18:59:31.636 LabApp] Could not determine jupyterlab build status without nodejs
+[I 18:59:32.014 LabApp] Adapting to protocol v5.1 for kernel bce4c984-61c7-45c0-8455-0cf2b75b9f95
+[W 18:59:32.253 LabApp] Notebook api/analysis/make_pred_to1dim.ipynb is not trusted
+[I 18:59:33.622 LabApp] Adapting to protocol v5.1 for kernel ec59875c-ab02-449b-8344-0d531fe4ea9e
+[I 18:59:34.039 LabApp] Kernel started: fc1cc021-17b8-4406-bb93-7b865c9bd1be
+[I 18:59:34.557 LabApp] Adapting to protocol v5.1 for kernel fc1cc021-17b8-4406-bb93-7b865c9bd1be
+[I 18:59:34.735 LabApp] Adapting to protocol v5.1 for kernel bce4c984-61c7-45c0-8455-0cf2b75b9f95
+[I 18:59:34.926 LabApp] Adapting to protocol v5.1 for kernel 8cf94e5a-7b42-4ccc-9769-c7a5e954d0a6
+[I 19:01:06.598 LabApp] Kernel shutdown: 6d13d8a9-a96c-4e13-b0ec-a96af82027c3
+[I 19:01:08.788 LabApp] Kernel shutdown: ec59875c-ab02-449b-8344-0d531fe4ea9e
+[I 19:01:09.096 LabApp] Kernel shutdown: 8cf94e5a-7b42-4ccc-9769-c7a5e954d0a6
+[I 19:01:09.299 LabApp] Kernel shutdown: bce4c984-61c7-45c0-8455-0cf2b75b9f95
+[I 19:01:09.501 LabApp] Kernel shutdown: fc1cc021-17b8-4406-bb93-7b865c9bd1be
+[I 19:01:26.707 LabApp] Kernel started: 13b788be-5d92-44c0-8977-8211cbb2beb3
+[I 19:01:27.230 LabApp] Adapting to protocol v5.1 for kernel 13b788be-5d92-44c0-8977-8211cbb2beb3
+[I 19:03:27.080 LabApp] Saving file at /api/analysis/plot.ipynb
+[W 23:58:57.232 LabApp] WebSocket ping timeout after 119774 ms.
+[I 23:59:02.237 LabApp] Starting buffering for 13b788be-5d92-44c0-8977-8211cbb2beb3:29d947a9eb70d207fd05387c314e4a2f
+[I 15:33:02.196 LabApp] 302 GET / (139.162.83.10) 0.78ms
+[I 19:47:24.594 LabApp] 302 GET / (198.108.66.112) 0.75ms
+[I 19:47:24.624 LabApp] 302 GET /lab? (198.108.66.112) 0.84ms
+[I 03:04:20.186 LabApp] 302 GET / (172.105.238.87) 0.79ms
+[W 14:48:15.612 LabApp] Could not determine jupyterlab build status without nodejs
+[I 14:48:16.095 LabApp] Adapting to protocol v5.1 for kernel 13b788be-5d92-44c0-8977-8211cbb2beb3
+[I 14:48:16.741 LabApp] Starting buffering for 13b788be-5d92-44c0-8977-8211cbb2beb3:6ee1a74c10abb3bc87e3179b9cdfc5cf
+[I 14:48:17.276 LabApp] Kernel started: 151a40c1-defd-4c99-bed7-93c71cb168b8
+[I 14:48:17.759 LabApp] Adapting to protocol v5.1 for kernel 151a40c1-defd-4c99-bed7-93c71cb168b8
+[I 14:48:17.923 LabApp] Adapting to protocol v5.1 for kernel 13b788be-5d92-44c0-8977-8211cbb2beb3
+[I 15:00:17.684 LabApp] Saving file at /api/analysis/plot.ipynb
+[I 15:00:25.590 LabApp] Kernel started: 993bc33f-e1a2-49bf-a575-701309638dff
+[I 15:00:26.059 LabApp] Adapting to protocol v5.1 for kernel 993bc33f-e1a2-49bf-a575-701309638dff
+[I 15:02:18.057 LabApp] Saving file at /api/analysis/plot.ipynb
+[I 15:04:18.494 LabApp] Saving file at /api/analysis/plot.ipynb
+[I 15:06:20.055 LabApp] Saving file at /api/analysis/plot.ipynb
+[I 15:08:21.328 LabApp] Saving file at /api/analysis/plot.ipynb
+[I 15:10:22.214 LabApp] Saving file at /api/analysis/plot.ipynb
+[I 15:24:23.051 LabApp] Saving file at /api/analysis/plot.ipynb
+[I 15:26:23.864 LabApp] Saving file at /api/analysis/plot.ipynb
+[I 15:28:24.820 LabApp] Saving file at /api/analysis/plot.ipynb
+[I 15:30:25.659 LabApp] Saving file at /api/analysis/plot.ipynb
+[I 15:32:26.488 LabApp] Saving file at /api/analysis/plot.ipynb
+[I 15:36:27.353 LabApp] Saving file at /api/analysis/plot.ipynb
+[I 15:38:29.902 LabApp] Saving file at /api/analysis/plot.ipynb
+[I 15:40:32.341 LabApp] Saving file at /api/analysis/plot.ipynb
+[I 15:42:27.935 LabApp] Saving file at /api/analysis/plot.ipynb
+[I 15:42:55.422 LabApp] Copying api/analysis/train_to1dim_ops_wordcut_only.ipynb to /api/analysis
+[I 15:43:24.930 LabApp] Kernel started: c2440c0f-8025-44b8-8252-285ce27a6ca9
+[I 15:43:25.455 LabApp] Adapting to protocol v5.1 for kernel c2440c0f-8025-44b8-8252-285ce27a6ca9
+[I 15:43:49.927 LabApp] Saving file at /api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb
+[I 15:53:50.369 LabApp] Saving file at /api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb
+[I 15:55:50.756 LabApp] Saving file at /api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb
+[I 16:09:51.932 LabApp] Saving file at /api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb
+[I 16:21:52.356 LabApp] Saving file at /api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb
+[I 16:23:52.745 LabApp] Saving file at /api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb
+[I 16:25:53.179 LabApp] Saving file at /api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb
+[I 16:27:53.566 LabApp] Saving file at /api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb
+[I 16:29:53.966 LabApp] Saving file at /api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb
+[I 16:31:55.315 LabApp] Saving file at /api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb
+[I 16:33:55.716 LabApp] Saving file at /api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb
+[I 16:35:56.109 LabApp] Saving file at /api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb
+[I 16:37:56.763 LabApp] Saving file at /api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb
+[I 16:39:57.169 LabApp] Saving file at /api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb
+[I 16:41:57.609 LabApp] Saving file at /api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb
+[I 16:43:58.022 LabApp] Saving file at /api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb
+[I 16:47:58.416 LabApp] Saving file at /api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb
+[I 16:49:58.806 LabApp] Saving file at /api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb
+[I 16:51:59.201 LabApp] Saving file at /api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb
+[I 16:53:59.593 LabApp] Saving file at /api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb
+[I 16:55:59.980 LabApp] Saving file at /api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb
+[I 16:58:00.368 LabApp] Saving file at /api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb
+[I 17:00:00.785 LabApp] Saving file at /api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb
+[I 17:02:01.196 LabApp] Saving file at /api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb
+[I 17:04:01.614 LabApp] Saving file at /api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb
+[I 17:06:02.022 LabApp] Saving file at /api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb
+[I 17:08:02.794 LabApp] Saving file at /api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb
+[I 17:12:03.566 LabApp] Saving file at /api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb
+[I 17:14:04.448 LabApp] Saving file at /api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb
+[I 17:16:04.856 LabApp] Saving file at /api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb
+[I 17:18:05.299 LabApp] Saving file at /api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb
+[I 17:20:05.710 LabApp] Saving file at /api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb
+[I 17:22:06.469 LabApp] Saving file at /api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb
+[I 17:24:06.920 LabApp] Saving file at /api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb
+[I 17:26:08.385 LabApp] Saving file at /api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb
+[I 17:30:08.927 LabApp] Saving file at /api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb
+[I 17:32:09.323 LabApp] Saving file at /api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb
+[I 17:34:09.747 LabApp] Saving file at /api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb
+[I 17:38:10.233 LabApp] Saving file at /api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb
+[I 17:38:40.042 LabApp] Kernel interrupted: c2440c0f-8025-44b8-8252-285ce27a6ca9
+[I 17:40:10.637 LabApp] Saving file at /api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb
+[I 17:40:28.044 LabApp] Kernel interrupted: c2440c0f-8025-44b8-8252-285ce27a6ca9
+[I 17:42:11.092 LabApp] Saving file at /api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb
+[I 17:43:10.905 LabApp] Saving file at /api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb
+[I 17:45:27.206 LabApp] Saving file at /api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb
+[I 17:49:25.064 LabApp] Saving file at /api/analysis/plot.ipynb
+[I 17:49:27.388 LabApp] Saving file at /api/analysis/plot.ipynb
+[I 17:50:12.331 LabApp] Kernel shutdown: 151a40c1-defd-4c99-bed7-93c71cb168b8
+[I 17:50:12.546 LabApp] Kernel shutdown: 993bc33f-e1a2-49bf-a575-701309638dff
+[I 17:50:13.797 LabApp] Kernel shutdown: c2440c0f-8025-44b8-8252-285ce27a6ca9
+[I 17:50:14.704 LabApp] Kernel shutdown: 13b788be-5d92-44c0-8977-8211cbb2beb3
+[I 17:51:21.694 LabApp] Kernel started: 8b8a88a8-a269-431e-96bc-577ec2caa20d
+[I 17:51:22.234 LabApp] Adapting to protocol v5.1 for kernel 8b8a88a8-a269-431e-96bc-577ec2caa20d
+[I 17:53:23.469 LabApp] Saving file at /api/analysis/plot.ipynb
+[I 17:56:12.101 LabApp] Starting buffering for 8b8a88a8-a269-431e-96bc-577ec2caa20d:7a0a9f50bf305609f1f2bd74ff2cf7c4
+[I 17:56:19.293 LabApp] Adapting to protocol v5.1 for kernel 8b8a88a8-a269-431e-96bc-577ec2caa20d
+[I 17:56:19.294 LabApp] Restoring connection for 8b8a88a8-a269-431e-96bc-577ec2caa20d:7a0a9f50bf305609f1f2bd74ff2cf7c4
+[I 17:56:21.470 LabApp] Starting buffering for 8b8a88a8-a269-431e-96bc-577ec2caa20d:7a0a9f50bf305609f1f2bd74ff2cf7c4
+[I 22:07:09.954 LabApp] 302 GET / (127.0.0.1) 0.77ms
+[W 22:07:11.717 LabApp] Could not determine jupyterlab build status without nodejs
+[I 22:07:12.237 LabApp] Adapting to protocol v5.1 for kernel 8b8a88a8-a269-431e-96bc-577ec2caa20d
+[I 22:07:12.833 LabApp] Starting buffering for 8b8a88a8-a269-431e-96bc-577ec2caa20d:9910033c6becb61474b2d1e8ec62181e
+[W 22:07:46.857 LabApp] Could not determine jupyterlab build status without nodejs
+[I 22:07:47.385 LabApp] Adapting to protocol v5.1 for kernel 8b8a88a8-a269-431e-96bc-577ec2caa20d
+[I 22:07:48.079 LabApp] Starting buffering for 8b8a88a8-a269-431e-96bc-577ec2caa20d:c09422b8a37dfdc84126cdbd48304fdc
+[I 22:09:14.744 LabApp] Adapting to protocol v5.1 for kernel 8b8a88a8-a269-431e-96bc-577ec2caa20d
+[I 22:10:11.049 LabApp] Kernel started: d4710175-6ee4-42ad-be27-9e20785cb65f
+[I 22:10:11.518 LabApp] Adapting to protocol v5.1 for kernel d4710175-6ee4-42ad-be27-9e20785cb65f
+[I 22:11:16.064 LabApp] Saving file at /api/analysis/plot.ipynb
+[I 22:13:24.857 LabApp] Saving file at /api/analysis/plot.ipynb
+[I 22:15:33.417 LabApp] Saving file at /api/analysis/plot.ipynb
+[I 22:21:36.065 LabApp] Saving file at /api/analysis/plot.ipynb
+[I 22:23:40.300 LabApp] Saving file at /api/analysis/plot.ipynb
+[I 22:25:43.200 LabApp] Saving file at /api/analysis/plot.ipynb
+[I 22:27:52.620 LabApp] Saving file at /api/analysis/plot.ipynb
+[I 22:29:56.450 LabApp] Saving file at /api/analysis/plot.ipynb
+[I 22:32:01.051 LabApp] Saving file at /api/analysis/plot.ipynb
+[I 23:28:15.548 LabApp] Saving file at /api/analysis/plot.ipynb
+[I 23:50:18.528 LabApp] Saving file at /api/analysis/plot.ipynb
+[I 23:52:27.992 LabApp] Saving file at /api/analysis/plot.ipynb
+[W 23:56:38.111 LabApp] 404 GET /tftpboot/000000000000.cfg (62.173.154.74) 8.81ms referer=None
+[W 23:56:38.256 LabApp] 404 GET /provision/000000000000.cfg (62.173.154.74) 1.31ms referer=None
+[W 23:56:38.393 LabApp] 404 GET /voip/000000000000.cfg (62.173.154.74) 1.29ms referer=None
+[W 23:56:38.534 LabApp] 404 GET /prov/000000000000.cfg (62.173.154.74) 1.26ms referer=None
+[W 23:56:38.675 LabApp] 404 GET /cfg/000000000000.cfg (62.173.154.74) 1.28ms referer=None
+[W 23:56:38.819 LabApp] 404 GET /provisioning/000000000000.cfg (62.173.154.74) 1.28ms referer=None
+[W 23:56:38.957 LabApp] 404 GET /polycom/000000000000.cfgc (62.173.154.74) 1.29ms referer=None
+[W 23:56:39.099 LabApp] 404 GET /000000000000.cfg (62.173.154.74) 1.29ms referer=None
+[W 23:56:39.243 LabApp] 404 GET /ftp/000000000000.cfg (62.173.154.74) 1.25ms referer=None
+[W 23:56:39.386 LabApp] 404 GET /tftp/000000000000.cfg (62.173.154.74) 1.23ms referer=None
+[W 23:56:39.525 LabApp] 404 GET /phone/000000000000.cfg (62.173.154.74) 1.24ms referer=None
+[W 23:56:39.663 LabApp] 404 GET /voice/000000000000.cfg (62.173.154.74) 1.25ms referer=None
+[W 23:56:39.806 LabApp] 404 GET /provision/y000000000000.cfg (62.173.154.74) 1.25ms referer=None
+[W 23:56:39.968 LabApp] 404 GET /yealink/y000000000000.cfg (62.173.154.74) 1.78ms referer=None
+[W 23:56:40.134 LabApp] 404 GET /provisioning/y000000000000.cfg (62.173.154.74) 1.38ms referer=None
+[W 23:56:40.282 LabApp] 404 GET /tftp/y000000000000.cfg (62.173.154.74) 1.29ms referer=None
+[W 23:56:40.430 LabApp] 404 GET /tftpboot/y000000000000.cfg (62.173.154.74) 1.25ms referer=None
+[W 23:56:40.568 LabApp] 404 GET /prov/y000000000000.cfg (62.173.154.74) 1.25ms referer=None
+[W 23:56:40.711 LabApp] 404 GET /cfg/y000000000000.cfg (62.173.154.74) 1.45ms referer=None
+[W 23:56:40.848 LabApp] 404 GET /y000000000000.cfg (62.173.154.74) 1.25ms referer=None
+[W 23:56:40.989 LabApp] 404 GET /voip/y000000000000.cfg (62.173.154.74) 1.25ms referer=None
+[W 23:56:41.139 LabApp] 404 GET /spa502G.cfg (62.173.154.74) 1.26ms referer=None
+[W 23:56:41.293 LabApp] 404 GET /spa503G.cfg (62.173.154.74) 1.25ms referer=None
+[W 23:56:41.436 LabApp] 404 GET /spa504G.cfg (62.173.154.74) 1.25ms referer=None
+[W 23:56:41.576 LabApp] 404 GET /spa962.cfg (62.173.154.74) 1.25ms referer=None
+[W 23:56:41.715 LabApp] 404 GET /spa942.cfg (62.173.154.74) 1.29ms referer=None
+[W 23:56:41.856 LabApp] 404 GET /spa921.cfg (62.173.154.74) 1.28ms referer=None
+[W 23:56:41.994 LabApp] 404 GET /spa2102.cfg (62.173.154.74) 1.29ms referer=None
+[W 23:56:42.135 LabApp] 404 GET /spa3102.cfg (62.173.154.74) 1.30ms referer=None
+[I 00:44:16.774 LabApp] Saving file at /api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb
+[I 00:48:17.167 LabApp] Saving file at /api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb
+[I 00:50:17.682 LabApp] Saving file at /api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb
+[I 00:52:18.428 LabApp] Saving file at /api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb
+[I 00:54:18.837 LabApp] Saving file at /api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb
+[I 00:56:19.230 LabApp] Saving file at /api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb
+[I 00:58:19.782 LabApp] Saving file at /api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb
+[I 01:00:20.171 LabApp] Saving file at /api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb
+[I 01:00:44.914 LabApp] Kernel interrupted: d4710175-6ee4-42ad-be27-9e20785cb65f
+[I 01:02:20.596 LabApp] Saving file at /api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb
+[I 01:04:20.970 LabApp] Saving file at /api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb
+[I 01:06:21.346 LabApp] Saving file at /api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb
+[I 01:08:21.722 LabApp] Saving file at /api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb
+[I 01:10:57.542 LabApp] Kernel interrupted: d4710175-6ee4-42ad-be27-9e20785cb65f
+[I 01:12:02.957 LabApp] Kernel interrupted: d4710175-6ee4-42ad-be27-9e20785cb65f
+[I 01:12:21.579 LabApp] Saving file at /api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb
