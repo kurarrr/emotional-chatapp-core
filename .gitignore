@@ -1,5 +1,7 @@
 api/analysis/image/
 api/analysis/word2vec/
+api/analysis/stanford_glove.txt
+api/analysis/stanford_w2v.txt
 api/analysis/dat_model_json/
 api/analysis/.ipynb_checkpoints/
 __pycache__/

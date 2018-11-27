@@ -1,7 +1,19 @@
+Traceback (most recent call last):
+  File "train_to1dim_cross-valid_dr_adadelta.py", line 14, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+300 3000000
+3000001
+1/2
+2/2
 /home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/matplotlib/__init__.py:1067: UserWarning: Duplicate key in file "/home/ubuntu/.config/matplotlib/matplotlibrc", line #2
   (fname, cnt))
 /home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/matplotlib/__init__.py:1067: UserWarning: Duplicate key in file "/home/ubuntu/.config/matplotlib/matplotlibrc", line #3
   (fname, cnt))
+Traceback (most recent call last):
+  File "train_to1dim_cross-valid_ops_wordcut_only.py", line 14, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
 300 3000000
 3000001
 1/8
@@ -9,10 +21,3 @@
 3/8
 4/8
 5/8
-6/8
-7/8
-8/8
-Traceback (most recent call last):
-  File "train_to1dim_cross-valid_ops_wordcut_only.py", line 14, in <module>
-    import torch
-ModuleNotFoundError: No module named 'torch'

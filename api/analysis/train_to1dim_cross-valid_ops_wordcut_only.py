@@ -8,7 +8,7 @@
 # 
 # cross-validationをやる
 
-# In[19]:
+# In[1]:
 
 
 import torch
@@ -28,54 +28,54 @@ from sklearn.model_selection import KFold
 import json
 
 
-# In[2]:
+# In[3]:
 
 
 import gensim
 gensim_model = gensim.models.KeyedVectors.load_word2vec_format('./word2vec/data.bin', binary=True)
 
 
-# In[3]:
+# In[4]:
 
 
 weights = gensim_model.vectors
 
 
-# In[4]:
+# In[5]:
 
 
 embedding_dim = weights.shape[1]
 print(embedding_dim,weights.shape[0])
 
 
-# In[5]:
+# In[6]:
 
 
 weights = np.append(weights,np.zeros((1,embedding_dim)),axis=0)
 # 末尾にunknown_wordを追加
 
 
-# In[6]:
+# In[7]:
 
 
 vocab_size = weights.shape[0]
 print(vocab_size)
 
 
-# In[7]:
+# In[8]:
 
 
 out_size = 1
 
 
-# In[8]:
+# In[9]:
 
 
 cuda = torch.cuda.is_available()
 # cuda = False
 
 
-# In[9]:
+# In[10]:
 
 
 # wordのindexを取得
@@ -84,14 +84,14 @@ cuda = torch.cuda.is_available()
 # print(gensim_model.wv.index2word[100])
 
 
-# In[10]:
+# In[11]:
 
 
 import re
 import nltk
 
 
-# In[11]:
+# In[12]:
 
 
 def prepare_sequence(seq):
@@ -103,7 +103,7 @@ def prepare_sequence(seq):
     return res
 
 
-# In[12]:
+# In[13]:
 
 
 def sentence2vec(sentence):
@@ -112,14 +112,14 @@ def sentence2vec(sentence):
     return res_seq
 
 
-# In[13]:
+# In[14]:
 
 
 # s = "I'm always fucking you."
 # sentence2vec(s)
 
 
-# In[13]:
+# In[15]:
 
 
 class LSTMTagger(nn.Module):
@@ -167,7 +167,7 @@ class LSTMTagger(nn.Module):
         return output
 
 
-# In[14]:
+# In[16]:
 
 
 def make_model(option):
@@ -178,7 +178,7 @@ def make_model(option):
     return model
 
 
-# In[16]:
+# In[17]:
 
 
 # ops = {
@@ -189,7 +189,7 @@ def make_model(option):
 # make_model(ops)
 
 
-# In[15]:
+# In[18]:
 
 
 def save_model(model,model_name):
@@ -198,7 +198,7 @@ def save_model(model,model_name):
     torch.save(model_state_dict,model_name)
 
 
-# In[16]:
+# In[19]:
 
 
 def load_model(hidden_dim,model_name):
@@ -212,7 +212,7 @@ def load_model(hidden_dim,model_name):
     return model
 
 
-# In[19]:
+# In[20]:
 
 
 # vad_type='Valence'
@@ -229,7 +229,7 @@ def load_model(hidden_dim,model_name):
 #     samples.append((sentence_vec,y_hat))
 
 
-# In[17]:
+# In[21]:
 
 
 def pad_tensor(vec, pad, dim):
@@ -293,13 +293,13 @@ class PadCollate:
         return self.pad_collate(batch)
 
 
-# In[21]:
+# In[22]:
 
 
 # train_loader = DataLoader(samples,batch_size=4,shuffle=True,collate_fn=PadCollate(dim=0))
 
 
-# In[22]:
+# In[23]:
 
 
 # for sam in train_loader:
@@ -308,7 +308,7 @@ class PadCollate:
 #     break
 
 
-# In[18]:
+# In[24]:
 
 
 def make_dataset(X,Y):
@@ -322,11 +322,12 @@ def make_dataset(X,Y):
     return ds
 
 
-# In[40]:
+# In[35]:
 
 
 def make_model_and_train_cross_validation_option(option,epochs,vad_type,csv_path='./data_cut_only.csv',metric='MSELoss',
-                         save_dir='./dat_model_json',learning_rate=0.01,batch_size=2,print_result=True):
+                         save_dir='./dat_model_json',learning_rate=0.01,batch_size=2,
+                         optimizer='Adam',print_result=True):
     
     # args
     # option : lstmに渡すoption
@@ -347,8 +348,13 @@ def make_model_and_train_cross_validation_option(option,epochs,vad_type,csv_path
         num_layers = 1
     else:
         num_layers = option['num_layers']
+        
+    if not 'dropout' in option:
+        dropout = 0
+    else:
+        dropout = option['dropout']
     
-    json_name = './{0}/json/{1}_layer_{2}_bi_{3}_hd_{4}_bs_{5}_lr_{6}.json'.format(                        save_dir,vad_type,num_layers,bidirectional,hidden_dim,batch_size,learning_rate)
+    json_name = './{0}/json/{1}_layer_{2}_bi_{3}_hd_{4}_bs_{5}_lr_{6}_dr_{7}_{8}.json'.format(                        save_dir,vad_type,num_layers,bidirectional,hidden_dim,batch_size,learning_rate,dropout,optimizer)
     # modelはsaveしない
 #     base_model_name = './{0}/model/{1}_layer_{2}_bi_{3}_hd_{4}_bs_{5}_lr_{6}'.format(\
 #                         save_dir,vad_type,num_layers,bidirectional,hidden_dim,batch_size,learning_rate)
@@ -374,8 +380,13 @@ def make_model_and_train_cross_validation_option(option,epochs,vad_type,csv_path
     else:
         print('no loss funciton')
         return
-    optimizer = optim.Adam(filter(lambda p: p.requires_grad, model.parameters()), lr=learning_rate)
-
+    
+    if optimizer == 'Adadelta':
+        optimizer = optim.Adadelta(filter(lambda p: p.requires_grad, model.parameters()), lr=learning_rate)
+    elif optimizer == 'Adam':
+        optimizer = optim.Adam(filter(lambda p: p.requires_grad, model.parameters()), lr=learning_rate)
+    else:
+        print('{} couldnt be found'.format(optimizer))
     # import time
     # t1 = time.time()
 
@@ -453,7 +464,7 @@ def make_model_and_train_cross_validation_option(option,epochs,vad_type,csv_path
 #                 save_model(model,base_model_name+"_epoch_{0}".format(epoch))
 
             if print_result:
-                print("epoch {0}: loss {1}".format(epoch,train_loss_av))
+                print("epoch {0}: loss {1}".format(epoch,train_loss_av),flush=True)
             
         train_losses.append(train_loss_part)
         dev_losses.append(dev_loss_part)
@@ -478,51 +489,61 @@ def make_model_and_train_cross_validation_option(option,epochs,vad_type,csv_path
         json.dump(loss_data,f)
 
 
-# In[43]:
+# In[34]:
 
 
 # op1 = {
 #     'hidden_size' : 16,
 #     'bidirectional' : False,   
 #     'num_layers' : 2,
+#     'dropout' : 0.25
 # }
-# op2 = {
-#     'hidden_size' : 32,
-#     'bidirectional' : True,   
-#     'num_layers' : 3,
-# }
+# # op2 = {
+# #     'hidden_size' : 32,
+# #     'bidirectional' : True,   
+# #     'num_layers' : 3,
+# # }
 # make_model_and_train_cross_validation_option(op1,4,'Valence',metric='L1Loss',csv_path='./data_cut_only.csv',
 #                             save_dir='./dat_model_json/dat_cross_valid_word_cut_only/',
-#                             learning_rate=2e-5,batch_size=4)
-# # make_model_and_train_option(op2,10,'Valence',metric='L1Loss',dat_base_name='./data_preprocessed_cut_2',
-# #                             save_dir='./dat_model_json/dat_word_cut_l1loss_mullayer_bidirectional',
-# #                             learning_rate=0.01,batch_size=4)
+#                             learning_rate=2e-5,batch_size=4,
+#                             optimizer='Adadelta')
+# # # make_model_and_train_option(op2,10,'Valence',metric='L1Loss',dat_base_name='./data_preprocessed_cut_2',
+# # #                             save_dir='./dat_model_json/dat_word_cut_l1loss_mullayer_bidirectional',
+# # #                             learning_rate=0.01,batch_size=4)
 
 
-# In[44]:
+# In[38]:
 
 
-vad_types = ['Valence','Arousal']
+# Adadeltaとdropout入れた
+# vad_types = ['Valence','Arousal']
+vad_types = ['Valence']
+# bss = [4]
 bss = [4,8]
-lrs = [1e-5,2e-5,4e-5]
+# Adadeltaは特にlearning rateを探索しなくて良い
+# lrs = [0.5]
+lrs = [0.2,0.4]
 
 options = []
 
-hidden_dims = [32,64]
+hidden_dims = [200,300]
 num_layers = [2]
 bis = [False]
+drs = [0.5]
 
 for num_layer in num_layers:
     for bi in bis:
         for hidden_dim in hidden_dims:
-            options.append({
-                'hidden_size' : hidden_dim,
-                'bidirectional' : bi,   
-                'num_layers' : num_layer,
-            })
+            for dr in drs:
+                options.append({
+                    'hidden_size' : hidden_dim,
+                    'bidirectional' : bi,   
+                    'num_layers' : num_layer,
+                    'dropout' : dr
+                })
 
 cnt = 0
-ma = len(vad_types)*len(lrs)*len(bss)*len(options)
+ma = len(vad_types)*len(lrs)*len(bss)*len(options)*len(drs)
 
 for vad_type in vad_types:
     for lr in lrs:
@@ -530,14 +551,52 @@ for vad_type in vad_types:
             for option in options:
                 epoch_num = 50
                 make_model_and_train_cross_validation_option(option,epoch_num,vad_type,metric='L1Loss',csv_path='./data_cut_only.csv',
-                            save_dir='./dat_model_json/dat_cross_valid_word_cut_only/',
-                            learning_rate=lr,batch_size=bs,print_result=False)
+                            save_dir='./dat_model_json/dat_cross_valid_dr_adadelta_word_cut_only/',
+                            learning_rate=lr,batch_size=bs,print_result=False,optimizer='Adadelta')
 
                 cnt += 1
-                print('{}/{}'.format(cnt,ma))
+                print('{}/{}'.format(cnt,ma),flush=True)
 
 
-# In[32]:
+# In[44]:
+
+
+# vad_types = ['Valence','Arousal']
+# bss = [4,8]
+# lrs = [1e-5,2e-5]
+
+# options = []
+
+# hidden_dims = [32,64]
+# num_layers = [2]
+# bis = [False]
+
+# for num_layer in num_layers:
+#     for bi in bis:
+#         for hidden_dim in hidden_dims:
+#             options.append({
+#                 'hidden_size' : hidden_dim,
+#                 'bidirectional' : bi,   
+#                 'num_layers' : num_layer,
+#             })
+
+# cnt = 0
+# ma = len(vad_types)*len(lrs)*len(bss)*len(options)
+
+# for vad_type in vad_types:
+#     for lr in lrs:
+#         for bs in bss:
+#             for option in options:
+#                 epoch_num = 1
+#                 make_model_and_train_cross_validation_option(option,epoch_num,vad_type,metric='L1Loss',csv_path='./data_cut_only.csv',
+#                             save_dir='./dat_model_json/dat_cross_valid_word_cut_only/',
+#                             learning_rate=lr,batch_size=bs,print_result=False)
+
+#                 cnt += 1
+#                 print('{}/{}'.format(cnt,ma))
+
+
+# In[36]:
 
 
 # vad_types = ['Valence','Arousal']

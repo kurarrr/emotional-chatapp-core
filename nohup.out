@@ -400,3 +400,272 @@
 [I 01:10:57.542 LabApp] Kernel interrupted: d4710175-6ee4-42ad-be27-9e20785cb65f
 [I 01:12:02.957 LabApp] Kernel interrupted: d4710175-6ee4-42ad-be27-9e20785cb65f
 [I 01:12:21.579 LabApp] Saving file at /api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb
+[I 01:22:26.063 LabApp] Starting buffering for d4710175-6ee4-42ad-be27-9e20785cb65f:2c5b05201cae0b46e981fd81b71252e0
+[I 01:22:26.064 LabApp] Starting buffering for 8b8a88a8-a269-431e-96bc-577ec2caa20d:fe9b47ffc933186ba2924d261b1a81c7
+[I 14:31:05.624 LabApp] Adapting to protocol v5.1 for kernel d4710175-6ee4-42ad-be27-9e20785cb65f
+[I 14:31:05.994 LabApp] Adapting to protocol v5.1 for kernel 8b8a88a8-a269-431e-96bc-577ec2caa20d
+[I 14:31:50.244 LabApp] Starting buffering for 8b8a88a8-a269-431e-96bc-577ec2caa20d:8f1a662004a271cc5dc3218d3d4ffd84
+[I 14:31:50.244 LabApp] Starting buffering for d4710175-6ee4-42ad-be27-9e20785cb65f:4d3d03a80a3ad95e20b12c3ff3bf02b8
+[W 14:31:51.825 LabApp] Could not determine jupyterlab build status without nodejs
+[I 14:31:52.202 LabApp] Adapting to protocol v5.1 for kernel d4710175-6ee4-42ad-be27-9e20785cb65f
+[I 14:31:53.070 LabApp] Starting buffering for d4710175-6ee4-42ad-be27-9e20785cb65f:adf96fde7011558c758f386b5c6db0a4
+[I 14:31:56.160 LabApp] Adapting to protocol v5.1 for kernel 8b8a88a8-a269-431e-96bc-577ec2caa20d
+[I 14:31:56.476 LabApp] Adapting to protocol v5.1 for kernel d4710175-6ee4-42ad-be27-9e20785cb65f
+[I 14:33:58.174 LabApp] Saving file at /api/analysis/plot.ipynb
+[I 14:35:59.871 LabApp] Saving file at /api/analysis/plot.ipynb
+[I 14:38:01.469 LabApp] Saving file at /api/analysis/plot.ipynb
+[I 14:40:03.297 LabApp] Saving file at /api/analysis/plot.ipynb
+[I 14:42:05.377 LabApp] Saving file at /api/analysis/plot.ipynb
+[I 14:44:07.157 LabApp] Saving file at /api/analysis/plot.ipynb
+[I 14:48:08.984 LabApp] Saving file at /api/analysis/plot.ipynb
+[I 15:26:11.213 LabApp] Saving file at /api/analysis/plot.ipynb
+[I 15:28:13.478 LabApp] Saving file at /api/analysis/plot.ipynb
+[I 15:42:57.016 LabApp] Saving file at /api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb
+[I 16:27:30.914 LabApp] 302 GET / (122.228.19.80) 0.55ms
+[I 16:27:31.459 LabApp] 302 GET /lab? (122.228.19.80) 0.72ms
+[W 16:38:26.162 LabApp] WebSocket ping timeout after 119825 ms.
+[W 16:38:26.478 LabApp] WebSocket ping timeout after 119819 ms.
+[I 16:38:31.164 LabApp] Starting buffering for 8b8a88a8-a269-431e-96bc-577ec2caa20d:66fb54d540ca0e919cde8f7293f0861c
+[I 16:38:31.479 LabApp] Starting buffering for d4710175-6ee4-42ad-be27-9e20785cb65f:4d77c1ba6138fd584797dff28e8fa4fe
+[I 18:20:33.590 LabApp] Adapting to protocol v5.1 for kernel 8b8a88a8-a269-431e-96bc-577ec2caa20d
+[I 18:20:33.919 LabApp] Adapting to protocol v5.1 for kernel d4710175-6ee4-42ad-be27-9e20785cb65f
+[I 18:42:23.395 LabApp] Saving file at /api/analysis/plot.ipynb
+[I 18:43:11.271 LabApp] Starting buffering for 8b8a88a8-a269-431e-96bc-577ec2caa20d:009cb78afeb275bc69995ca8df2cf025
+[I 18:43:11.271 LabApp] Starting buffering for d4710175-6ee4-42ad-be27-9e20785cb65f:73bc681cd5e8d6b56d90d8869df17acd
+[W 18:43:12.376 LabApp] Could not determine jupyterlab build status without nodejs
+[I 18:43:13.133 LabApp] Adapting to protocol v5.1 for kernel d4710175-6ee4-42ad-be27-9e20785cb65f
+[I 18:43:14.156 LabApp] Starting buffering for d4710175-6ee4-42ad-be27-9e20785cb65f:ba88c1ab78053159614a6808e2ac6f5c
+[I 18:43:16.955 LabApp] Adapting to protocol v5.1 for kernel d4710175-6ee4-42ad-be27-9e20785cb65f
+[I 18:43:26.825 LabApp] Adapting to protocol v5.1 for kernel 8b8a88a8-a269-431e-96bc-577ec2caa20d
+[I 18:45:27.748 LabApp] Saving file at /api/analysis/plot.ipynb
+[I 18:47:29.199 LabApp] Saving file at /api/analysis/plot.ipynb
+[W 19:55:46.959 LabApp] WebSocket ping timeout after 119587 ms.
+[I 19:55:51.962 LabApp] Starting buffering for d4710175-6ee4-42ad-be27-9e20785cb65f:f35bfd502e57d42f9c6c2f620f20c6c5
+[W 19:55:56.827 LabApp] WebSocket ping timeout after 119525 ms.
+[I 19:56:01.830 LabApp] Starting buffering for 8b8a88a8-a269-431e-96bc-577ec2caa20d:7134c10bca025bd957ae58b3a7bda3e9
+[W 21:12:05.846 LabApp] Could not determine jupyterlab build status without nodejs
+[I 21:12:06.850 LabApp] Adapting to protocol v5.1 for kernel d4710175-6ee4-42ad-be27-9e20785cb65f
+[I 21:12:09.563 LabApp] Starting buffering for d4710175-6ee4-42ad-be27-9e20785cb65f:3b0adabad904171f83e9f371b2aab005
+[I 21:12:13.071 LabApp] Adapting to protocol v5.1 for kernel d4710175-6ee4-42ad-be27-9e20785cb65f
+[I 21:12:26.186 LabApp] Starting buffering for d4710175-6ee4-42ad-be27-9e20785cb65f:afdb8bf0293932aa2523d8ab150f2e59
+[W 21:12:28.365 LabApp] Could not determine jupyterlab build status without nodejs
+[I 21:12:28.892 LabApp] Adapting to protocol v5.1 for kernel d4710175-6ee4-42ad-be27-9e20785cb65f
+[I 21:12:30.500 LabApp] Starting buffering for d4710175-6ee4-42ad-be27-9e20785cb65f:542e92a55edf5233f682c69100494b5b
+[I 21:12:37.340 LabApp] Adapting to protocol v5.1 for kernel d4710175-6ee4-42ad-be27-9e20785cb65f
+[I 21:12:43.829 LabApp] Starting buffering for d4710175-6ee4-42ad-be27-9e20785cb65f:24a5159b0019d3a6184360cdae5414b3
+[W 21:12:45.436 LabApp] Could not determine jupyterlab build status without nodejs
+[I 21:12:46.023 LabApp] Adapting to protocol v5.1 for kernel d4710175-6ee4-42ad-be27-9e20785cb65f
+[I 21:12:46.386 LabApp] Starting buffering for d4710175-6ee4-42ad-be27-9e20785cb65f:6fb4ebe2a363db74a1e5936cf84cd24f
+[I 21:14:27.021 LabApp] Kernel shutdown: 8b8a88a8-a269-431e-96bc-577ec2caa20d
+[I 21:14:28.281 LabApp] Kernel shutdown: d4710175-6ee4-42ad-be27-9e20785cb65f
+[I 21:14:40.860 LabApp] Kernel started: f1e1a100-b1af-48e1-a354-c9f50bb0e2a9
+[I 21:14:41.626 LabApp] Adapting to protocol v5.1 for kernel f1e1a100-b1af-48e1-a354-c9f50bb0e2a9
+[I 21:16:47.837 LabApp] Saving file at /api/analysis/plot.ipynb
+[I 21:18:57.339 LabApp] Saving file at /api/analysis/plot.ipynb
+[I 21:22:02.338 LabApp] Kernel started: 4c8ab702-395f-4110-9d20-1bd533f3caf6
+[I 21:22:03.462 LabApp] Adapting to protocol v5.1 for kernel 4c8ab702-395f-4110-9d20-1bd533f3caf6
+[I 21:24:03.550 LabApp] Saving file at /api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb
+[I 21:25:30.901 LabApp] Saving file at /api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb
+[I 21:25:42.477 LabApp] Saving file at /api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb
+[I 21:30:20.512 LabApp] Saving file at /api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb
+[I 21:46:39.455 LabApp] Starting buffering for 4c8ab702-395f-4110-9d20-1bd533f3caf6:97a14cdf1070b14f55069b8079fc9829
+[I 21:46:39.455 LabApp] Starting buffering for f1e1a100-b1af-48e1-a354-c9f50bb0e2a9:f4a687ab4f9e9ef3b2d5ec68b86854ad
+[I 23:42:21.653 LabApp] Adapting to protocol v5.1 for kernel f1e1a100-b1af-48e1-a354-c9f50bb0e2a9
+[I 23:42:21.965 LabApp] Adapting to protocol v5.1 for kernel 4c8ab702-395f-4110-9d20-1bd533f3caf6
+[I 23:48:43.961 LabApp] Starting buffering for f1e1a100-b1af-48e1-a354-c9f50bb0e2a9:186898c30547be25db3cd1aa1acca333
+[I 23:48:43.962 LabApp] Starting buffering for 4c8ab702-395f-4110-9d20-1bd533f3caf6:7a172cd7a2eb82dd9bf9fb6aee200475
+[W 23:48:44.900 LabApp] Could not determine jupyterlab build status without nodejs
+[I 23:48:46.214 LabApp] Adapting to protocol v5.1 for kernel 4c8ab702-395f-4110-9d20-1bd533f3caf6
+[I 23:48:46.563 LabApp] Starting buffering for 4c8ab702-395f-4110-9d20-1bd533f3caf6:b9390c0a0500a3afd8ab905dd0df6fac
+[I 23:48:51.059 LabApp] Adapting to protocol v5.1 for kernel 4c8ab702-395f-4110-9d20-1bd533f3caf6
+[I 23:49:18.365 LabApp] Starting buffering for 4c8ab702-395f-4110-9d20-1bd533f3caf6:682739421c449a8ef08a4d176732d6b7
+[W 23:49:19.947 LabApp] Could not determine jupyterlab build status without nodejs
+[I 23:49:20.743 LabApp] Adapting to protocol v5.1 for kernel 4c8ab702-395f-4110-9d20-1bd533f3caf6
+[I 23:49:21.139 LabApp] Starting buffering for 4c8ab702-395f-4110-9d20-1bd533f3caf6:ec68c9e532b2365777109e4792c4d81d
+[I 23:49:29.301 LabApp] Adapting to protocol v5.1 for kernel 4c8ab702-395f-4110-9d20-1bd533f3caf6
+[I 23:49:39.784 LabApp] Starting buffering for 4c8ab702-395f-4110-9d20-1bd533f3caf6:d6ac28911d2c2b78c4034dde1b2b366a
+[W 23:49:40.908 LabApp] Could not determine jupyterlab build status without nodejs
+[I 23:49:41.516 LabApp] Adapting to protocol v5.1 for kernel 4c8ab702-395f-4110-9d20-1bd533f3caf6
+[I 23:49:41.858 LabApp] Starting buffering for 4c8ab702-395f-4110-9d20-1bd533f3caf6:375ebe20546976937777c77b57571d61
+[I 23:51:10.268 LabApp] Adapting to protocol v5.1 for kernel 4c8ab702-395f-4110-9d20-1bd533f3caf6
+[I 23:53:54.238 LabApp] Adapting to protocol v5.1 for kernel f1e1a100-b1af-48e1-a354-c9f50bb0e2a9
+[I 23:57:56.302 LabApp] Saving file at /api/analysis/plot.ipynb
+[I 23:59:57.550 LabApp] Saving file at /api/analysis/plot.ipynb
+[I 00:01:58.796 LabApp] Saving file at /api/analysis/plot.ipynb
+[I 00:08:03.642 LabApp] Saving file at /api/analysis/plot.ipynb
+[I 00:10:06.283 LabApp] Saving file at /api/analysis/plot.ipynb
+[I 00:12:07.899 LabApp] Saving file at /api/analysis/plot.ipynb
+[I 00:14:10.686 LabApp] Saving file at /api/analysis/plot.ipynb
+[I 00:16:12.583 LabApp] Saving file at /api/analysis/plot.ipynb
+[I 00:18:14.465 LabApp] Saving file at /api/analysis/plot.ipynb
+[I 00:34:24.128 LabApp] Saving file at /api/analysis/plot.ipynb
+[I 00:36:26.932 LabApp] Saving file at /api/analysis/plot.ipynb
+[W 00:38:22.465 LabApp] delete /api/analysis/preprocess_vad_respectively-Copy1.ipynb
+[I 00:38:43.262 LabApp] Copying api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb to /api/analysis
+[I 00:41:10.739 LabApp] Saving file at /api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb
+[I 00:43:11.127 LabApp] Saving file at /api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb
+[I 00:47:11.728 LabApp] Saving file at /api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb
+[I 00:49:12.276 LabApp] Saving file at /api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb
+[E 00:49:12.278 LabApp] Error while saving file: api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb database or disk is full
+    Traceback (most recent call last):
+      File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 455, in save
+        self.check_and_sign(nb, path)
+      File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/notebook/services/contents/manager.py", line 486, in check_and_sign
+        self.notary.sign(nb)
+      File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/nbformat/sign.py", line 449, in sign
+        self.store.store_signature(signature, self.algorithm)
+      File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/nbformat/sign.py", line 211, in store_signature
+        """, (algorithm, digest, datetime.utcnow())
+    sqlite3.OperationalError: database or disk is full
+[W 00:49:12.281 LabApp] 500 PUT /api/contents/api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb?1543333752221 (127.0.0.1): Unexpected error while saving file: api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb database or disk is full
+[W 00:49:12.281 LabApp] Unexpected error while saving file: api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb database or disk is full
+[E 00:49:12.282 LabApp] {
+      "Host": "localhost:8888",
+      "Connection": "keep-alive",
+      "Content-Length": "49582",
+      "Origin": "http://localhost:8888",
+      "X-Xsrftoken": "2|37840969|4d3aae9ab017ab4b3b874b5f75269eb7|1529215940",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36",
+      "Content-Type": "application/json",
+      "Accept": "*/*",
+      "Referer": "http://localhost:8888/lab?",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Accept-Language": "ja,en-US;q=0.9,en;q=0.8",
+      "Cookie": "_xsrf=2|37840969|4d3aae9ab017ab4b3b874b5f75269eb7|1529215940; rack.session=6132c079091a88435424152c0a46d8d5a9801a031b1c0b560628a7773183fabf; username-localhost-8888=\"2|1:0|10:1542541649|23:username-localhost-8888|44:NjdiYTY2NDE3ZmFlNDBiMmJhNjAyYzlmOWY1YjIxOGE=|9044ba2e949444a1cda7f6108e87e3b36d90686786cfd113fca77f79bd680ea6\""
+    }
+[E 00:49:12.282 LabApp] 500 PUT /api/contents/api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb?1543333752221 (127.0.0.1) 164.14ms referer=http://localhost:8888/lab?
+[I 00:51:12.799 LabApp] Saving file at /api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb
+[E 00:51:12.800 LabApp] Error while saving file: api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb database or disk is full
+    Traceback (most recent call last):
+      File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 455, in save
+        self.check_and_sign(nb, path)
+      File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/notebook/services/contents/manager.py", line 486, in check_and_sign
+        self.notary.sign(nb)
+      File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/nbformat/sign.py", line 449, in sign
+        self.store.store_signature(signature, self.algorithm)
+      File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/nbformat/sign.py", line 211, in store_signature
+        """, (algorithm, digest, datetime.utcnow())
+    sqlite3.OperationalError: database or disk is full
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 455, in save
+    self.check_and_sign(nb, path)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/notebook/services/contents/manager.py", line 486, in check_and_sign
+    self.notary.sign(nb)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/nbformat/sign.py", line 449, in sign
+    self.store.store_signature(signature, self.algorithm)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/nbformat/sign.py", line 211, in store_signature
+    """, (algorithm, digest, datetime.utcnow())
+sqlite3.OperationalError: database or disk is full
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tornado/web.py", line 1543, in _execute
+    result = yield result
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tornado/gen.py", line 1099, in run
+    value = future.result()
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tornado/gen.py", line 1107, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/notebook/services/contents/handlers.py", line 223, in put
+    yield gen.maybe_future(self._save(model, path))
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tornado/gen.py", line 1099, in run
+    value = future.result()
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tornado/gen.py", line 315, in wrapper
+    yielded = next(result)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/notebook/services/contents/handlers.py", line 165, in _save
+    model = yield gen.maybe_future(self.contents_manager.save(model, path))
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/notebook/services/contents/largefilemanager.py", line 46, in save
+    return super(LargeFileManager, self).save(model, path)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 471, in save
+    raise web.HTTPError(500, u'Unexpected error while saving file: %s %s' % (path, e))
+tornado.web.HTTPError: HTTP 500: Internal Server Error (Unexpected error while saving file: api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb database or disk is full)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda3/lib/python3.6/logging/__init__.py", line 996, in emit
+    self.flush()
+  File "/home/ubuntu/anaconda3/lib/python3.6/logging/__init__.py", line 976, in flush
+    self.stream.flush()
+OSError: [Errno 28] No space left on device
+Call stack:
+  File "/home/ubuntu/anaconda3/bin/jupyter-lab", line 11, in <module>
+    sys.exit(main())
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/jupyter_core/application.py", line 266, in launch_instance
+    return super(JupyterApp, cls).launch_instance(argv=argv, **kwargs)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/traitlets/config/application.py", line 658, in launch_instance
+    app.start()
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/notebook/notebookapp.py", line 1636, in start
+    self.io_loop.start()
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tornado/platform/asyncio.py", line 127, in start
+    self.asyncio_loop.run_forever()
+  File "/home/ubuntu/anaconda3/lib/python3.6/asyncio/base_events.py", line 421, in run_forever
+    self._run_once()
+  File "/home/ubuntu/anaconda3/lib/python3.6/asyncio/base_events.py", line 1431, in _run_once
+    handle._run()
+  File "/home/ubuntu/anaconda3/lib/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tornado/ioloop.py", line 759, in _run_callback
+    ret = callback()
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tornado/stack_context.py", line 276, in null_wrapper
+    return fn(*args, **kwargs)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tornado/gen.py", line 1199, in inner
+    self.run()
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tornado/gen.py", line 1113, in run
+    yielded = self.gen.send(value)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tornado/http1connection.py", line 237, in _read_message
+    delegate.finish()
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tornado/routing.py", line 256, in finish
+    self.delegate.finish()
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tornado/web.py", line 2139, in finish
+    self.execute()
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tornado/web.py", line 2172, in execute
+    **self.path_kwargs)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tornado/gen.py", line 335, in wrapper
+    runner = Runner(result, future, yielded)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tornado/gen.py", line 1046, in __init__
+    self.run()
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tornado/gen.py", line 1107, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tornado/web.py", line 1548, in _execute
+    self._handle_request_exception(e)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tornado/web.py", line 1599, in _handle_request_exception
+    self.send_error(e.status_code, exc_info=sys.exc_info())
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tornado/web.py", line 1063, in send_error
+    self.write_error(status_code, **kwargs)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/notebook/base/handlers.py", line 526, in write_error
+    self.finish(json.dumps(reply))
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/notebook/base/handlers.py", line 564, in finish
+    return super(APIHandler, self).finish(*args, **kwargs)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tornado/web.py", line 1020, in finish
+    self._log()
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tornado/web.py", line 1575, in _log
+    self.application.log_request(self)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tornado/web.py", line 2096, in log_request
+    self.settings["log_function"](handler)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/notebook/log.py", line 47, in log_request
+    log_method(msg.format(**ns))
+Message: '500 PUT /api/contents/api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb?1543333872746 (127.0.0.1) 185.05ms referer=http://localhost:8888/lab?'
+Arguments: ()
+[I 00:53:13.435 LabApp] Saving file at /api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb
+[I 00:55:14.159 LabApp] Saving file at /api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb
+[I 00:56:16.492 LabApp] Kernel started: 9336cfde-e04f-44a9-b313-4505adb22161
+[I 00:56:17.082 LabApp] Adapting to protocol v5.1 for kernel 9336cfde-e04f-44a9-b313-4505adb22161
+[I 00:56:19.463 LabApp] Kernel interrupted: 4c8ab702-395f-4110-9d20-1bd533f3caf6
+[I 00:57:14.544 LabApp] Saving file at /api/analysis/train_to1dim_cross-valid_ops_wordcut_only.ipynb
+[I 00:58:16.844 LabApp] Saving file at /api/analysis/train_glove.ipynb
+[I 01:01:44.242 LabApp] Kernel shutdown: f1e1a100-b1af-48e1-a354-c9f50bb0e2a9
+[I 01:01:44.932 LabApp] Kernel shutdown: 4c8ab702-395f-4110-9d20-1bd533f3caf6
+[I 01:03:33.780 LabApp] Saving file at /api/analysis/train_glove.ipynb
+[I 01:04:03.823 LabApp] Kernel shutdown: 9336cfde-e04f-44a9-b313-4505adb22161
+[I 01:04:12.335 LabApp] Kernel started: 5a47cfac-2df0-4d9b-9f01-c926513bf4f0
+[I 01:04:12.800 LabApp] Adapting to protocol v5.1 for kernel 5a47cfac-2df0-4d9b-9f01-c926513bf4f0
+[I 01:06:12.680 LabApp] Saving file at /api/analysis/train_glove.ipynb
+[I 01:14:13.267 LabApp] Saving file at /api/analysis/train_glove.ipynb
+[I 01:15:42.759 LabApp] Kernel started: 3cf64bfe-1d38-48dd-b05d-1a66ef206dae
+[I 01:15:43.249 LabApp] Adapting to protocol v5.1 for kernel 3cf64bfe-1d38-48dd-b05d-1a66ef206dae
+[I 01:16:14.252 LabApp] Saving file at /api/analysis/train_glove.ipynb
+[I 01:16:44.927 LabApp] Saving file at /api/analysis/train_glove.ipynb
+[I 01:18:45.317 LabApp] Saving file at /api/analysis/train_glove.ipynb
+[I 01:20:45.741 LabApp] Saving file at /api/analysis/train_glove.ipynb
