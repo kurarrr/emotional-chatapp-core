@@ -6,7 +6,8 @@
 # 引数でdictを受け取るver
 # devで相関係数を出す
 # 
-# cross-validationをやる
+# cross-validationをやる  
+# mseでtrainingする
 
 # In[1]:
 
@@ -83,7 +84,7 @@ out_size = 1
 
 
 cuda = torch.cuda.is_available()
-cuda = False
+# cuda = False
 
 
 # In[10]:
@@ -319,13 +320,13 @@ class PadCollate:
         return self.pad_collate(batch)
 
 
-# In[23]:
+# In[76]:
 
 
 # train_loader = DataLoader(samples,batch_size=4,shuffle=True,collate_fn=PadCollate(dim=0))
 
 
-# In[24]:
+# In[77]:
 
 
 # for sam in train_loader:
@@ -334,22 +335,7 @@ class PadCollate:
 #     break
 
 
-# In[36]:
-
-
-from itertools import chain
-def flatten(listOfLists):
-    "Flatten one level of nesting"
-    return list(chain.from_iterable(listOfLists))
-
-
-# In[38]:
-
-
-# flatten([[1,2,3],[4,5,3]])
-
-
-# In[25]:
+# In[23]:
 
 
 def make_dataset(X,Y):
@@ -363,7 +349,7 @@ def make_dataset(X,Y):
     return ds
 
 
-# In[44]:
+# In[24]:
 
 
 def make_model_and_train_cross_validation_option(option,epochs,vad_type,csv_path='./data_cut_only.csv',metric='MSELoss',
@@ -396,7 +382,9 @@ def make_model_and_train_cross_validation_option(option,epochs,vad_type,csv_path
         dropout = option['dropout']
     
     json_name = './{0}./json/{1}_layer_{2}_bi_{3}_hd_{4}_bs_{5}_lr_{6}_dr_{7}_{8}.json'.format(                        save_dir,vad_type,num_layers,bidirectional,hidden_dim,batch_size,learning_rate,dropout,optimizer_name)
-    model_name = './{0}./model/{1}_layer_{2}_bi_{3}_hd_{4}_bs_{5}_lr_{6}_{7}'.format(                        save_dir,vad_type,num_layers,bidirectional,hidden_dim,batch_size,learning_rate,optimizer_name)
+    # modelはsaveしない
+#     base_model_name = './{0}/model/{1}_layer_{2}_bi_{3}_hd_{4}_bs_{5}_lr_{6}'.format(\
+#                         save_dir,vad_type,num_layers,bidirectional,hidden_dim,batch_size,learning_rate)
 
 
     epoch_start = 0
@@ -409,13 +397,8 @@ def make_model_and_train_cross_validation_option(option,epochs,vad_type,csv_path
     Y = data_cut['{0}_reg'.format(vad_type)].as_matrix()
 
 
-    if metric == 'MSELoss':
-        loss_function = nn.MSELoss(size_average=False)
-    elif metric == 'L1Loss':
-        loss_function = nn.L1Loss(size_average=False)
-    else:
-        print('no loss funciton')
-        return
+    loss_function = nn.MSELoss(size_average=False)
+    loss_function_metric = nn.L1Loss(size_average=False)
     
 #     loss_function_metric = nn.L1Loss(size_average=False)
     
@@ -430,12 +413,9 @@ def make_model_and_train_cross_validation_option(option,epochs,vad_type,csv_path
     n_splits = 5
     kf = KFold(n_splits=n_splits,shuffle=True)
     # 5-fold
-    k_split = 0
-    
-    best_cost = 10000 # INF
+    k_split = 1
     
     for train_index,dev_index in kf.split(X):
-        k_split += 1
         print("{} split / {}".format(k_split,n_splits),flush=True)
         
         model = make_model(option)
@@ -452,6 +432,8 @@ def make_model_and_train_cross_validation_option(option,epochs,vad_type,csv_path
         else:
             print('{} couldnt be found'.format(optimizer_name))
         
+        
+        k_split += 1
         train_loss_part = []
         dev_loss_part = []
         dev_coef_part = []
@@ -482,11 +464,13 @@ def make_model_and_train_cross_validation_option(option,epochs,vad_type,csv_path
                 y = y.view(-1)
                 loss = loss_function(y, y_batch)
                 
-                train_loss_sum += loss.data.item()
-                
                 # training Loss func
                 loss.backward()
                 optimizer.step()
+                
+                loss_metric = loss_function_metric(y, y_batch)
+                train_loss_sum += loss_metric.data.item()
+                
                 
                 
             train_loss_av = train_loss_sum/len(X_train)
@@ -505,30 +489,21 @@ def make_model_and_train_cross_validation_option(option,epochs,vad_type,csv_path
                 lengths, perm_idx = lengths.sort(0, descending=True)
                 x_batch = x_batch[perm_idx]
                 y_batch = y_batch[perm_idx]
-                y_true.append(list(y_batch.cpu().detach().numpy()))
+                y_true.append(y_batch.cpu().detach().numpy()[0])
 
                 y = model(x_batch,lengths)
                 y = y.view(-1)
-                y_pred.append(list(y.cpu().detach().numpy()))
-                loss = loss_function(y, y_batch)
-                dev_loss_sum += loss.data.item()
+                y_pred.append(y.cpu().detach().numpy()[0])
+                
+                loss_metric = loss_function_metric(y, y_batch)
+                dev_loss_sum += loss_metric.data.item()
 
             dev_loss_av = dev_loss_sum / len(X_dev)
-            
-            if dev_loss_av < best_cost:
-                save_model(model,model_name)
-                best_cost = dev_loss_av
-            
-            
             dev_loss_part.append(dev_loss_av)
-            y_true = flatten(y_true)
-            y_pred = flatten(y_pred)
             r = np.corrcoef(y_true,y_pred)[0,1]
             dev_coef_part.append(r)
                 
             print("dev : {} / {} = {}".format(dev_loss_sum,len(X_dev),dev_loss_av))
-            print("r:    {}, size {}:{}".format(r,len(y_true),len(y_pred)))
-            
 
             # saveしない
 #             if epoch%10==0:
@@ -563,30 +538,30 @@ def make_model_and_train_cross_validation_option(option,epochs,vad_type,csv_path
         json.dump(loss_data,f)
 
 
-# In[45]:
+# In[25]:
 
 
-op1 = {
-    'hidden_size' : 60,
-    'bidirectional' : False,   
-    'num_layers' : 2,
-    'dropout' : 0.5
-}
-# op2 = {
-#     'hidden_size' : 32,
-#     'bidirectional' : True,   
-#     'num_layers' : 3,
+# op1 = {
+#     'hidden_size' : 60,
+#     'bidirectional' : False,   
+#     'num_layers' : 2,
+#     'dropout' : 0.5
 # }
-make_model_and_train_cross_validation_option(op1,1,'Valence',metric='L1Loss',csv_path='./data_cut_only.csv',
-                            save_dir='./dat_model_json/valid/',
-                            learning_rate=2e-5,batch_size=50,
-                            optimizer_name='Adagrad')
-# # make_model_and_train_option(op2,10,'Valence',metric='L1Loss',dat_base_name='./data_preprocessed_cut_2',
-# #                             save_dir='./dat_model_json/dat_word_cut_l1loss_mullayer_bidirectional',
-# #                             learning_rate=0.01,batch_size=4)
+# # op2 = {
+# #     'hidden_size' : 32,
+# #     'bidirectional' : True,   
+# #     'num_layers' : 3,
+# # }
+# make_model_and_train_cross_validation_option(op1,1,'Valence',metric='L1Loss',csv_path='./data_cut_only.csv',
+#                             save_dir='./dat_model_json/dat_cross_valid_word_cut_only/',
+#                             learning_rate=2e-5,batch_size=50,
+#                             optimizer_name='Adagrad')
+# # # make_model_and_train_option(op2,10,'Valence',metric='L1Loss',dat_base_name='./data_preprocessed_cut_2',
+# # #                             save_dir='./dat_model_json/dat_word_cut_l1loss_mullayer_bidirectional',
+# # #                             learning_rate=0.01,batch_size=4)
 
 
-# In[41]:
+# In[ ]:
 
 
 # Adadeltaとdropout入れた
@@ -596,16 +571,15 @@ vad_types = ['Valence']
 bss = [50]
 # Adadeltaは特にlearning rateを探索しなくて良い
 # lrs = [1e-3,1e-4,5e-5]
-lrs = [0.05]
-# for Adagrad
-# lrs = [0.5]
+# lrs = [0.05]
+lrs = [0.5]
 # for Adadelta
 options = []
 
-hidden_dims = [240,300]
+hidden_dims = [600]
 num_layers = [2]
 bis = [True]
-drs = [0.5]
+drs = [0.25,0.5]
 
 for num_layer in num_layers:
     for bi in bis:
@@ -630,8 +604,8 @@ for vad_type in vad_types:
 #                             save_dir='./dat_model_json/dat_stanford/',
 #                             learning_rate=lr,batch_size=bs,print_result=True,optimizer='Adadelta')
                 make_model_and_train_cross_validation_option(option,epoch_num,vad_type,metric='L1Loss',csv_path='./data_cut_only.csv',
-                            save_dir='./dat_model_json/valid/',
-                            learning_rate=lr,batch_size=bs,print_result=False,optimizer_name='Adagrad')
+                            save_dir='./dat_model_json/dat_mean_by_mse/',
+                            learning_rate=lr,batch_size=bs,print_result=False,optimizer_name='Adadelta')
                 cnt += 1
                 print('{}/{}'.format(cnt,ma),flush=True)
 
@@ -646,16 +620,15 @@ vad_types = ['Valence']
 bss = [50]
 # Adadeltaは特にlearning rateを探索しなくて良い
 # lrs = [1e-3,1e-4,5e-5]
-# lrs = [0.05]
-# for Adagrad
-lrs = [0.5]
+lrs = [0.05]
+# lrs = [0.5]
 # for Adadelta
 options = []
 
-hidden_dims = [240,300]
+hidden_dims = [600]
 num_layers = [2]
 bis = [True]
-drs = [0.5]
+drs = [0.25,0.5]
 
 for num_layer in num_layers:
     for bi in bis:
@@ -680,8 +653,8 @@ for vad_type in vad_types:
 #                             save_dir='./dat_model_json/dat_stanford/',
 #                             learning_rate=lr,batch_size=bs,print_result=True,optimizer='Adadelta')
                 make_model_and_train_cross_validation_option(option,epoch_num,vad_type,metric='L1Loss',csv_path='./data_cut_only.csv',
-                            save_dir='./dat_model_json/valid/',
-                            learning_rate=lr,batch_size=bs,print_result=False,optimizer_name='Adadelta')
+                            save_dir='./dat_model_json/dat_mean_by_mse/',
+                            learning_rate=lr,batch_size=bs,print_result=False,optimizer_name='Adagrad')
                 cnt += 1
                 print('{}/{}'.format(cnt,ma),flush=True)
 
