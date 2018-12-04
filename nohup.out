@@ -669,3 +669,631 @@ Arguments: ()
 [I 01:16:44.927 LabApp] Saving file at /api/analysis/train_glove.ipynb
 [I 01:18:45.317 LabApp] Saving file at /api/analysis/train_glove.ipynb
 [I 01:20:45.741 LabApp] Saving file at /api/analysis/train_glove.ipynb
+[I 01:28:39.578 LabApp] Starting buffering for 5a47cfac-2df0-4d9b-9f01-c926513bf4f0:21c9965fbc257babe2d28728a9f8ef0e
+[I 01:28:39.579 LabApp] Starting buffering for 3cf64bfe-1d38-48dd-b05d-1a66ef206dae:590f107237f33ee4ed4af21e033729aa
+[I 10:25:12.757 LabApp] 302 GET / (196.52.43.118) 0.86ms
+[I 16:51:40.832 LabApp] Adapting to protocol v5.1 for kernel 5a47cfac-2df0-4d9b-9f01-c926513bf4f0
+[I 16:51:44.973 LabApp] Adapting to protocol v5.1 for kernel 3cf64bfe-1d38-48dd-b05d-1a66ef206dae
+[I 16:51:53.421 LabApp] Starting buffering for 5a47cfac-2df0-4d9b-9f01-c926513bf4f0:13a9e36efeb41d1e2bc1f37438255707
+[I 16:51:53.423 LabApp] Starting buffering for 3cf64bfe-1d38-48dd-b05d-1a66ef206dae:701d2414bf89103c938c28822f5d3edd
+[W 16:51:55.092 LabApp] Could not determine jupyterlab build status without nodejs
+[I 16:51:55.650 LabApp] Adapting to protocol v5.1 for kernel 3cf64bfe-1d38-48dd-b05d-1a66ef206dae
+[I 16:51:57.505 LabApp] Starting buffering for 3cf64bfe-1d38-48dd-b05d-1a66ef206dae:94818359119e0a0da7a58c384e45b947
+[I 16:51:57.746 LabApp] Adapting to protocol v5.1 for kernel 5a47cfac-2df0-4d9b-9f01-c926513bf4f0
+[I 16:51:58.299 LabApp] Adapting to protocol v5.1 for kernel 3cf64bfe-1d38-48dd-b05d-1a66ef206dae
+[I 16:52:05.912 LabApp] Copying api/analysis/plot.ipynb to /api/analysis
+[I 16:52:25.020 LabApp] Kernel started: de457f1d-4edb-4a1f-b901-f9269f2ce461
+[I 16:52:25.524 LabApp] Adapting to protocol v5.1 for kernel de457f1d-4edb-4a1f-b901-f9269f2ce461
+[I 16:52:28.884 LabApp] Adapting to protocol v5.1 for kernel 5a47cfac-2df0-4d9b-9f01-c926513bf4f0
+[I 16:54:25.405 LabApp] Saving file at /api/analysis/plot_stanford.ipynb
+[I 16:54:39.441 LabApp] Kernel started: 062abc98-90f6-4802-806c-24a3fa324034
+[I 16:54:39.968 LabApp] Adapting to protocol v5.1 for kernel 062abc98-90f6-4802-806c-24a3fa324034
+[I 16:56:25.829 LabApp] Saving file at /api/analysis/plot_stanford.ipynb
+[I 17:04:26.244 LabApp] Saving file at /api/analysis/plot_stanford.ipynb
+[I 17:06:26.654 LabApp] Saving file at /api/analysis/plot_stanford.ipynb
+[I 17:32:29.091 LabApp] Saving file at /api/analysis/train_glove.ipynb
+[I 17:34:16.121 LabApp] Kernel interrupted: 5a47cfac-2df0-4d9b-9f01-c926513bf4f0
+[I 17:34:29.523 LabApp] Saving file at /api/analysis/train_glove.ipynb
+[I 17:34:36.830 LabApp] Saving file at /api/analysis/train_glove.ipynb
+[I 17:34:47.119 LabApp] Kernel shutdown: 3cf64bfe-1d38-48dd-b05d-1a66ef206dae
+[I 17:34:49.267 LabApp] Kernel shutdown: 5a47cfac-2df0-4d9b-9f01-c926513bf4f0
+[W 19:48:25.526 LabApp] WebSocket ping timeout after 119826 ms.
+[I 19:48:30.528 LabApp] Starting buffering for de457f1d-4edb-4a1f-b901-f9269f2ce461:b2472453ce7d92911ca829e0a31bcaf8
+[W 19:48:39.971 LabApp] WebSocket ping timeout after 119256 ms.
+[I 19:48:44.974 LabApp] Starting buffering for 062abc98-90f6-4802-806c-24a3fa324034:876ee397e0929997177c41b44cb5c934
+[W 20:06:12.983 LabApp] Could not determine jupyterlab build status without nodejs
+[I 20:06:14.569 LabApp] Adapting to protocol v5.1 for kernel 062abc98-90f6-4802-806c-24a3fa324034
+[I 20:06:15.482 LabApp] Adapting to protocol v5.1 for kernel de457f1d-4edb-4a1f-b901-f9269f2ce461
+[I 20:06:16.200 LabApp] Starting buffering for 062abc98-90f6-4802-806c-24a3fa324034:a395126cb379aea74afc90422b62e39a
+[I 20:07:00.282 LabApp] Kernel started: 6214e143-974e-4c3b-aa62-84f09e9fd56e
+[I 20:07:01.214 LabApp] Adapting to protocol v5.1 for kernel 6214e143-974e-4c3b-aa62-84f09e9fd56e
+[I 20:08:50.282 LabApp] Saving file at /api/analysis/train_glove.ipynb
+[I 21:06:06.484 LabApp] Saving file at /api/analysis/train_glove.ipynb
+[I 21:19:12.262 LabApp] Saving file at /api/analysis/train_glove.ipynb
+[I 21:39:12.700 LabApp] Saving file at /api/analysis/train_glove.ipynb
+[I 21:41:13.091 LabApp] Saving file at /api/analysis/train_glove.ipynb
+[I 21:42:01.302 LabApp] Saving file at /api/analysis/train_glove.ipynb
+[I 21:45:31.841 LabApp] Saving file at /api/analysis/train_glove.ipynb
+[I 21:54:19.995 LabApp] Starting buffering for de457f1d-4edb-4a1f-b901-f9269f2ce461:d2330a3038f73a7d6db4d790f4da306c
+[I 21:54:19.995 LabApp] Starting buffering for 6214e143-974e-4c3b-aa62-84f09e9fd56e:ce7dc5319da8bb31ec96a9d5ba20e9da
+[I 03:15:58.651 LabApp] 302 GET / (139.162.83.10) 0.80ms
+[I 16:03:04.852 LabApp] Adapting to protocol v5.1 for kernel de457f1d-4edb-4a1f-b901-f9269f2ce461
+[I 16:03:05.155 LabApp] Adapting to protocol v5.1 for kernel 6214e143-974e-4c3b-aa62-84f09e9fd56e
+[I 16:03:33.613 LabApp] 302 GET / (127.0.0.1) 0.54ms
+[W 16:03:35.479 LabApp] Could not determine jupyterlab build status without nodejs
+[I 16:03:35.843 LabApp] Adapting to protocol v5.1 for kernel 6214e143-974e-4c3b-aa62-84f09e9fd56e
+[I 16:03:37.123 LabApp] Adapting to protocol v5.1 for kernel de457f1d-4edb-4a1f-b901-f9269f2ce461
+[I 16:03:37.480 LabApp] Adapting to protocol v5.1 for kernel 6214e143-974e-4c3b-aa62-84f09e9fd56e
+[I 16:05:37.507 LabApp] Saving file at /api/analysis/plot_stanford.ipynb
+[I 16:07:38.601 LabApp] Saving file at /api/analysis/plot_stanford.ipynb
+[I 16:10:02.357 LabApp] Saving file at /api/analysis/train_glove.ipynb
+[I 16:10:38.918 LabApp] Saving file at /api/analysis/train_glove.ipynb
+[I 16:38:19.540 LabApp] 302 GET / (172.105.238.87) 0.58ms
+[I 16:40:11.457 LabApp] 302 GET / (51.15.191.81) 0.52ms
+[W 18:45:34.854 LabApp] WebSocket ping timeout after 119764 ms.
+[W 18:45:35.157 LabApp] WebSocket ping timeout after 119757 ms.
+[W 18:45:37.125 LabApp] WebSocket ping timeout after 119825 ms.
+[W 18:45:37.482 LabApp] WebSocket ping timeout after 119831 ms.
+[I 18:45:42.126 LabApp] Starting buffering for de457f1d-4edb-4a1f-b901-f9269f2ce461:a96d6d4bb5a2301cb318627e695abb11
+[I 18:45:42.482 LabApp] Starting buffering for 6214e143-974e-4c3b-aa62-84f09e9fd56e:ee2242df4e08e20fcb208b87020817a2
+[I 19:59:32.528 LabApp] Adapting to protocol v5.1 for kernel 6214e143-974e-4c3b-aa62-84f09e9fd56e
+[I 19:59:32.529 LabApp] Restoring connection for 6214e143-974e-4c3b-aa62-84f09e9fd56e:ee2242df4e08e20fcb208b87020817a2
+[I 19:59:32.856 LabApp] Adapting to protocol v5.1 for kernel de457f1d-4edb-4a1f-b901-f9269f2ce461
+[I 19:59:32.857 LabApp] Restoring connection for de457f1d-4edb-4a1f-b901-f9269f2ce461:a96d6d4bb5a2301cb318627e695abb11
+[I 19:59:36.482 LabApp] Adapting to protocol v5.1 for kernel 6214e143-974e-4c3b-aa62-84f09e9fd56e
+[I 19:59:36.810 LabApp] Adapting to protocol v5.1 for kernel de457f1d-4edb-4a1f-b901-f9269f2ce461
+[W 20:09:11.793 LabApp] Could not determine jupyterlab build status without nodejs
+[I 20:09:12.420 LabApp] Adapting to protocol v5.1 for kernel 6214e143-974e-4c3b-aa62-84f09e9fd56e
+[I 20:09:13.749 LabApp] Adapting to protocol v5.1 for kernel 6214e143-974e-4c3b-aa62-84f09e9fd56e
+[I 20:09:14.056 LabApp] Adapting to protocol v5.1 for kernel de457f1d-4edb-4a1f-b901-f9269f2ce461
+[I 20:11:13.989 LabApp] Saving file at /api/analysis/plot_stanford.ipynb
+[I 20:13:15.459 LabApp] Saving file at /api/analysis/plot_stanford.ipynb
+[I 20:15:16.028 LabApp] Saving file at /api/analysis/plot_stanford.ipynb
+[I 20:28:57.866 LabApp] Saving file at /api/analysis/train_glove.ipynb
+[I 20:32:58.251 LabApp] Saving file at /api/analysis/train_glove.ipynb
+[I 20:32:59.039 LabApp] Saving file at /api/analysis/train_glove.ipynb
+[I 20:33:24.698 LabApp] Saving file at /api/analysis/train_glove.ipynb
+[I 20:35:25.069 LabApp] Saving file at /api/analysis/train_glove.ipynb
+[I 20:38:05.770 LabApp] Saving file at /api/analysis/train_glove.ipynb
+[I 20:38:14.565 LabApp] Saving file at /api/analysis/train_glove.ipynb
+[I 20:39:21.317 LabApp] Saving file at /api/analysis/train_glove.ipynb
+[I 21:27:26.622 LabApp] Saving file at /api/analysis/plot_stanford.ipynb
+[I 21:41:33.544 LabApp] Saving file at /api/analysis/train_glove.ipynb
+[I 21:43:34.102 LabApp] Saving file at /api/analysis/train_glove.ipynb
+[I 21:51:34.544 LabApp] Saving file at /api/analysis/train_glove.ipynb
+[I 21:53:34.919 LabApp] Saving file at /api/analysis/train_glove.ipynb
+[I 21:55:35.286 LabApp] Saving file at /api/analysis/train_glove.ipynb
+[I 21:57:35.672 LabApp] Saving file at /api/analysis/train_glove.ipynb
+[I 21:59:36.050 LabApp] Saving file at /api/analysis/train_glove.ipynb
+[I 22:01:36.430 LabApp] Saving file at /api/analysis/train_glove.ipynb
+[I 22:43:37.344 LabApp] Saving file at /api/analysis/train_glove.ipynb
+[I 22:48:18.164 LabApp] Kernel shutdown: 6214e143-974e-4c3b-aa62-84f09e9fd56e
+[W 22:48:50.056 LabApp] delete /api/analysis/dat_model_json/dat_stanford/json/Valence_layer_2_bi_0_hd_120_bs_1_lr_0.5_dr_0.5_Adadelta.json
+[W 22:48:57.001 LabApp] delete /api/analysis/dat_model_json/dat_stanford/json/Valence_layer_2_bi_0_hd_60_bs_1_lr_0.5_dr_0.5_Adadelta.json
+[I 23:18:27.191 LabApp] Starting buffering for de457f1d-4edb-4a1f-b901-f9269f2ce461:5506e36ac8d95946289a371c82f5ed0f
+[W 23:22:27.480 LabApp] Could not determine jupyterlab build status without nodejs
+[I 23:22:28.034 LabApp] Adapting to protocol v5.1 for kernel 062abc98-90f6-4802-806c-24a3fa324034
+[I 23:22:28.628 LabApp] Adapting to protocol v5.1 for kernel de457f1d-4edb-4a1f-b901-f9269f2ce461
+[I 23:22:28.642 LabApp] Starting buffering for 062abc98-90f6-4802-806c-24a3fa324034:4985a735ae67f3ac16ee604c05595634
+[I 23:22:29.665 LabApp] Kernel started: 664d0cc6-4426-4d71-9327-ad43063c4a87
+[I 23:22:29.669 LabApp] Adapting to protocol v5.1 for kernel de457f1d-4edb-4a1f-b901-f9269f2ce461
+[I 23:22:30.196 LabApp] Adapting to protocol v5.1 for kernel 664d0cc6-4426-4d71-9327-ad43063c4a87
+[I 23:26:30.072 LabApp] Saving file at /api/analysis/train_glove.ipynb
+[I 23:28:20.996 LabApp] Saving file at /api/analysis/train_glove.ipynb
+[I 23:30:21.418 LabApp] Saving file at /api/analysis/train_glove.ipynb
+[I 23:34:21.854 LabApp] Saving file at /api/analysis/train_glove.ipynb
+[I 23:36:22.271 LabApp] Saving file at /api/analysis/train_glove.ipynb
+[I 23:38:22.678 LabApp] Saving file at /api/analysis/train_glove.ipynb
+[I 23:40:23.087 LabApp] Saving file at /api/analysis/train_glove.ipynb
+[I 00:25:40.001 LabApp] Copying api/analysis/train_glove.ipynb to /api/analysis
+[I 00:25:59.365 LabApp] Kernel started: 96bd8dfd-1ccd-4a0e-a53d-d8112146fb30
+[I 00:25:59.907 LabApp] Adapting to protocol v5.1 for kernel 96bd8dfd-1ccd-4a0e-a53d-d8112146fb30
+[I 00:26:07.136 LabApp] Kernel shutdown: 664d0cc6-4426-4d71-9327-ad43063c4a87
+[I 00:29:59.777 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 00:40:02.800 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 00:52:04.088 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 00:56:04.499 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 00:58:04.907 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 01:02:05.321 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 01:04:05.727 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 01:06:06.170 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 01:08:06.589 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 01:09:04.458 LabApp] 302 GET / (66.128.161.12) 0.54ms
+[I 01:10:07.000 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 01:11:42.400 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 01:13:42.808 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 01:15:43.325 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 01:17:43.737 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 01:19:32.576 LabApp] Kernel interrupted: 96bd8dfd-1ccd-4a0e-a53d-d8112146fb30
+[I 01:19:44.254 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 01:20:37.934 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 01:22:09.677 LabApp] Starting buffering for 96bd8dfd-1ccd-4a0e-a53d-d8112146fb30:c7c3cfc44cbd9ccc833ebeb30a4906cf
+[I 01:22:09.678 LabApp] Starting buffering for de457f1d-4edb-4a1f-b901-f9269f2ce461:ee3f6218340fbd6c0185f6d87df7f3b4
+[I 01:22:40.916 LabApp] Adapting to protocol v5.1 for kernel de457f1d-4edb-4a1f-b901-f9269f2ce461
+[I 01:22:40.917 LabApp] Restoring connection for de457f1d-4edb-4a1f-b901-f9269f2ce461:ee3f6218340fbd6c0185f6d87df7f3b4
+[I 01:22:41.222 LabApp] Adapting to protocol v5.1 for kernel 96bd8dfd-1ccd-4a0e-a53d-d8112146fb30
+[I 01:22:41.222 LabApp] Restoring connection for 96bd8dfd-1ccd-4a0e-a53d-d8112146fb30:c7c3cfc44cbd9ccc833ebeb30a4906cf
+[I 01:22:44.967 LabApp] Adapting to protocol v5.1 for kernel de457f1d-4edb-4a1f-b901-f9269f2ce461
+[I 01:23:29.794 LabApp] Starting buffering for 96bd8dfd-1ccd-4a0e-a53d-d8112146fb30:c7c3cfc44cbd9ccc833ebeb30a4906cf
+[W 01:23:30.927 LabApp] Could not determine jupyterlab build status without nodejs
+[I 01:23:31.450 LabApp] Adapting to protocol v5.1 for kernel 96bd8dfd-1ccd-4a0e-a53d-d8112146fb30
+[I 01:23:32.043 LabApp] Starting buffering for 96bd8dfd-1ccd-4a0e-a53d-d8112146fb30:57f610ec8fa3fef14878390ea76928b6
+[I 01:23:33.035 LabApp] Adapting to protocol v5.1 for kernel de457f1d-4edb-4a1f-b901-f9269f2ce461
+[I 01:23:33.391 LabApp] Adapting to protocol v5.1 for kernel 96bd8dfd-1ccd-4a0e-a53d-d8112146fb30
+[I 01:24:13.165 LabApp] Kernel started: 9935fba7-cd64-46bf-960b-fb5cbf877bea
+[I 01:24:13.704 LabApp] Adapting to protocol v5.1 for kernel 9935fba7-cd64-46bf-960b-fb5cbf877bea
+[I 01:25:33.360 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 01:26:09.668 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 01:26:13.540 LabApp] Saving file at /api/analysis/train_glove.ipynb
+[W 01:31:03.036 LabApp] WebSocket ping timeout after 119807 ms.
+[W 01:31:03.392 LabApp] WebSocket ping timeout after 119829 ms.
+[I 01:31:08.393 LabApp] Starting buffering for 96bd8dfd-1ccd-4a0e-a53d-d8112146fb30:51fd27e1e9685714d8166c183ce4604d
+[W 01:31:13.706 LabApp] WebSocket ping timeout after 119828 ms.
+[W 01:31:14.969 LabApp] WebSocket ping timeout after 119782 ms.
+[I 01:31:18.707 LabApp] Starting buffering for 9935fba7-cd64-46bf-960b-fb5cbf877bea:8cf5d42963a8f79b2d233caefc80f7a0
+[I 01:31:19.971 LabApp] Starting buffering for de457f1d-4edb-4a1f-b901-f9269f2ce461:a64dbd69e69e52a3cfcaf1653dc52b8c
+[I 07:08:11.301 LabApp] 302 GET / (172.105.238.87) 0.80ms
+[I 08:32:30.195 LabApp] 302 GET / (139.162.83.10) 1.10ms
+[I 10:16:41.437 LabApp] Adapting to protocol v5.1 for kernel 9935fba7-cd64-46bf-960b-fb5cbf877bea
+[I 10:16:41.438 LabApp] Restoring connection for 9935fba7-cd64-46bf-960b-fb5cbf877bea:8cf5d42963a8f79b2d233caefc80f7a0
+[I 10:16:41.993 LabApp] Adapting to protocol v5.1 for kernel 96bd8dfd-1ccd-4a0e-a53d-d8112146fb30
+[I 10:16:41.993 LabApp] Adapting to protocol v5.1 for kernel de457f1d-4edb-4a1f-b901-f9269f2ce461
+[I 10:16:41.993 LabApp] Restoring connection for 96bd8dfd-1ccd-4a0e-a53d-d8112146fb30:51fd27e1e9685714d8166c183ce4604d
+[I 10:16:44.102 LabApp] Adapting to protocol v5.1 for kernel de457f1d-4edb-4a1f-b901-f9269f2ce461
+[I 10:16:57.112 LabApp] Starting buffering for 96bd8dfd-1ccd-4a0e-a53d-d8112146fb30:51fd27e1e9685714d8166c183ce4604d
+[I 10:16:57.112 LabApp] Starting buffering for 9935fba7-cd64-46bf-960b-fb5cbf877bea:8cf5d42963a8f79b2d233caefc80f7a0
+[W 10:16:58.412 LabApp] Could not determine jupyterlab build status without nodejs
+[I 10:16:58.910 LabApp] Adapting to protocol v5.1 for kernel 9935fba7-cd64-46bf-960b-fb5cbf877bea
+[I 10:16:59.508 LabApp] Starting buffering for 9935fba7-cd64-46bf-960b-fb5cbf877bea:787194ee7c1176abb53a15249223e95c
+[I 10:17:01.266 LabApp] Adapting to protocol v5.1 for kernel 96bd8dfd-1ccd-4a0e-a53d-d8112146fb30
+[I 10:17:01.568 LabApp] Adapting to protocol v5.1 for kernel de457f1d-4edb-4a1f-b901-f9269f2ce461
+[I 10:17:01.607 LabApp] Adapting to protocol v5.1 for kernel 9935fba7-cd64-46bf-960b-fb5cbf877bea
+[W 10:32:31.268 LabApp] WebSocket ping timeout after 119763 ms.
+[W 10:32:31.570 LabApp] WebSocket ping timeout after 119837 ms.
+[W 10:32:31.609 LabApp] WebSocket ping timeout after 119838 ms.
+[I 10:32:36.271 LabApp] Starting buffering for 96bd8dfd-1ccd-4a0e-a53d-d8112146fb30:29797367fec305c4dc9bbd96b04e59c8
+[I 10:32:36.610 LabApp] Starting buffering for 9935fba7-cd64-46bf-960b-fb5cbf877bea:fec2f3b2d0f7a1b1b7408765b795e3e9
+[W 10:32:44.104 LabApp] WebSocket ping timeout after 119799 ms.
+[I 10:32:49.105 LabApp] Starting buffering for de457f1d-4edb-4a1f-b901-f9269f2ce461:a64dbd69e69e52a3cfcaf1653dc52b8c
+[I 13:56:38.552 LabApp] 302 GET / (196.52.43.127) 0.79ms
+[I 15:23:01.245 LabApp] Adapting to protocol v5.1 for kernel de457f1d-4edb-4a1f-b901-f9269f2ce461
+[I 15:23:01.991 LabApp] Adapting to protocol v5.1 for kernel 96bd8dfd-1ccd-4a0e-a53d-d8112146fb30
+[I 15:23:02.295 LabApp] Adapting to protocol v5.1 for kernel de457f1d-4edb-4a1f-b901-f9269f2ce461
+[I 15:23:02.345 LabApp] Adapting to protocol v5.1 for kernel 9935fba7-cd64-46bf-960b-fb5cbf877bea
+[I 15:23:08.317 LabApp] Starting buffering for 96bd8dfd-1ccd-4a0e-a53d-d8112146fb30:280ba04df678e79c2d18e71a74e0c483
+[I 15:23:08.318 LabApp] Starting buffering for 9935fba7-cd64-46bf-960b-fb5cbf877bea:bfaaf6f1943da6d23aa7c354ef438171
+[W 15:23:09.353 LabApp] Could not determine jupyterlab build status without nodejs
+[I 15:23:09.876 LabApp] Adapting to protocol v5.1 for kernel 9935fba7-cd64-46bf-960b-fb5cbf877bea
+[I 15:23:10.373 LabApp] Starting buffering for 9935fba7-cd64-46bf-960b-fb5cbf877bea:555810784c5286bb89e508627a6ea0cc
+[I 15:23:11.368 LabApp] Adapting to protocol v5.1 for kernel 96bd8dfd-1ccd-4a0e-a53d-d8112146fb30
+[I 15:23:11.688 LabApp] Adapting to protocol v5.1 for kernel de457f1d-4edb-4a1f-b901-f9269f2ce461
+[I 15:24:46.903 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 15:25:48.570 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 15:26:49.010 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 15:31:47.234 LabApp] Starting buffering for 96bd8dfd-1ccd-4a0e-a53d-d8112146fb30:7f72df6f53fbe6aa99142341cd0ce4d0
+[I 15:31:47.234 LabApp] Starting buffering for de457f1d-4edb-4a1f-b901-f9269f2ce461:0ae56230c2c9fe800e4c8aa0adc1cf19
+[I 17:16:08.657 LabApp] Adapting to protocol v5.1 for kernel 96bd8dfd-1ccd-4a0e-a53d-d8112146fb30
+[I 17:16:09.176 LabApp] Adapting to protocol v5.1 for kernel de457f1d-4edb-4a1f-b901-f9269f2ce461
+[I 17:16:09.634 LabApp] Adapting to protocol v5.1 for kernel de457f1d-4edb-4a1f-b901-f9269f2ce461
+[I 17:20:38.372 LabApp] Starting buffering for 96bd8dfd-1ccd-4a0e-a53d-d8112146fb30:1d62a0fe76c4c2788b92793b38ae10c0
+[W 17:20:39.331 LabApp] Could not determine jupyterlab build status without nodejs
+[I 17:20:39.965 LabApp] Adapting to protocol v5.1 for kernel 9935fba7-cd64-46bf-960b-fb5cbf877bea
+[I 17:20:40.410 LabApp] Starting buffering for 9935fba7-cd64-46bf-960b-fb5cbf877bea:50c5f3e611337f44c064edd380751f9f
+[I 17:20:41.445 LabApp] Adapting to protocol v5.1 for kernel 96bd8dfd-1ccd-4a0e-a53d-d8112146fb30
+[I 17:20:41.762 LabApp] Adapting to protocol v5.1 for kernel de457f1d-4edb-4a1f-b901-f9269f2ce461
+[I 17:28:41.506 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 17:30:41.884 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 17:38:43.272 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 17:40:43.656 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 17:50:44.055 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 17:52:44.494 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 17:53:11.349 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 17:55:11.730 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 17:57:12.113 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 17:59:12.511 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 18:00:18.336 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 18:01:32.254 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 18:03:32.645 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 18:06:23.570 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 18:06:33.611 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 18:07:34.844 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 18:07:50.358 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 18:08:00.242 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 18:08:05.728 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 18:08:10.903 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 18:08:33.741 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 18:08:40.705 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 18:08:41.844 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 18:11:19.171 LabApp] Starting buffering for de457f1d-4edb-4a1f-b901-f9269f2ce461:1ee40ab7fa0793ce1a6cb1d95663c861
+[I 18:11:19.171 LabApp] Starting buffering for 96bd8dfd-1ccd-4a0e-a53d-d8112146fb30:b9dd1efbf76584fe188622dcff461e59
+[I 15:12:44.940 LabApp] Adapting to protocol v5.1 for kernel de457f1d-4edb-4a1f-b901-f9269f2ce461
+[I 15:12:45.325 LabApp] Adapting to protocol v5.1 for kernel 96bd8dfd-1ccd-4a0e-a53d-d8112146fb30
+[I 15:12:45.326 LabApp] Restoring connection for 96bd8dfd-1ccd-4a0e-a53d-d8112146fb30:b9dd1efbf76584fe188622dcff461e59
+[I 15:12:45.559 LabApp] Starting buffering for 96bd8dfd-1ccd-4a0e-a53d-d8112146fb30:b9dd1efbf76584fe188622dcff461e59
+[W 15:12:48.505 LabApp] Could not determine jupyterlab build status without nodejs
+[I 15:12:49.127 LabApp] Adapting to protocol v5.1 for kernel 9935fba7-cd64-46bf-960b-fb5cbf877bea
+[I 15:12:49.535 LabApp] Starting buffering for 9935fba7-cd64-46bf-960b-fb5cbf877bea:ebfc2e57d9f132f59861c3785f7b53d2
+[I 15:12:50.908 LabApp] Adapting to protocol v5.1 for kernel 96bd8dfd-1ccd-4a0e-a53d-d8112146fb30
+[I 15:12:51.405 LabApp] Adapting to protocol v5.1 for kernel de457f1d-4edb-4a1f-b901-f9269f2ce461
+[I 16:59:13.274 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 16:59:29.348 LabApp] Kernel interrupted: 96bd8dfd-1ccd-4a0e-a53d-d8112146fb30
+[I 17:00:22.595 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 17:01:05.153 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[W 17:02:59.239 LabApp] delete /api/analysis/dat_model_json/dat_mean/json/Valence_layer_1_bi_0_hd_120_bs_50_lr_0.5_dr_0.5_Adadelta.json
+[W 17:02:59.243 LabApp] delete /api/analysis/dat_model_json/dat_mean/json/Valence_layer_1_bi_0_hd_120_bs_64_lr_0.5_dr_0.5_Adadelta.json
+[W 17:02:59.245 LabApp] delete /api/analysis/dat_model_json/dat_mean/json/Valence_layer_1_bi_0_hd_60_bs_50_lr_0.5_dr_0.5_Adadelta.json
+[W 17:02:59.247 LabApp] delete /api/analysis/dat_model_json/dat_mean/json/Valence_layer_1_bi_0_hd_60_bs_64_lr_0.5_dr_0.5_Adadelta.json
+[W 17:02:59.248 LabApp] delete /api/analysis/dat_model_json/dat_mean/json/Valence_layer_2_bi_0_hd_60_bs_50_lr_0.5_dr_0.5_Adadelta.json
+[W 17:02:59.405 LabApp] delete /api/analysis/dat_model_json/dat_mean/json/Valence_layer_2_bi_0_hd_60_bs_64_lr_0.5_dr_0.5_Adadelta.json
+[W 17:02:59.410 LabApp] delete /api/analysis/dat_model_json/dat_mean/json/Valence_layer_2_bi_0_hd_120_bs_50_lr_0.5_dr_0.5_Adadelta.json
+[W 17:02:59.412 LabApp] delete /api/analysis/dat_model_json/dat_mean/json/Valence_layer_2_bi_0_hd_120_bs_64_lr_0.5_dr_0.5_Adadelta.json
+[I 17:03:05.574 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 21:51:37.880 LabApp] Starting buffering for 96bd8dfd-1ccd-4a0e-a53d-d8112146fb30:3d61042c39912ad7f03df6050cafa0de
+[W 21:51:38.809 LabApp] Could not determine jupyterlab build status without nodejs
+[I 21:51:39.573 LabApp] Adapting to protocol v5.1 for kernel 9935fba7-cd64-46bf-960b-fb5cbf877bea
+[I 21:51:44.005 LabApp] Starting buffering for 9935fba7-cd64-46bf-960b-fb5cbf877bea:5e17eb2c04c50b4900371d9a77c2b548
+[I 21:51:44.859 LabApp] Adapting to protocol v5.1 for kernel 96bd8dfd-1ccd-4a0e-a53d-d8112146fb30
+[I 21:51:45.193 LabApp] Adapting to protocol v5.1 for kernel de457f1d-4edb-4a1f-b901-f9269f2ce461
+[I 21:52:09.540 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 21:52:49.970 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 21:53:00.061 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 21:53:16.354 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 21:53:27.290 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 23:58:48.722 LabApp] Starting buffering for 96bd8dfd-1ccd-4a0e-a53d-d8112146fb30:e3ab9ed28912cfff19e0052f6bf56b13
+[I 23:58:48.723 LabApp] Starting buffering for de457f1d-4edb-4a1f-b901-f9269f2ce461:fe3260c807f30cf24209c6f97030bc78
+[I 14:53:06.154 LabApp] Adapting to protocol v5.1 for kernel de457f1d-4edb-4a1f-b901-f9269f2ce461
+[I 14:53:06.599 LabApp] Adapting to protocol v5.1 for kernel 96bd8dfd-1ccd-4a0e-a53d-d8112146fb30
+[I 14:53:06.628 LabApp] Adapting to protocol v5.1 for kernel de457f1d-4edb-4a1f-b901-f9269f2ce461
+[W 14:53:19.767 LabApp] Could not determine jupyterlab build status without nodejs
+[I 14:53:20.591 LabApp] Adapting to protocol v5.1 for kernel 9935fba7-cd64-46bf-960b-fb5cbf877bea
+[I 14:53:21.043 LabApp] Starting buffering for 9935fba7-cd64-46bf-960b-fb5cbf877bea:383f8799dc87ad9ee5a7fcb5d3fdc291
+[I 14:53:22.421 LabApp] Adapting to protocol v5.1 for kernel 96bd8dfd-1ccd-4a0e-a53d-d8112146fb30
+[I 14:53:22.743 LabApp] Adapting to protocol v5.1 for kernel de457f1d-4edb-4a1f-b901-f9269f2ce461
+[I 14:55:22.997 LabApp] Saving file at /api/analysis/plot_stanford.ipynb
+[I 14:55:45.551 LabApp] Saving file at /api/analysis/plot_stanford.ipynb
+[I 14:57:46.827 LabApp] Saving file at /api/analysis/plot_stanford.ipynb
+[I 15:27:48.523 LabApp] Saving file at /api/analysis/plot_stanford.ipynb
+[W 15:40:52.423 LabApp] WebSocket ping timeout after 119808 ms.
+[W 15:40:52.745 LabApp] WebSocket ping timeout after 119832 ms.
+[W 15:41:06.600 LabApp] WebSocket ping timeout after 119831 ms.
+[W 15:41:06.629 LabApp] WebSocket ping timeout after 119830 ms.
+[I 15:41:11.603 LabApp] Starting buffering for 96bd8dfd-1ccd-4a0e-a53d-d8112146fb30:e1f3734219bd8fc7295de64ba8ca6727
+[I 15:41:11.631 LabApp] Starting buffering for de457f1d-4edb-4a1f-b901-f9269f2ce461:06994eabcba98e836d6fd035efdcd845
+[I 16:02:07.327 LabApp] Adapting to protocol v5.1 for kernel 96bd8dfd-1ccd-4a0e-a53d-d8112146fb30
+[I 16:02:07.677 LabApp] Adapting to protocol v5.1 for kernel de457f1d-4edb-4a1f-b901-f9269f2ce461
+[I 16:02:08.146 LabApp] Adapting to protocol v5.1 for kernel 96bd8dfd-1ccd-4a0e-a53d-d8112146fb30
+[I 16:02:08.458 LabApp] Adapting to protocol v5.1 for kernel de457f1d-4edb-4a1f-b901-f9269f2ce461
+[I 16:05:57.206 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 16:06:51.831 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 16:07:41.445 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 16:09:42.015 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 16:40:57.103 LabApp] 302 GET / (172.105.238.87) 0.39ms
+[W 17:51:37.329 LabApp] WebSocket ping timeout after 119112 ms.
+[W 17:51:37.679 LabApp] WebSocket ping timeout after 119462 ms.
+[W 17:51:38.148 LabApp] WebSocket ping timeout after 119833 ms.
+[W 17:51:38.459 LabApp] WebSocket ping timeout after 119832 ms.
+[I 17:51:43.149 LabApp] Starting buffering for 96bd8dfd-1ccd-4a0e-a53d-d8112146fb30:e1f3734219bd8fc7295de64ba8ca6727
+[I 17:51:43.460 LabApp] Starting buffering for de457f1d-4edb-4a1f-b901-f9269f2ce461:06994eabcba98e836d6fd035efdcd845
+[I 18:32:22.219 LabApp] Adapting to protocol v5.1 for kernel 96bd8dfd-1ccd-4a0e-a53d-d8112146fb30
+[I 18:32:22.515 LabApp] Adapting to protocol v5.1 for kernel de457f1d-4edb-4a1f-b901-f9269f2ce461
+[I 18:32:26.319 LabApp] Adapting to protocol v5.1 for kernel 96bd8dfd-1ccd-4a0e-a53d-d8112146fb30
+[I 18:32:26.604 LabApp] Adapting to protocol v5.1 for kernel de457f1d-4edb-4a1f-b901-f9269f2ce461
+[W 18:58:19.156 LabApp] Could not determine jupyterlab build status without nodejs
+[I 18:58:20.373 LabApp] Adapting to protocol v5.1 for kernel 9935fba7-cd64-46bf-960b-fb5cbf877bea
+[I 18:58:20.898 LabApp] Starting buffering for 9935fba7-cd64-46bf-960b-fb5cbf877bea:00cb17472e4d6301efd3fcf69787e4c6
+[I 18:58:26.514 LabApp] Adapting to protocol v5.1 for kernel 96bd8dfd-1ccd-4a0e-a53d-d8112146fb30
+[W 18:58:35.522 LabApp] Could not determine jupyterlab build status without nodejs
+[I 18:58:36.171 LabApp] Adapting to protocol v5.1 for kernel 9935fba7-cd64-46bf-960b-fb5cbf877bea
+[I 18:58:36.513 LabApp] Starting buffering for 9935fba7-cd64-46bf-960b-fb5cbf877bea:4618c376be174ed98ddfae5e7234d7e1
+[I 18:58:45.200 LabApp] Kernel shutdown: 062abc98-90f6-4802-806c-24a3fa324034
+[I 18:58:51.621 LabApp] Kernel shutdown: 9935fba7-cd64-46bf-960b-fb5cbf877bea
+[I 18:59:04.406 LabApp] Kernel shutdown: 96bd8dfd-1ccd-4a0e-a53d-d8112146fb30
+[I 22:20:53.982 LabApp] Adapting to protocol v5.1 for kernel de457f1d-4edb-4a1f-b901-f9269f2ce461
+[I 22:21:36.844 LabApp] Kernel started: d5115142-57fb-4aa7-bd65-e4182ac07037
+[I 22:21:37.392 LabApp] Adapting to protocol v5.1 for kernel d5115142-57fb-4aa7-bd65-e4182ac07037
+[I 22:22:57.857 LabApp] Saving file at /api/analysis/plot_stanford.ipynb
+[I 22:25:01.652 LabApp] Saving file at /api/analysis/plot_stanford.ipynb
+[I 22:29:04.671 LabApp] Saving file at /api/analysis/plot_stanford.ipynb
+[I 22:44:20.866 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 22:44:26.598 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 22:44:45.882 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 22:45:24.364 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 22:45:25.779 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 22:47:08.542 LabApp] Saving file at /api/analysis/plot_stanford.ipynb
+[I 22:49:10.948 LabApp] Saving file at /api/analysis/plot_stanford.ipynb
+[I 22:50:11.732 LabApp] Saving file at /api/analysis/plot_stanford.ipynb
+[I 22:50:15.891 LabApp] Saving file at /api/analysis/plot_stanford.ipynb
+[I 22:50:21.419 LabApp] Saving file at /api/analysis/plot_stanford.ipynb
+[I 22:52:24.722 LabApp] Saving file at /api/analysis/plot_stanford.ipynb
+[W 00:04:37.395 LabApp] WebSocket ping timeout after 119820 ms.
+[I 00:04:42.398 LabApp] Starting buffering for d5115142-57fb-4aa7-bd65-e4182ac07037:8ef99786d3c7f0e14400b3f7190c1841
+[W 00:04:55.926 LabApp] WebSocket ping timeout after 121538 ms.
+[W 00:04:56.607 LabApp] WebSocket ping timeout after 119832 ms.
+[I 00:05:01.609 LabApp] Starting buffering for de457f1d-4edb-4a1f-b901-f9269f2ce461:1deded3b3458c8b56d77b35f94026cd0
+[I 00:26:18.094 LabApp] Adapting to protocol v5.1 for kernel d5115142-57fb-4aa7-bd65-e4182ac07037
+[I 00:26:18.095 LabApp] Restoring connection for d5115142-57fb-4aa7-bd65-e4182ac07037:8ef99786d3c7f0e14400b3f7190c1841
+[I 00:26:18.437 LabApp] Adapting to protocol v5.1 for kernel de457f1d-4edb-4a1f-b901-f9269f2ce461
+[I 00:26:21.157 LabApp] Adapting to protocol v5.1 for kernel de457f1d-4edb-4a1f-b901-f9269f2ce461
+[I 00:26:55.108 LabApp] Starting buffering for d5115142-57fb-4aa7-bd65-e4182ac07037:8ef99786d3c7f0e14400b3f7190c1841
+[W 00:26:56.222 LabApp] Could not determine jupyterlab build status without nodejs
+[I 00:26:56.757 LabApp] Adapting to protocol v5.1 for kernel d5115142-57fb-4aa7-bd65-e4182ac07037
+[I 00:26:57.237 LabApp] Starting buffering for d5115142-57fb-4aa7-bd65-e4182ac07037:762eeabf4fc682c397369e6ccac1c1b8
+[I 00:26:59.257 LabApp] Adapting to protocol v5.1 for kernel de457f1d-4edb-4a1f-b901-f9269f2ce461
+[I 00:26:59.593 LabApp] Adapting to protocol v5.1 for kernel d5115142-57fb-4aa7-bd65-e4182ac07037
+[I 00:28:59.974 LabApp] Saving file at /api/analysis/plot_stanford.ipynb
+[I 00:29:14.744 LabApp] Saving file at /api/analysis/plot_stanford.ipynb
+[I 00:30:59.603 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 00:31:16.901 LabApp] Saving file at /api/analysis/plot_stanford.ipynb
+[I 00:32:09.433 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 00:32:24.591 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 00:33:57.403 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 00:35:57.801 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 00:39:58.364 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 00:40:38.401 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 00:43:11.557 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 00:47:38.532 LabApp] Copying api/analysis/train_mean_pooling.ipynb to /api/analysis
+[I 00:48:01.400 LabApp] Kernel started: f6ca6528-1bef-4105-a97f-30cb87508725
+[I 00:48:01.836 LabApp] Adapting to protocol v5.1 for kernel f6ca6528-1bef-4105-a97f-30cb87508725
+[I 00:48:03.459 LabApp] Kernel shutdown: d5115142-57fb-4aa7-bd65-e4182ac07037
+[I 00:50:00.299 LabApp] Saving file at /api/analysis/train_mean_pooling_by_msetrain.ipynb
+[I 00:51:37.084 LabApp] Saving file at /api/analysis/train_mean_pooling_by_msetrain.ipynb
+[I 00:51:46.385 LabApp] Saving file at /api/analysis/train_mean_pooling_by_msetrain.ipynb
+[I 00:53:46.966 LabApp] Saving file at /api/analysis/train_mean_pooling_by_msetrain.ipynb
+[I 00:59:47.747 LabApp] Saving file at /api/analysis/train_mean_pooling_by_msetrain.ipynb
+[I 01:01:48.167 LabApp] Saving file at /api/analysis/train_mean_pooling_by_msetrain.ipynb
+[I 01:20:41.600 LabApp] Saving file at /api/analysis/train_mean_pooling_by_msetrain.ipynb
+[I 01:21:52.877 LabApp] Saving file at /api/analysis/train_mean_pooling_by_msetrain.ipynb
+[I 01:22:04.605 LabApp] Saving file at /api/analysis/train_mean_pooling_by_msetrain.ipynb
+[I 01:22:52.156 LabApp] Saving file at /api/analysis/train_mean_pooling_by_msetrain.ipynb
+[I 01:23:47.820 LabApp] Saving file at /api/analysis/train_mean_pooling_by_msetrain.ipynb
+[I 01:24:12.083 LabApp] Saving file at /api/analysis/train_mean_pooling_by_msetrain.ipynb
+[I 01:24:44.307 LabApp] Kernel shutdown: de457f1d-4edb-4a1f-b901-f9269f2ce461
+[I 01:24:45.799 LabApp] Kernel shutdown: f6ca6528-1bef-4105-a97f-30cb87508725
+[I 05:37:39.392 LabApp] 302 GET / (198.108.66.64) 0.97ms
+[I 05:37:39.422 LabApp] 302 GET /lab? (198.108.66.64) 1.08ms
+[I 13:58:39.902 LabApp] 302 GET / (127.0.0.1) 0.76ms
+[W 13:58:41.877 LabApp] Could not determine jupyterlab build status without nodejs
+[I 13:58:45.150 LabApp] Kernel started: c058a491-c08d-4a0f-9ca9-f38b60537d17
+[I 13:58:45.167 LabApp] Kernel started: 9cf89829-a55e-4f47-b095-4a0d0faec36a
+[I 13:58:45.653 LabApp] Adapting to protocol v5.1 for kernel c058a491-c08d-4a0f-9ca9-f38b60537d17
+[I 13:58:45.806 LabApp] Adapting to protocol v5.1 for kernel c058a491-c08d-4a0f-9ca9-f38b60537d17
+[I 13:58:46.014 LabApp] Adapting to protocol v5.1 for kernel 9cf89829-a55e-4f47-b095-4a0d0faec36a
+[I 13:58:46.162 LabApp] Adapting to protocol v5.1 for kernel 9cf89829-a55e-4f47-b095-4a0d0faec36a
+[I 14:00:21.865 LabApp] Starting buffering for 9cf89829-a55e-4f47-b095-4a0d0faec36a:b68b24b26535724930dbb44f36a80b7e
+[I 14:00:21.865 LabApp] Starting buffering for c058a491-c08d-4a0f-9ca9-f38b60537d17:b6c5efaf30b5e329b809b9273eca528c
+[I 14:00:39.466 LabApp] Adapting to protocol v5.1 for kernel c058a491-c08d-4a0f-9ca9-f38b60537d17
+[I 14:00:39.467 LabApp] Restoring connection for c058a491-c08d-4a0f-9ca9-f38b60537d17:b6c5efaf30b5e329b809b9273eca528c
+[I 14:00:39.768 LabApp] Adapting to protocol v5.1 for kernel 9cf89829-a55e-4f47-b095-4a0d0faec36a
+[I 14:00:39.769 LabApp] Restoring connection for 9cf89829-a55e-4f47-b095-4a0d0faec36a:b68b24b26535724930dbb44f36a80b7e
+[I 14:00:39.828 LabApp] Adapting to protocol v5.1 for kernel 9cf89829-a55e-4f47-b095-4a0d0faec36a
+[I 14:00:44.179 LabApp] Starting buffering for c058a491-c08d-4a0f-9ca9-f38b60537d17:b6c5efaf30b5e329b809b9273eca528c
+[I 14:00:44.179 LabApp] Starting buffering for 9cf89829-a55e-4f47-b095-4a0d0faec36a:49e423484b9d04d1725f24380e49975e
+[W 14:00:45.529 LabApp] Could not determine jupyterlab build status without nodejs
+[I 14:00:45.907 LabApp] Adapting to protocol v5.1 for kernel 9cf89829-a55e-4f47-b095-4a0d0faec36a
+[I 14:00:47.536 LabApp] Starting buffering for 9cf89829-a55e-4f47-b095-4a0d0faec36a:4d7eb66eed924e76895c20f7b2ee9a7c
+[I 14:00:47.913 LabApp] Adapting to protocol v5.1 for kernel c058a491-c08d-4a0f-9ca9-f38b60537d17
+[I 14:00:48.609 LabApp] Adapting to protocol v5.1 for kernel 9cf89829-a55e-4f47-b095-4a0d0faec36a
+[I 14:09:06.007 LabApp] Saving file at /api/analysis/train_mean_pooling_by_msetrain.ipynb
+[I 14:11:06.501 LabApp] Saving file at /api/analysis/train_mean_pooling_by_msetrain.ipynb
+[I 14:17:08.047 LabApp] Saving file at /api/analysis/train_mean_pooling_by_msetrain.ipynb
+[I 14:19:08.452 LabApp] Saving file at /api/analysis/train_mean_pooling_by_msetrain.ipynb
+[I 14:20:29.014 LabApp] Kernel started: 9c41af24-9859-44ee-8082-69cc8f7dbf57
+[I 14:20:29.560 LabApp] Adapting to protocol v5.1 for kernel 9c41af24-9859-44ee-8082-69cc8f7dbf57
+[I 14:21:05.701 LabApp] Saving file at /api/analysis/train_mean_pooling_by_msetrain.ipynb
+[I 14:22:29.385 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 14:24:30.569 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 14:25:07.163 LabApp] Saving file at /api/analysis/plot_stanford.ipynb
+[I 14:32:31.171 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 14:34:31.605 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[W 14:41:17.916 LabApp] WebSocket ping timeout after 119767 ms.
+[W 14:41:18.610 LabApp] WebSocket ping timeout after 119828 ms.
+[I 14:41:22.919 LabApp] Starting buffering for c058a491-c08d-4a0f-9ca9-f38b60537d17:f268999b0b810b9e6d15aa093c650081
+[I 14:41:23.612 LabApp] Starting buffering for 9cf89829-a55e-4f47-b095-4a0d0faec36a:422d4e4e3df50a590b84e75c2403a935
+[W 14:41:29.562 LabApp] WebSocket ping timeout after 119829 ms.
+[I 14:41:34.564 LabApp] Starting buffering for 9c41af24-9859-44ee-8082-69cc8f7dbf57:8000e07fb1fe268233d52bf2a48a40ad
+[I 18:30:39.815 LabApp] Adapting to protocol v5.1 for kernel c058a491-c08d-4a0f-9ca9-f38b60537d17
+[I 18:30:40.115 LabApp] Adapting to protocol v5.1 for kernel 9cf89829-a55e-4f47-b095-4a0d0faec36a
+[I 18:30:40.159 LabApp] Adapting to protocol v5.1 for kernel 9c41af24-9859-44ee-8082-69cc8f7dbf57
+[I 18:31:14.752 LabApp] Starting buffering for c058a491-c08d-4a0f-9ca9-f38b60537d17:de74119c31966a0942442c4adc90e490
+[I 18:31:14.753 LabApp] Starting buffering for 9c41af24-9859-44ee-8082-69cc8f7dbf57:b5ce09714011571fb56346a6a4e89b62
+[I 18:31:14.753 LabApp] Starting buffering for 9cf89829-a55e-4f47-b095-4a0d0faec36a:cc50ba2cecdd878e142dc0fb29cb862a
+[W 18:31:15.880 LabApp] Could not determine jupyterlab build status without nodejs
+[I 18:31:16.519 LabApp] Adapting to protocol v5.1 for kernel 9c41af24-9859-44ee-8082-69cc8f7dbf57
+[I 18:31:18.335 LabApp] Starting buffering for 9c41af24-9859-44ee-8082-69cc8f7dbf57:67917cbfd52b813160e3cb811179b578
+[I 18:31:18.877 LabApp] Adapting to protocol v5.1 for kernel 9c41af24-9859-44ee-8082-69cc8f7dbf57
+[I 18:31:19.525 LabApp] Adapting to protocol v5.1 for kernel 9cf89829-a55e-4f47-b095-4a0d0faec36a
+[I 18:33:18.906 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 18:33:24.746 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 18:35:25.136 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 18:37:25.523 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 18:39:25.921 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 18:41:26.309 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 18:42:15.509 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 18:42:31.379 LabApp] Adapting to protocol v5.1 for kernel c058a491-c08d-4a0f-9ca9-f38b60537d17
+[I 18:45:21.933 LabApp] Saving file at /api/analysis/plot_stanford.ipynb
+[I 18:47:22.608 LabApp] Saving file at /api/analysis/plot_stanford.ipynb
+[I 19:35:48.532 LabApp] Saving file at /api/analysis/train_mean_pooling_by_msetrain.ipynb
+[I 19:36:09.925 LabApp] Kernel shutdown: c058a491-c08d-4a0f-9ca9-f38b60537d17
+[I 19:37:01.447 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 19:39:01.837 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 19:44:22.503 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 19:45:26.409 LabApp] Saving file at /api/analysis/plot_stanford.ipynb
+[W 19:47:13.436 LabApp] delete /api/analysis/dat_model_json/dat_mean/json/Valence_layer_2_bi_1_hd_60_bs_32_lr_0.5_dr_0.5_Adadelta.json
+[W 19:47:13.453 LabApp] delete /api/analysis/dat_model_json/dat_mean/json/Valence_layer_2_bi_1_hd_600_bs_25_lr_0.05_dr_0.5_Adagrad.json
+[W 19:47:13.455 LabApp] delete /api/analysis/dat_model_json/dat_mean/json/Valence_layer_2_bi_1_hd_600_bs_25_lr_0.5_dr_0.25_Adadelta.json
+[W 19:47:13.456 LabApp] delete /api/analysis/dat_model_json/dat_mean/json/Valence_layer_2_bi_1_hd_60_bs_64_lr_0.5_dr_0.5_Adadelta.json
+[W 19:47:13.457 LabApp] delete /api/analysis/dat_model_json/dat_mean/json/Valence_layer_2_bi_1_hd_600_bs_25_lr_0.5_dr_0.5_Adadelta.json
+[W 19:47:13.459 LabApp] delete /api/analysis/dat_model_json/dat_mean/json/Valence_layer_2_bi_1_hd_600_bs_50_lr_0.05_dr_0.5_Adagrad.json
+[W 19:47:13.601 LabApp] delete /api/analysis/dat_model_json/dat_mean/json/Valence_layer_2_bi_1_hd_600_bs_50_lr_0.07_dr_0.25_Adagrad.json
+[W 19:47:13.618 LabApp] delete /api/analysis/dat_model_json/dat_mean/json/Valence_layer_2_bi_1_hd_600_bs_50_lr_0.1_dr_0.5_Adagrad.json
+[W 19:47:13.623 LabApp] delete /api/analysis/dat_model_json/dat_mean/json/Valence_layer_2_bi_1_hd_600_bs_50_lr_0.5_dr_0.25_Adadelta.json
+[W 19:47:13.628 LabApp] delete /api/analysis/dat_model_json/dat_mean/json/Valence_layer_2_bi_1_hd_600_bs_50_lr_0.5_dr_0.5_Adadelta.json
+[W 19:47:13.629 LabApp] delete /api/analysis/dat_model_json/dat_mean/json/Valence_layer_2_bi_1_hd_600_bs_50_lr_0.07_dr_0.5_Adagrad.json
+[W 19:47:13.631 LabApp] delete /api/analysis/dat_model_json/dat_mean/json/Valence_layer_2_bi_1_hd_600_bs_50_lr_0.1_dr_0.25_Adagrad.json
+[I 19:51:49.060 LabApp] Adapting to protocol v5.1 for kernel 9c41af24-9859-44ee-8082-69cc8f7dbf57
+[I 19:53:49.085 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 19:54:09.710 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 19:55:43.120 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 19:59:43.511 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 20:01:43.912 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 20:02:29.744 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 20:03:14.451 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 20:05:14.842 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 20:05:57.503 LabApp] Kernel interrupted: 9c41af24-9859-44ee-8082-69cc8f7dbf57
+[I 20:07:15.271 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[W 20:09:04.485 LabApp] delete /api/analysis/dat_model_json/valid/model/Valence_layer_2_bi_0_hd_60_bs_50_lr_2e-05_Adagrad
+[I 20:09:15.667 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[W 20:09:20.699 LabApp] delete /api/analysis/dat_model_json/valid/json/Valence_layer_2_bi_0_hd_60_bs_50_lr_2e-05_dr_0.5_Adagrad.json
+[I 20:09:42.010 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 20:10:45.863 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 20:58:14.682 LabApp] 302 GET / (162.243.157.171) 0.49ms
+[I 21:49:29.264 LabApp] Saving file at /api/analysis/plot_stanford.ipynb
+[W 21:49:42.623 LabApp] delete /api/analysis/image/dat_stanford/image_8.png
+[W 21:49:42.624 LabApp] delete /api/analysis/image/dat_stanford/image_9.png
+[W 21:49:42.775 LabApp] delete /api/analysis/image/dat_stanford/image_10.png
+[W 21:49:42.779 LabApp] delete /api/analysis/image/dat_stanford/image_11.png
+[W 21:49:42.780 LabApp] delete /api/analysis/image/dat_stanford/image_12.png
+[W 21:49:42.784 LabApp] delete /api/analysis/image/dat_stanford/image_13.png
+[W 21:49:42.787 LabApp] delete /api/analysis/image/dat_stanford/image_14.png
+[W 21:49:42.789 LabApp] delete /api/analysis/image/dat_stanford/image_15.png
+[W 21:49:42.940 LabApp] delete /api/analysis/image/dat_stanford/image_1.png
+[W 21:49:42.945 LabApp] delete /api/analysis/image/dat_stanford/image_2.png
+[W 21:49:42.946 LabApp] delete /api/analysis/image/dat_stanford/image_3.png
+[W 21:49:42.951 LabApp] delete /api/analysis/image/dat_stanford/image_4.png
+[W 21:49:42.953 LabApp] delete /api/analysis/image/dat_stanford/image_5.png
+[W 21:49:42.956 LabApp] delete /api/analysis/image/dat_stanford/image_6.png
+[W 21:49:43.105 LabApp] delete /api/analysis/image/dat_stanford/image_7.png
+[W 21:49:43.109 LabApp] delete /api/analysis/image/dat_stanford/image_0.png
+[I 21:51:31.569 LabApp] Saving file at /api/analysis/plot_stanford.ipynb
+[I 21:53:33.676 LabApp] Saving file at /api/analysis/plot_stanford.ipynb
+[I 21:55:37.345 LabApp] Saving file at /api/analysis/plot_stanford.ipynb
+[I 22:03:36.749 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 22:06:02.548 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 22:06:04.406 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 22:08:04.802 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 22:09:45.013 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 22:10:16.256 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 23:00:55.278 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 23:00:59.657 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 23:04:53.008 LabApp] Starting buffering for 9cf89829-a55e-4f47-b095-4a0d0faec36a:8c0e9a36a336edfef75fdb4bbd9e15ee
+[I 23:04:53.009 LabApp] Starting buffering for 9c41af24-9859-44ee-8082-69cc8f7dbf57:28e3000bae537c65aaa63477efdfa737
+[I 12:56:47.259 LabApp] 302 GET / (139.162.83.10) 0.77ms
+[I 15:34:18.612 LabApp] Adapting to protocol v5.1 for kernel 9c41af24-9859-44ee-8082-69cc8f7dbf57
+[I 15:34:18.912 LabApp] Adapting to protocol v5.1 for kernel 9cf89829-a55e-4f47-b095-4a0d0faec36a
+[I 15:34:18.953 LabApp] Adapting to protocol v5.1 for kernel 9c41af24-9859-44ee-8082-69cc8f7dbf57
+[I 15:34:37.890 LabApp] Starting buffering for 9c41af24-9859-44ee-8082-69cc8f7dbf57:bd042e50ca59d9404e85aff1028fdc07
+[I 15:34:37.891 LabApp] Starting buffering for 9cf89829-a55e-4f47-b095-4a0d0faec36a:80b41c78ac04b32eaf80f6f2e95fec32
+[W 15:34:39.458 LabApp] Could not determine jupyterlab build status without nodejs
+[I 15:34:39.970 LabApp] Adapting to protocol v5.1 for kernel 9c41af24-9859-44ee-8082-69cc8f7dbf57
+[I 15:34:41.347 LabApp] Starting buffering for 9c41af24-9859-44ee-8082-69cc8f7dbf57:47f2b4432d8e74cfec5114234602c647
+[I 15:34:42.895 LabApp] Adapting to protocol v5.1 for kernel 9c41af24-9859-44ee-8082-69cc8f7dbf57
+[I 15:34:43.319 LabApp] Adapting to protocol v5.1 for kernel 9cf89829-a55e-4f47-b095-4a0d0faec36a
+[I 15:36:44.375 LabApp] Saving file at /api/analysis/plot_stanford.ipynb
+[I 15:38:45.223 LabApp] Saving file at /api/analysis/plot_stanford.ipynb
+[I 15:42:45.944 LabApp] Saving file at /api/analysis/plot_stanford.ipynb
+[I 16:08:49.664 LabApp] Saving file at /api/analysis/plot_stanford.ipynb
+[I 16:10:50.623 LabApp] Saving file at /api/analysis/plot_stanford.ipynb
+[I 16:42:43.701 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 16:46:44.108 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 16:48:44.684 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 16:50:45.084 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 16:52:45.479 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 16:54:45.874 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 16:56:46.281 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 16:58:46.899 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 17:00:47.360 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 17:02:47.753 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 17:04:48.175 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 17:08:48.609 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 17:10:49.005 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 17:11:38.512 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 17:11:48.511 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 17:12:47.956 LabApp] Kernel interrupted: 9c41af24-9859-44ee-8082-69cc8f7dbf57
+[I 17:13:48.907 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 17:15:08.017 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 17:19:08.538 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 17:21:08.941 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 17:21:15.055 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 17:21:53.356 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 17:22:27.070 LabApp] Kernel interrupted: 9c41af24-9859-44ee-8082-69cc8f7dbf57
+[I 17:23:54.080 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[W 19:28:42.897 LabApp] WebSocket ping timeout after 119740 ms.
+[W 19:28:43.321 LabApp] WebSocket ping timeout after 119837 ms.
+[I 19:28:47.899 LabApp] Starting buffering for 9c41af24-9859-44ee-8082-69cc8f7dbf57:c91f703b51073fdbf1d0c11cdd21e7cf
+[I 19:28:48.323 LabApp] Starting buffering for 9cf89829-a55e-4f47-b095-4a0d0faec36a:221ee487410fce91467ee46c68b3424b
+[I 19:30:32.143 LabApp] Adapting to protocol v5.1 for kernel 9c41af24-9859-44ee-8082-69cc8f7dbf57
+[I 19:30:32.143 LabApp] Restoring connection for 9c41af24-9859-44ee-8082-69cc8f7dbf57:c91f703b51073fdbf1d0c11cdd21e7cf
+[I 19:30:32.443 LabApp] Adapting to protocol v5.1 for kernel 9cf89829-a55e-4f47-b095-4a0d0faec36a
+[I 19:30:32.444 LabApp] Restoring connection for 9cf89829-a55e-4f47-b095-4a0d0faec36a:221ee487410fce91467ee46c68b3424b
+[W 19:32:02.144 LabApp] WebSocket ping timeout after 90001 ms.
+[W 19:32:02.444 LabApp] WebSocket ping timeout after 90000 ms.
+[I 19:32:07.147 LabApp] Starting buffering for 9c41af24-9859-44ee-8082-69cc8f7dbf57:c91f703b51073fdbf1d0c11cdd21e7cf
+[I 19:32:07.446 LabApp] Starting buffering for 9cf89829-a55e-4f47-b095-4a0d0faec36a:221ee487410fce91467ee46c68b3424b
+[I 22:23:26.425 LabApp] Adapting to protocol v5.1 for kernel 9c41af24-9859-44ee-8082-69cc8f7dbf57
+[I 22:23:26.728 LabApp] Adapting to protocol v5.1 for kernel 9cf89829-a55e-4f47-b095-4a0d0faec36a
+[I 22:41:13.359 LabApp] Starting buffering for 9cf89829-a55e-4f47-b095-4a0d0faec36a:454fe8d5f1582b930bf6953fa950e22e
+[I 22:41:13.360 LabApp] Starting buffering for 9c41af24-9859-44ee-8082-69cc8f7dbf57:d004c4c81ad36a23412568d0c5b1412b
+[W 22:41:15.204 LabApp] Could not determine jupyterlab build status without nodejs
+[I 22:41:16.557 LabApp] Adapting to protocol v5.1 for kernel 9c41af24-9859-44ee-8082-69cc8f7dbf57
+[I 22:41:18.078 LabApp] Starting buffering for 9c41af24-9859-44ee-8082-69cc8f7dbf57:6817ea5a64928f3086fcb8ba42eb61fd
+[I 22:41:21.779 LabApp] Adapting to protocol v5.1 for kernel 9c41af24-9859-44ee-8082-69cc8f7dbf57
+[I 22:41:31.495 LabApp] Starting buffering for 9c41af24-9859-44ee-8082-69cc8f7dbf57:ec04eca4a67216c37a76b5735a20c774
+[W 22:41:32.736 LabApp] Could not determine jupyterlab build status without nodejs
+[I 22:41:33.847 LabApp] Adapting to protocol v5.1 for kernel 9c41af24-9859-44ee-8082-69cc8f7dbf57
+[I 22:41:34.391 LabApp] Starting buffering for 9c41af24-9859-44ee-8082-69cc8f7dbf57:c4e103ab9cc33ce017d12bcfcecc07af
+[I 22:42:01.575 LabApp] Adapting to protocol v5.1 for kernel 9c41af24-9859-44ee-8082-69cc8f7dbf57
+[I 22:42:10.996 LabApp] Adapting to protocol v5.1 for kernel 9cf89829-a55e-4f47-b095-4a0d0faec36a
+[I 22:44:17.666 LabApp] Saving file at /api/analysis/plot_stanford.ipynb
+[I 22:46:22.982 LabApp] Saving file at /api/analysis/plot_stanford.ipynb
+[W 22:47:27.304 LabApp] delete /api/analysis/dat_model_json/valid/json/Valence_layer_2_bi_1_hd_300_bs_32_lr_0.05_dr_0.25_Adagrad.json
+[W 22:47:27.307 LabApp] delete /api/analysis/dat_model_json/valid/json/Valence_layer_2_bi_1_hd_300_bs_50_lr_0.03_dr_0.5_Adagrad.json
+[W 22:47:27.486 LabApp] delete /api/analysis/dat_model_json/valid/json/Valence_layer_2_bi_1_hd_300_bs_32_lr_0.07_dr_0.25_Adagrad.json
+[W 22:47:27.490 LabApp] delete /api/analysis/dat_model_json/valid/json/Valence_layer_2_bi_1_hd_300_bs_32_lr_0.05_dr_0.5_Adagrad.json
+[W 22:47:27.492 LabApp] delete /api/analysis/dat_model_json/valid/json/Valence_layer_2_bi_1_hd_300_bs_32_lr_0.07_dr_0.5_Adagrad.json
+[W 22:47:27.493 LabApp] delete /api/analysis/dat_model_json/valid/json/Valence_layer_2_bi_1_hd_300_bs_50_lr_0.03_dr_0.25_Adagrad.json
+[W 22:47:27.495 LabApp] delete /api/analysis/dat_model_json/valid/json/Valence_layer_2_bi_1_hd_300_bs_50_lr_0.05_dr_0.25_Adagrad.json
+[W 22:47:27.497 LabApp] delete /api/analysis/dat_model_json/valid/json/Valence_layer_2_bi_1_hd_300_bs_50_lr_0.05_dr_0.5_Adagrad.json
+[W 22:47:27.673 LabApp] delete /api/analysis/dat_model_json/valid/json/Valence_layer_2_bi_1_hd_300_bs_50_lr_0.07_dr_0.5_Adagrad.json
+[W 22:47:27.676 LabApp] delete /api/analysis/dat_model_json/valid/json/Valence_layer_2_bi_1_hd_300_bs_50_lr_0.07_dr_0.25_Adagrad.json
+[W 22:47:34.883 LabApp] delete /api/analysis/dat_model_json/valid/json/Valence_layer_2_bi_1_hd_300_bs_50_lr_0.5_dr_0.5_Adadelta.json
+[W 22:47:54.537 LabApp] delete /api/analysis/dat_model_json/valid/json/Valence_layer_2_bi_1_hd_180_bs_50_lr_0.03_dr_0.25_Adagrad.json
+[W 22:47:54.539 LabApp] delete /api/analysis/dat_model_json/valid/json/Valence_layer_2_bi_1_hd_180_bs_50_lr_0.03_dr_0.5_Adagrad.json
+[W 22:47:54.541 LabApp] delete /api/analysis/dat_model_json/valid/json/Valence_layer_2_bi_1_hd_180_bs_50_lr_0.05_dr_0.25_Adagrad.json
+[W 22:47:54.708 LabApp] delete /api/analysis/dat_model_json/valid/json/Valence_layer_2_bi_0_hd_60_bs_50_lr_2e-05_dr_0.5_Adagrad.json
+[W 22:47:54.713 LabApp] delete /api/analysis/dat_model_json/valid/json/Valence_layer_2_bi_1_hd_180_bs_50_lr_0.05_dr_0.5_Adagrad.json
+[W 22:47:54.717 LabApp] delete /api/analysis/dat_model_json/valid/json/Valence_layer_2_bi_1_hd_180_bs_50_lr_0.07_dr_0.25_Adagrad.json
+[W 22:47:54.725 LabApp] delete /api/analysis/dat_model_json/valid/json/Valence_layer_2_bi_1_hd_180_bs_50_lr_0.07_dr_0.5_Adagrad.json
+[I 22:48:30.191 LabApp] Saving file at /api/analysis/plot_stanford.ipynb
+[W 22:48:35.922 LabApp] delete /api/analysis/dat_model_json/valid/json/Valence_layer_2_bi_1_hd_240_bs_32_lr_0.05_dr_0.25_Adagrad.json
+[W 22:48:35.924 LabApp] delete /api/analysis/dat_model_json/valid/json/Valence_layer_2_bi_1_hd_240_bs_32_lr_0.05_dr_0.5_Adagrad.json
+[W 22:48:35.928 LabApp] delete /api/analysis/dat_model_json/valid/json/Valence_layer_2_bi_1_hd_240_bs_32_lr_0.07_dr_0.5_Adagrad.json
+[W 22:48:35.930 LabApp] delete /api/analysis/dat_model_json/valid/json/Valence_layer_2_bi_1_hd_240_bs_32_lr_0.07_dr_0.25_Adagrad.json
+[W 22:48:41.649 LabApp] 400 GET /api/contents/api/analysis/dat_model_json/valid/model/Arousal_layer_2_bi_1_hd_240_bs_32_lr_0.07_Adagrad?format=text&type=file&content=1&1543931321543 (127.0.0.1): /home/ubuntu/emotional-chatapp/api/analysis/dat_model_json/valid/model/Arousal_layer_2_bi_1_hd_240_bs_32_lr_0.07_Adagrad is not UTF-8 encoded
+[W 22:48:41.649 LabApp] /home/ubuntu/emotional-chatapp/api/analysis/dat_model_json/valid/model/Arousal_layer_2_bi_1_hd_240_bs_32_lr_0.07_Adagrad is not UTF-8 encoded
+[W 22:48:41.649 LabApp] 400 GET /api/contents/api/analysis/dat_model_json/valid/model/Arousal_layer_2_bi_1_hd_240_bs_32_lr_0.07_Adagrad?format=text&type=file&content=1&1543931321543 (127.0.0.1) 7.86ms referer=http://localhost:8888/lab?
+[W 22:48:59.909 LabApp] delete /api/analysis/dat_model_json/valid/model/Arousal_layer_2_bi_1_hd_240_bs_50_lr_0.07_Adagrad
+[W 22:48:59.911 LabApp] delete /api/analysis/dat_model_json/valid/model/Arousal_layer_2_bi_1_hd_240_bs_64_lr_0.07_Adagrad
+[W 22:48:59.913 LabApp] delete /api/analysis/dat_model_json/valid/model/Arousal_layer_2_bi_1_hd_240_bs_64_lr_0.05_Adagrad
+[W 22:48:59.914 LabApp] delete /api/analysis/dat_model_json/valid/model/Arousal_layer_2_bi_1_hd_240_bs_32_lr_0.07_Adagrad
+[W 22:48:59.916 LabApp] delete /api/analysis/dat_model_json/valid/model/Arousal_layer_2_bi_1_hd_240_bs_32_lr_0.05_Adagrad
+[W 22:48:59.917 LabApp] delete /api/analysis/dat_model_json/valid/model/Arousal_layer_2_bi_1_hd_240_bs_50_lr_0.05_Adagrad
+[W 22:49:00.095 LabApp] delete /api/analysis/dat_model_json/valid/model/Arousal_layer_2_bi_1_hd_300_bs_32_lr_0.05_Adagrad
+[W 22:49:00.097 LabApp] delete /api/analysis/dat_model_json/valid/model/Arousal_layer_2_bi_1_hd_300_bs_50_lr_0.07_Adagrad
+[W 22:49:00.102 LabApp] delete /api/analysis/dat_model_json/valid/model/Arousal_layer_2_bi_1_hd_300_bs_64_lr_0.05_Adagrad
+[W 22:49:00.104 LabApp] delete /api/analysis/dat_model_json/valid/model/Arousal_layer_2_bi_1_hd_300_bs_64_lr_0.07_Adagrad
+[W 22:49:00.105 LabApp] delete /api/analysis/dat_model_json/valid/model/Arousal_layer_2_bi_1_hd_300_bs_32_lr_0.07_Adagrad
+[W 22:49:00.107 LabApp] delete /api/analysis/dat_model_json/valid/model/Arousal_layer_2_bi_1_hd_300_bs_50_lr_0.05_Adagrad
+[I 22:50:38.272 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 22:52:33.322 LabApp] Saving file at /api/analysis/plot_stanford.ipynb
+[I 22:54:38.799 LabApp] Saving file at /api/analysis/plot_stanford.ipynb
+[W 22:55:27.270 LabApp] delete /api/analysis/dat_model_json/validated/model
+[W 22:55:27.271 LabApp] delete /api/analysis/dat_model_json/validated/json
+[W 22:56:55.438 LabApp] delete /api/analysis/dat_model_json/valid/json/Valence_layer_2_bi_1_hd_240_bs_50_lr_0.05_dr_0.25_Adagrad.json
+[W 22:56:55.444 LabApp] delete /api/analysis/dat_model_json/valid/json/Valence_layer_2_bi_1_hd_240_bs_50_lr_0.05_dr_0.5_Adagrad.json
+[W 22:56:55.448 LabApp] delete /api/analysis/dat_model_json/valid/json/Valence_layer_2_bi_1_hd_240_bs_50_lr_0.07_dr_0.25_Adagrad.json
+[W 22:56:55.458 LabApp] delete /api/analysis/dat_model_json/valid/json/Valence_layer_2_bi_1_hd_240_bs_50_lr_0.03_dr_0.25_Adagrad.json
+[W 22:56:55.621 LabApp] delete /api/analysis/dat_model_json/valid/json/Valence_layer_2_bi_1_hd_240_bs_50_lr_0.07_dr_0.5_Adagrad.json
+[W 22:56:55.629 LabApp] delete /api/analysis/dat_model_json/valid/json/Valence_layer_2_bi_1_hd_240_bs_50_lr_0.5_dr_0.5_Adadelta.json
+[I 22:58:47.858 LabApp] Saving file at /api/analysis/plot_stanford.ipynb
+[I 22:58:49.121 LabApp] Saving file at /api/analysis/plot_stanford.ipynb
+[I 22:58:49.894 LabApp] Saving file at /api/analysis/plot_stanford.ipynb
