@@ -1364,3 +1364,156 @@ Arguments: ()
 [I 17:45:56.761 LabApp] Starting buffering for 9c41af24-9859-44ee-8082-69cc8f7dbf57:6ba25f305da406e6a70842262d237493
 [I 17:45:58.262 LabApp] Adapting to protocol v5.1 for kernel 9cf89829-a55e-4f47-b095-4a0d0faec36a
 [I 17:45:58.586 LabApp] Adapting to protocol v5.1 for kernel 9c41af24-9859-44ee-8082-69cc8f7dbf57
+[I 18:37:31.688 LabApp] Kernel shutdown: 9cf89829-a55e-4f47-b095-4a0d0faec36a
+[I 18:37:36.036 LabApp] Kernel shutdown: 9c41af24-9859-44ee-8082-69cc8f7dbf57
+[I 18:41:28.967 LabApp] 302 GET / (127.0.0.1) 0.81ms
+[W 18:41:30.573 LabApp] Could not determine jupyterlab build status without nodejs
+[I 18:41:34.863 LabApp] Kernel started: ec22e81b-35fa-4401-bef5-532fdf36a15f
+[I 18:41:35.262 LabApp] Kernel started: 899bd80d-e643-44e4-923e-3e0917991c0f
+[I 18:41:35.332 LabApp] Adapting to protocol v5.1 for kernel ec22e81b-35fa-4401-bef5-532fdf36a15f
+[I 18:41:35.569 LabApp] Adapting to protocol v5.1 for kernel ec22e81b-35fa-4401-bef5-532fdf36a15f
+[I 18:41:35.728 LabApp] Adapting to protocol v5.1 for kernel 899bd80d-e643-44e4-923e-3e0917991c0f
+[I 18:41:35.989 LabApp] Adapting to protocol v5.1 for kernel 899bd80d-e643-44e4-923e-3e0917991c0f
+[I 18:50:19.218 LabApp] Kernel interrupted: ec22e81b-35fa-4401-bef5-532fdf36a15f
+[I 18:50:32.514 LabApp] Kernel started: 37510a07-e9b4-45fe-8156-31e53a841883
+[I 18:50:32.984 LabApp] Adapting to protocol v5.1 for kernel 37510a07-e9b4-45fe-8156-31e53a841883
+[I 18:51:35.328 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 18:51:41.561 LabApp] Copying api/analysis/train_mean_pooling.ipynb to /api/analysis
+[I 18:51:49.321 LabApp] Kernel started: eb224e0d-03c7-46ac-a8e5-0af764e6c710
+[I 18:51:49.766 LabApp] Adapting to protocol v5.1 for kernel eb224e0d-03c7-46ac-a8e5-0af764e6c710
+[I 18:53:49.731 LabApp] Saving file at /api/analysis/make_pred_mean_pooling.ipynb
+[I 18:55:50.109 LabApp] Saving file at /api/analysis/make_pred_mean_pooling.ipynb
+[I 18:57:50.486 LabApp] Saving file at /api/analysis/make_pred_mean_pooling.ipynb
+[I 18:59:50.863 LabApp] Saving file at /api/analysis/make_pred_mean_pooling.ipynb
+[I 19:01:51.283 LabApp] Saving file at /api/analysis/make_pred_mean_pooling.ipynb
+[I 19:03:51.675 LabApp] Saving file at /api/analysis/make_pred_mean_pooling.ipynb
+[I 19:05:52.051 LabApp] Saving file at /api/analysis/make_pred_mean_pooling.ipynb
+[I 19:07:52.428 LabApp] Saving file at /api/analysis/make_pred_mean_pooling.ipynb
+[I 19:10:24.264 LabApp] 302 GET / (172.105.238.87) 0.45ms
+[W 19:42:32.987 LabApp] WebSocket ping timeout after 119784 ms.
+[W 19:42:35.334 LabApp] WebSocket ping timeout after 119760 ms.
+[W 19:42:35.729 LabApp] WebSocket ping timeout after 119842 ms.
+[W 19:42:35.990 LabApp] WebSocket ping timeout after 119841 ms.
+[I 19:42:37.989 LabApp] Starting buffering for 37510a07-e9b4-45fe-8156-31e53a841883:f04a5850afc743fc359de07ca36fe72b
+[I 19:42:40.336 LabApp] Starting buffering for ec22e81b-35fa-4401-bef5-532fdf36a15f:818e4358c5b57e20ad0f1c757a8d3ae0
+[I 19:42:40.992 LabApp] Starting buffering for 899bd80d-e643-44e4-923e-3e0917991c0f:8589769469c8351cc2d6b33db511d463
+[W 19:42:49.768 LabApp] WebSocket ping timeout after 119765 ms.
+[I 19:42:54.770 LabApp] Starting buffering for eb224e0d-03c7-46ac-a8e5-0af764e6c710:1387310f42a53e4c40a5e7fab01448bf
+[W 20:06:04.067 LabApp] Could not determine jupyterlab build status without nodejs
+[I 20:06:09.736 LabApp] Adapting to protocol v5.1 for kernel eb224e0d-03c7-46ac-a8e5-0af764e6c710
+[I 20:06:12.506 LabApp] Adapting to protocol v5.1 for kernel ec22e81b-35fa-4401-bef5-532fdf36a15f
+[I 20:06:12.508 LabApp] Starting buffering for eb224e0d-03c7-46ac-a8e5-0af764e6c710:e2f82d1c873480caff371245692906b5
+[I 20:06:13.050 LabApp] Adapting to protocol v5.1 for kernel 37510a07-e9b4-45fe-8156-31e53a841883
+[I 20:06:14.287 LabApp] Adapting to protocol v5.1 for kernel eb224e0d-03c7-46ac-a8e5-0af764e6c710
+[I 20:06:29.612 LabApp] Starting buffering for ec22e81b-35fa-4401-bef5-532fdf36a15f:ff238d502b39e6362bdf3d869625b160
+[I 20:06:29.612 LabApp] Starting buffering for 37510a07-e9b4-45fe-8156-31e53a841883:725b53925cef82bacbd5506d46d17b2c
+[I 20:06:29.613 LabApp] Starting buffering for eb224e0d-03c7-46ac-a8e5-0af764e6c710:94bb75b8730ffe34ce9de1ca92c6e953
+[W 20:06:30.492 LabApp] Could not determine jupyterlab build status without nodejs
+[I 20:06:31.514 LabApp] Adapting to protocol v5.1 for kernel eb224e0d-03c7-46ac-a8e5-0af764e6c710
+[I 20:06:32.776 LabApp] Starting buffering for eb224e0d-03c7-46ac-a8e5-0af764e6c710:d20817ecb39937b6421412e48350ae69
+[I 20:06:35.187 LabApp] Adapting to protocol v5.1 for kernel ec22e81b-35fa-4401-bef5-532fdf36a15f
+[I 20:06:43.549 LabApp] Adapting to protocol v5.1 for kernel 37510a07-e9b4-45fe-8156-31e53a841883
+[I 20:06:45.110 LabApp] Adapting to protocol v5.1 for kernel eb224e0d-03c7-46ac-a8e5-0af764e6c710
+[I 20:06:52.521 LabApp] Starting buffering for 37510a07-e9b4-45fe-8156-31e53a841883:9a08098b08ace1fd77a162b656f50dc8
+[I 20:06:52.522 LabApp] Starting buffering for ec22e81b-35fa-4401-bef5-532fdf36a15f:9327ec3ad90239b9e0538ef13c0d60a8
+[I 20:06:52.522 LabApp] Starting buffering for eb224e0d-03c7-46ac-a8e5-0af764e6c710:b99737798977f6fdaf8fa4fa60508018
+[W 20:06:54.266 LabApp] Could not determine jupyterlab build status without nodejs
+[I 20:06:55.144 LabApp] Adapting to protocol v5.1 for kernel eb224e0d-03c7-46ac-a8e5-0af764e6c710
+[I 20:06:55.582 LabApp] Starting buffering for eb224e0d-03c7-46ac-a8e5-0af764e6c710:dec872f740a7712f812a270a9be9ed9f
+[I 20:07:03.532 LabApp] Adapting to protocol v5.1 for kernel 37510a07-e9b4-45fe-8156-31e53a841883
+[I 20:07:19.077 LabApp] Adapting to protocol v5.1 for kernel eb224e0d-03c7-46ac-a8e5-0af764e6c710
+[I 20:11:19.105 LabApp] Saving file at /api/analysis/make_pred_mean_pooling.ipynb
+[I 20:12:17.120 LabApp] Kernel started: bba26aae-b076-4919-ab77-1bfcacc663bf
+[I 20:12:17.570 LabApp] Adapting to protocol v5.1 for kernel bba26aae-b076-4919-ab77-1bfcacc663bf
+[I 20:13:20.238 LabApp] Saving file at /api/analysis/make_pred_mean_pooling.ipynb
+[I 20:14:27.109 LabApp] Kernel started: 9f321ab2-e85e-4cd9-98f2-d82ff673d7ca
+[I 20:14:27.544 LabApp] Adapting to protocol v5.1 for kernel 9f321ab2-e85e-4cd9-98f2-d82ff673d7ca
+[I 20:16:07.479 LabApp] Kernel started: 3df5e134-f383-48d6-b460-dbf0c748fcd1
+[I 20:16:07.961 LabApp] Adapting to protocol v5.1 for kernel 3df5e134-f383-48d6-b460-dbf0c748fcd1
+[I 20:19:21.008 LabApp] Saving file at /api/analysis/make_pred_mean_pooling.ipynb
+[I 20:21:22.078 LabApp] Saving file at /api/analysis/make_pred_mean_pooling.ipynb
+[I 20:23:22.505 LabApp] Saving file at /api/analysis/make_pred_mean_pooling.ipynb
+[I 20:24:01.447 LabApp] Adapting to protocol v5.1 for kernel ec22e81b-35fa-4401-bef5-532fdf36a15f
+[I 20:26:02.699 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 20:27:23.492 LabApp] Saving file at /api/analysis/make_pred_mean_pooling.ipynb
+[I 20:29:24.462 LabApp] Saving file at /api/analysis/make_pred_mean_pooling.ipynb
+[I 20:31:24.904 LabApp] Saving file at /api/analysis/make_pred_mean_pooling.ipynb
+[I 20:35:25.745 LabApp] Saving file at /api/analysis/make_pred_mean_pooling.ipynb
+[I 20:37:16.013 LabApp] Saving file at /api/analysis/make_pred_mean_pooling.ipynb
+[I 20:39:16.418 LabApp] Saving file at /api/analysis/make_pred_mean_pooling.ipynb
+[I 20:43:17.013 LabApp] Saving file at /api/analysis/make_pred_mean_pooling.ipynb
+[I 20:43:45.370 LabApp] Saving file at /api/analysis/make_pred_mean_pooling.ipynb
+[I 20:44:22.436 LabApp] Saving file at /api/analysis/make_pred_mean_pooling.ipynb
+[I 20:48:24.009 LabApp] Saving file at /api/analysis/make_pred_mean_pooling.ipynb
+[I 20:50:24.703 LabApp] Saving file at /api/analysis/make_pred_mean_pooling.ipynb
+[I 20:52:25.266 LabApp] Saving file at /api/analysis/make_pred_mean_pooling.ipynb
+[I 20:53:39.547 LabApp] Saving file at /api/analysis/make_pred_mean_pooling.ipynb
+[I 20:54:13.136 LabApp] Saving file at /api/analysis/make_pred_mean_pooling.ipynb
+[I 21:08:13.599 LabApp] Saving file at /api/analysis/make_pred_mean_pooling.ipynb
+[I 21:10:14.229 LabApp] Saving file at /api/analysis/make_pred_mean_pooling.ipynb
+[I 21:14:15.028 LabApp] Saving file at /api/analysis/make_pred_mean_pooling.ipynb
+[I 21:14:20.159 LabApp] Saving file at /api/analysis/make_pred_mean_pooling.ipynb
+[I 21:14:41.633 LabApp] Saving file at /api/analysis/make_pred_mean_pooling.ipynb
+[I 21:16:42.235 LabApp] Saving file at /api/analysis/make_pred_mean_pooling.ipynb
+[I 21:16:56.992 LabApp] Saving file at /api/analysis/make_pred_mean_pooling.ipynb
+[I 21:18:57.582 LabApp] Saving file at /api/analysis/make_pred_mean_pooling.ipynb
+[I 21:19:13.540 LabApp] Saving file at /api/analysis/make_pred_mean_pooling.ipynb
+[I 21:19:24.181 LabApp] Kernel shutdown: ec22e81b-35fa-4401-bef5-532fdf36a15f
+[I 21:19:24.387 LabApp] Kernel shutdown: 899bd80d-e643-44e4-923e-3e0917991c0f
+[I 21:19:24.589 LabApp] Kernel shutdown: 37510a07-e9b4-45fe-8156-31e53a841883
+[I 21:19:24.793 LabApp] Kernel shutdown: bba26aae-b076-4919-ab77-1bfcacc663bf
+[I 21:19:25.006 LabApp] Kernel shutdown: 9f321ab2-e85e-4cd9-98f2-d82ff673d7ca
+[I 21:19:26.514 LabApp] Kernel shutdown: eb224e0d-03c7-46ac-a8e5-0af764e6c710
+[I 21:19:26.724 LabApp] Kernel shutdown: 3df5e134-f383-48d6-b460-dbf0c748fcd1
+[I 21:19:34.410 LabApp] Kernel started: cc4b6fa6-9f62-4209-a3a1-cc036df4cbdd
+[I 21:19:34.968 LabApp] Adapting to protocol v5.1 for kernel cc4b6fa6-9f62-4209-a3a1-cc036df4cbdd
+[I 21:21:34.800 LabApp] Saving file at /api/analysis/make_pred_mean_pooling.ipynb
+[I 21:23:35.231 LabApp] Saving file at /api/analysis/make_pred_mean_pooling.ipynb
+[I 21:30:31.178 LabApp] Kernel interrupted: cc4b6fa6-9f62-4209-a3a1-cc036df4cbdd
+[I 21:30:35.471 LabApp] Kernel interrupted: cc4b6fa6-9f62-4209-a3a1-cc036df4cbdd
+[I 21:30:35.838 LabApp] Kernel interrupted: cc4b6fa6-9f62-4209-a3a1-cc036df4cbdd
+[I 21:30:36.016 LabApp] Kernel interrupted: cc4b6fa6-9f62-4209-a3a1-cc036df4cbdd
+[I 21:30:36.249 LabApp] Kernel interrupted: cc4b6fa6-9f62-4209-a3a1-cc036df4cbdd
+[I 21:30:41.779 LabApp] Kernel shutdown: cc4b6fa6-9f62-4209-a3a1-cc036df4cbdd
+[I 21:30:44.794 LabApp] Kernel started: 78c533d1-fae4-4847-abd6-f249940faa27
+[I 21:30:45.240 LabApp] Adapting to protocol v5.1 for kernel 78c533d1-fae4-4847-abd6-f249940faa27
+[I 21:30:50.334 LabApp] Adapting to protocol v5.1 for kernel 78c533d1-fae4-4847-abd6-f249940faa27
+[I 21:30:59.834 LabApp] Saving file at /api/analysis/make_pred_mean_pooling.ipynb
+[I 21:31:01.288 LabApp] Saving file at /api/analysis/make_pred_mean_pooling.ipynb
+[I 21:31:07.012 LabApp] Kernel started: c3b38913-e73a-4bb2-b9c5-801c63858a22
+[I 21:31:07.716 LabApp] Adapting to protocol v5.1 for kernel c3b38913-e73a-4bb2-b9c5-801c63858a22
+[I 21:31:10.789 LabApp] Kernel shutdown: 78c533d1-fae4-4847-abd6-f249940faa27
+[I 21:32:19.011 LabApp] KernelRestarter: restarting kernel (1/5), keep random ports
+kernel c3b38913-e73a-4bb2-b9c5-801c63858a22 restarted
+[I 21:32:25.254 LabApp] Kernel shutdown: c3b38913-e73a-4bb2-b9c5-801c63858a22
+[I 21:32:37.597 LabApp] Kernel started: 98b277fe-118b-4999-869a-de036b29bf56
+[I 21:32:38.049 LabApp] Adapting to protocol v5.1 for kernel 98b277fe-118b-4999-869a-de036b29bf56
+[I 21:32:41.286 LabApp] Kernel started: 246f3323-59d6-4913-9a54-84e011041a25
+[I 21:32:41.894 LabApp] Adapting to protocol v5.1 for kernel 246f3323-59d6-4913-9a54-84e011041a25
+[I 21:34:42.121 LabApp] Saving file at /api/analysis/make_pred_mean_pooling.ipynb
+[I 21:44:42.587 LabApp] Saving file at /api/analysis/make_pred_mean_pooling.ipynb
+[I 21:46:44.229 LabApp] Saving file at /api/analysis/make_pred_mean_pooling.ipynb
+[I 21:50:00.862 LabApp] Kernel shutdown: 98b277fe-118b-4999-869a-de036b29bf56
+[I 21:52:28.689 LabApp] Saving file at /api/analysis/make_pred_mean_pooling.ipynb
+[I 21:56:29.344 LabApp] Saving file at /api/analysis/make_pred_mean_pooling.ipynb
+[I 21:58:30.419 LabApp] Saving file at /api/analysis/make_pred_mean_pooling.ipynb
+[I 22:10:31.887 LabApp] Saving file at /api/analysis/make_pred_mean_pooling.ipynb
+[I 22:16:33.157 LabApp] Saving file at /api/analysis/make_pred_mean_pooling.ipynb
+[I 22:18:33.877 LabApp] Saving file at /api/analysis/make_pred_mean_pooling.ipynb
+[I 22:20:34.430 LabApp] Saving file at /api/analysis/make_pred_mean_pooling.ipynb
+[I 22:21:16.156 LabApp] Kernel started: 9374141b-ee42-4bf4-aee8-69bf3cef80b1
+[I 22:21:16.615 LabApp] Adapting to protocol v5.1 for kernel 9374141b-ee42-4bf4-aee8-69bf3cef80b1
+[I 22:22:35.896 LabApp] Saving file at /api/analysis/make_pred_mean_pooling.ipynb
+[I 22:24:37.428 LabApp] Saving file at /api/analysis/make_pred_mean_pooling.ipynb
+[I 22:30:37.974 LabApp] Saving file at /api/analysis/make_pred_mean_pooling.ipynb
+[I 22:32:38.924 LabApp] Saving file at /api/analysis/make_pred_mean_pooling.ipynb
+[I 22:34:39.507 LabApp] Saving file at /api/analysis/make_pred_mean_pooling.ipynb
+[I 22:36:40.082 LabApp] Saving file at /api/analysis/make_pred_mean_pooling.ipynb
+[I 22:38:41.234 LabApp] Saving file at /api/analysis/make_pred_mean_pooling.ipynb
+[I 22:40:41.733 LabApp] Saving file at /api/analysis/make_pred_mean_pooling.ipynb
+[I 22:46:42.584 LabApp] Saving file at /api/analysis/make_pred_mean_pooling.ipynb
+[I 22:48:43.702 LabApp] Saving file at /api/analysis/make_pred_mean_pooling.ipynb
+[I 22:50:44.622 LabApp] Saving file at /api/analysis/make_pred_mean_pooling.ipynb
+[I 22:50:56.774 LabApp] Saving file at /api/analysis/make_pred_mean_pooling.ipynb
+[I 22:51:42.280 LabApp] Kernel shutdown: 246f3323-59d6-4913-9a54-84e011041a25
+[I 22:51:42.494 LabApp] Kernel shutdown: 9374141b-ee42-4bf4-aee8-69bf3cef80b1
