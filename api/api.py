@@ -10,6 +10,17 @@ class ItemsResource:
     def __init__(self):
         print('model loading...')
 
+        w2v_path = './analysis/stanford_w2v.txt'
+        self.gensim_model = gensim.models.KeyedVectors.load_word2vec_format(w2v_path)
+        weights = self.gensim_model.vectors
+        embedding_dim = weights.shape[1]
+        weights = np.append(weights,np.zeros((1,embedding_dim)),axis=0)
+        # 末尾にunknown_wordを追加
+        vocab_size = weights.shape[0]
+        print("vocab : {}".format(vocab_size))
+        out_size = 1
+        
+        
         base_path = './analysis/dat_model_json/best/'
 
         ops_a = {
@@ -24,25 +35,26 @@ class ItemsResource:
         model_name_a = base_path + './{}_layer_{}_bi_{}_hd_{}_bs_{}_lr_{}_{}'.format(
             'Arousal',ops_a['num_layers'],bi_a,ops_a['hidden_size'],bs_a,lr_a,optimizer_a
         )
-        model_a = load_model(ops_a,model_name_a)
+        model_a = load_model(ops_a,model_name_a,embedding_dim,vocab_size,out_size,weights)
 
         ops_v = {
             'hidden_size': 240,
             'num_layers' : 2,
             'bidirectional' : True,
         }
-        bi_v = (1 if ops['bidirectional'] else 0)
+        bi_v = (1 if ops_v['bidirectional'] else 0)
         bs_v = 50
         lr_v = 0.03
         optimizer_v = 'Adagrad'
         model_name_v = base_path + './{}_layer_{}_bi_{}_hd_{}_bs_{}_lr_{}_{}'.format(
             'Valence',ops_v['num_layers'],bi_v,ops_v['hidden_size'],bs_v,lr_v,optimizer_v
         )
-        model_v = load_model(ops_v,model_name_v)
-
-
-        self.models['Valence'] = model_v
-        self.models['Arousal'] = model_a 
+        model_v = load_model(ops_v,model_name_v,embedding_dim,vocab_size,out_size,weights)
+        
+        self.models = {
+            'Valence' : model_v,
+            'Arousal' : model_a
+        }
 
         print('model loaded')
 
@@ -60,7 +72,7 @@ class ItemsResource:
         data = req.params
 
         msg = data['msg']
-        valence, arousal = analysis.make_pred_va_sentence(self.models,msg)
+        valence, arousal = analysis.make_pred_va_sentence(self.models,msg,self.gensim_model)
 
         items = {
             'Valence' : valence,
