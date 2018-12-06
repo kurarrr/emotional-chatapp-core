@@ -152,7 +152,8 @@ class LSTMTagger(nn.Module):
 def load_model(option,model_name,embedding_dim,vocab_size,out_size,weights):
     torch.manual_seed(1)
     model = LSTMTagger(embedding_dim, option, vocab_size, out_size)
-    model_state_dict = torch.load(model_name)
+    # model_state_dict = torch.load(model_name)
+    model_state_dict = torch.load(model_name,map_location=lambda storage, loc:storage)
     model_state_dict['word_embeddings.weight'] = torch.from_numpy(weights).float()
     model.load_state_dict(model_state_dict)
     # Freeze
