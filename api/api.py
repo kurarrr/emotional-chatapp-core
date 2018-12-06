@@ -3,7 +3,7 @@
 import falcon
 import json,os,sys
 import numpy as np
-from analysis import make_pred_to1dim_mean_pooling as analysis
+from analysis import make_pred_mean_pooling as analysis
 
 class ItemsResource:
 
