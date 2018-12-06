@@ -1297,3 +1297,70 @@ Arguments: ()
 [I 22:58:47.858 LabApp] Saving file at /api/analysis/plot_stanford.ipynb
 [I 22:58:49.121 LabApp] Saving file at /api/analysis/plot_stanford.ipynb
 [I 22:58:49.894 LabApp] Saving file at /api/analysis/plot_stanford.ipynb
+[I 23:00:39.140 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 23:01:38.396 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 23:02:10.508 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 23:02:24.595 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 23:02:34.261 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 23:02:54.284 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 23:03:41.532 LabApp] Starting buffering for 9cf89829-a55e-4f47-b095-4a0d0faec36a:3723bdf46f38774ac64905b3be0273c2
+[I 23:03:41.533 LabApp] Starting buffering for 9c41af24-9859-44ee-8082-69cc8f7dbf57:4e6642ec4a43d3a6d77fdb2675f0f18b
+[W 23:03:44.173 LabApp] Could not determine jupyterlab build status without nodejs
+[I 23:03:45.269 LabApp] Adapting to protocol v5.1 for kernel 9c41af24-9859-44ee-8082-69cc8f7dbf57
+[I 23:03:48.331 LabApp] Starting buffering for 9c41af24-9859-44ee-8082-69cc8f7dbf57:64bc961849f921766b78b375c17fd96f
+[I 23:04:01.622 LabApp] Adapting to protocol v5.1 for kernel 9c41af24-9859-44ee-8082-69cc8f7dbf57
+[I 23:04:13.314 LabApp] Adapting to protocol v5.1 for kernel 9cf89829-a55e-4f47-b095-4a0d0faec36a
+[I 23:04:22.402 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 23:06:15.109 LabApp] Saving file at /api/analysis/plot_stanford.ipynb
+[I 23:11:45.944 LabApp] Starting buffering for 9cf89829-a55e-4f47-b095-4a0d0faec36a:0739e0d80fb1ba598a7d9daa7fb5625f
+[I 23:11:45.945 LabApp] Starting buffering for 9c41af24-9859-44ee-8082-69cc8f7dbf57:07da6b0ee8adda1d5a15c1863874a190
+[W 15:01:06.143 LabApp] Could not determine jupyterlab build status without nodejs
+[I 15:01:08.492 LabApp] Adapting to protocol v5.1 for kernel 9c41af24-9859-44ee-8082-69cc8f7dbf57
+[I 15:01:08.966 LabApp] Adapting to protocol v5.1 for kernel 9c41af24-9859-44ee-8082-69cc8f7dbf57
+[I 15:01:09.740 LabApp] Adapting to protocol v5.1 for kernel 9cf89829-a55e-4f47-b095-4a0d0faec36a
+[I 15:02:59.383 LabApp] Saving file at /api/analysis/plot_stanford.ipynb
+[I 15:03:46.207 LabApp] Saving file at /api/analysis/plot_stanford.ipynb
+[I 15:13:47.997 LabApp] Saving file at /api/analysis/plot_stanford.ipynb
+[I 15:15:48.760 LabApp] Saving file at /api/analysis/plot_stanford.ipynb
+[I 15:17:12.704 LabApp] Saving file at /api/analysis/plot_stanford.ipynb
+[I 15:19:13.546 LabApp] Saving file at /api/analysis/plot_stanford.ipynb
+[I 15:26:21.362 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 15:27:28.264 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 15:27:43.609 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 15:29:18.122 LabApp] Saving file at /api/analysis/train_mean_pooling.ipynb
+[I 16:33:15.553 LabApp] Saving file at /api/analysis/plot_stanford.ipynb
+[I 16:35:17.084 LabApp] Saving file at /api/analysis/plot_stanford.ipynb
+[I 20:16:11.123 LabApp] Saving file at /api/analysis/plot_stanford.ipynb
+[I 20:18:13.007 LabApp] Saving file at /api/analysis/plot_stanford.ipynb
+[W 20:20:08.970 LabApp] WebSocket ping timeout after 119796 ms.
+[W 20:20:09.743 LabApp] WebSocket ping timeout after 119744 ms.
+[I 20:20:13.973 LabApp] Starting buffering for 9c41af24-9859-44ee-8082-69cc8f7dbf57:41226640f8aa06ed29a9493c3b3d7b92
+[I 20:20:14.745 LabApp] Starting buffering for 9cf89829-a55e-4f47-b095-4a0d0faec36a:641353b9c493fef13c419f75204db2ab
+[I 20:23:54.031 LabApp] Adapting to protocol v5.1 for kernel 9cf89829-a55e-4f47-b095-4a0d0faec36a
+[I 20:23:54.032 LabApp] Restoring connection for 9cf89829-a55e-4f47-b095-4a0d0faec36a:641353b9c493fef13c419f75204db2ab
+[I 20:23:54.334 LabApp] Adapting to protocol v5.1 for kernel 9c41af24-9859-44ee-8082-69cc8f7dbf57
+[I 20:23:54.334 LabApp] Restoring connection for 9c41af24-9859-44ee-8082-69cc8f7dbf57:41226640f8aa06ed29a9493c3b3d7b92
+[W 22:21:24.033 LabApp] WebSocket ping timeout after 119828 ms.
+[W 22:21:24.335 LabApp] WebSocket ping timeout after 119827 ms.
+[I 22:21:29.035 LabApp] Starting buffering for 9cf89829-a55e-4f47-b095-4a0d0faec36a:641353b9c493fef13c419f75204db2ab
+[I 22:21:29.337 LabApp] Starting buffering for 9c41af24-9859-44ee-8082-69cc8f7dbf57:41226640f8aa06ed29a9493c3b3d7b92
+[I 22:31:11.151 LabApp] Adapting to protocol v5.1 for kernel 9cf89829-a55e-4f47-b095-4a0d0faec36a
+[I 22:31:11.151 LabApp] Restoring connection for 9cf89829-a55e-4f47-b095-4a0d0faec36a:641353b9c493fef13c419f75204db2ab
+[I 22:31:11.449 LabApp] Adapting to protocol v5.1 for kernel 9c41af24-9859-44ee-8082-69cc8f7dbf57
+[I 22:31:11.450 LabApp] Restoring connection for 9c41af24-9859-44ee-8082-69cc8f7dbf57:41226640f8aa06ed29a9493c3b3d7b92
+[W 22:45:11.153 LabApp] WebSocket ping timeout after 119830 ms.
+[W 22:45:11.451 LabApp] WebSocket ping timeout after 119829 ms.
+[I 22:45:16.155 LabApp] Starting buffering for 9cf89829-a55e-4f47-b095-4a0d0faec36a:641353b9c493fef13c419f75204db2ab
+[I 22:45:16.452 LabApp] Starting buffering for 9c41af24-9859-44ee-8082-69cc8f7dbf57:41226640f8aa06ed29a9493c3b3d7b92
+[I 01:13:35.573 LabApp] 302 GET / (139.162.83.10) 0.79ms
+[I 07:44:14.409 LabApp] 302 GET / (88.80.152.252) 0.77ms
+[I 09:18:49.156 LabApp] 302 GET / (196.52.43.101) 0.79ms
+[I 17:43:34.907 LabApp] Adapting to protocol v5.1 for kernel 9c41af24-9859-44ee-8082-69cc8f7dbf57
+[I 17:43:35.207 LabApp] Adapting to protocol v5.1 for kernel 9cf89829-a55e-4f47-b095-4a0d0faec36a
+[I 17:45:53.673 LabApp] Starting buffering for 9c41af24-9859-44ee-8082-69cc8f7dbf57:911724e1e0888a92adf73fa5147bf8d4
+[I 17:45:53.674 LabApp] Starting buffering for 9cf89829-a55e-4f47-b095-4a0d0faec36a:cb82f66c0c9b0dc0c7ba1e386b235323
+[W 17:45:55.629 LabApp] Could not determine jupyterlab build status without nodejs
+[I 17:45:56.109 LabApp] Adapting to protocol v5.1 for kernel 9c41af24-9859-44ee-8082-69cc8f7dbf57
+[I 17:45:56.761 LabApp] Starting buffering for 9c41af24-9859-44ee-8082-69cc8f7dbf57:6ba25f305da406e6a70842262d237493
+[I 17:45:58.262 LabApp] Adapting to protocol v5.1 for kernel 9cf89829-a55e-4f47-b095-4a0d0faec36a
+[I 17:45:58.586 LabApp] Adapting to protocol v5.1 for kernel 9c41af24-9859-44ee-8082-69cc8f7dbf57

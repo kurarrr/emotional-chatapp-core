@@ -136,7 +136,7 @@ def sentence2vec(sentence):
 # sentence2vec(s)
 
 
-# In[83]:
+# In[93]:
 
 
 class LSTMTagger(nn.Module):
@@ -157,14 +157,14 @@ class LSTMTagger(nn.Module):
         
         # 2layer固定 調べるのめんどい
         self.lstm.weight_hh_l0.data.uniform_(-0.01,0.01)        
-        self.lstm.weight_hh_l1.data.uniform_(-0.01,0.01)        
+#         self.lstm.weight_hh_l1.data.uniform_(-0.01,0.01)        
         self.lstm.weight_ih_l0.data.uniform_(-0.01,0.01)        
-        self.lstm.weight_ih_l1.data.uniform_(-0.01,0.01)       
+#         self.lstm.weight_ih_l1.data.uniform_(-0.01,0.01)       
         
-        self.lstm.weight_hh_l0_reverse.data.uniform_(-0.01,0.01)        
-        self.lstm.weight_hh_l1_reverse.data.uniform_(-0.01,0.01)        
-        self.lstm.weight_ih_l0_reverse.data.uniform_(-0.01,0.01)        
-        self.lstm.weight_ih_l1_reverse.data.uniform_(-0.01,0.01)       
+#         self.lstm.weight_hh_l0_reverse.data.uniform_(-0.01,0.01)        
+#         self.lstm.weight_hh_l1_reverse.data.uniform_(-0.01,0.01)        
+#         self.lstm.weight_ih_l0_reverse.data.uniform_(-0.01,0.01)        
+#         self.lstm.weight_ih_l1_reverse.data.uniform_(-0.01,0.01)       
         
         # The linear layer that maps from hidden state space to tag space
         self.out = nn.Linear(self.hidden_dim*self.bi, tagset_size)
@@ -455,6 +455,8 @@ def make_model_and_train_cross_validation_option(option,epochs,vad_type,csv_path
     best_cost = 10000 # INF
     
     for train_index,dev_index in kf.split(X):
+        torch.manual_seed(4)
+
         k_split += 1
         print("{} split / {}".format(k_split,n_splits),flush=True)
         
@@ -512,7 +514,6 @@ def make_model_and_train_cross_validation_option(option,epochs,vad_type,csv_path
             train_loss_av = train_loss_sum/len(X_train)
             train_loss_part.append(train_loss_av)            
             
-            print("train : {} / {} = {}".format(train_loss_sum,len(X_train),train_loss_av))
             y_true = []
             y_pred = []
             dev_loss_sum = 0
@@ -546,8 +547,6 @@ def make_model_and_train_cross_validation_option(option,epochs,vad_type,csv_path
             r = np.corrcoef(y_true,y_pred)[0,1]
             dev_coef_part.append(r)
                 
-            print("dev : {} / {} = {}".format(dev_loss_sum,len(X_dev),dev_loss_av))
-            print("r:    {}, size {}:{}".format(r,len(y_true),len(y_pred)))
             
 
             # saveしない
@@ -555,7 +554,10 @@ def make_model_and_train_cross_validation_option(option,epochs,vad_type,csv_path
 #                 save_model(model,base_model_name+"_epoch_{0}".format(epoch))
 
             if print_result:
-                print("epoch {0}: loss {1}".format(epoch,train_loss_av),flush=True)
+                print("epoch {0}: loss {1}".format(epoch,train_loss_av))
+                print("dev : {} / {} = {}".format(dev_loss_sum,len(X_dev),dev_loss_av))
+                print("r:    {}, size {}:{}".format(r,len(y_true),len(y_pred)),flush=True)
+            
             
         train_losses.append(train_loss_part)
         dev_losses.append(dev_loss_part)
@@ -583,12 +585,12 @@ def make_model_and_train_cross_validation_option(option,epochs,vad_type,csv_path
         json.dump(loss_data,f)
 
 
-# In[84]:
+# In[92]:
 
 
 # op1 = {
 #     'hidden_size' : 60,
-#     'bidirectional' : False,   
+#     'bidirectional' : True,   
 #     'num_layers' : 2,
 #     'dropout' : 0.5
 # }
@@ -611,21 +613,21 @@ def make_model_and_train_cross_validation_option(option,epochs,vad_type,csv_path
 
 # Adadeltaとdropout入れた
 # vad_types = ['Valence','Arousal']
-vad_types = ['Valence']
+vad_types = ['Arousal']
 # bss = [4]
-bss = [50]
+bss = [200]
 # Adadeltaは特にlearning rateを探索しなくて良い
 # lrs = [1e-3,1e-4,5e-5]
-lrs = [0.03,0.05,0.07]
+lrs = [0.001,0.003]
 # for Adagrad
 # lrs = [0.5]
 # for Adadelta
 options = []
 
-hidden_dims = [180,240,300]
-num_layers = [2]
-bis = [True]
-drs = [0.5,0.25]
+hidden_dims = [60,120]
+num_layers = [1]
+bis = [False]
+drs = [0.7]
 
 for num_layer in num_layers:
     for bi in bis:
@@ -659,6 +661,7 @@ for vad_type in vad_types:
 # In[ ]:
 
 
+# # Valenceの学習(確定版)
 # # Adadeltaとdropout入れた
 # # vad_types = ['Valence','Arousal']
 # vad_types = ['Valence']
@@ -666,16 +669,16 @@ for vad_type in vad_types:
 # bss = [50]
 # # Adadeltaは特にlearning rateを探索しなくて良い
 # # lrs = [1e-3,1e-4,5e-5]
-# # lrs = [0.05]
+# lrs = [0.03,0.05,0.07]
 # # for Adagrad
-# lrs = [0.5]
+# # lrs = [0.5]
 # # for Adadelta
 # options = []
 
-# hidden_dims = [240,300]
+# hidden_dims = [180,240,300]
 # num_layers = [2]
 # bis = [True]
-# drs = [0.5]
+# drs = [0.5,0.25]
 
 # for num_layer in num_layers:
 #     for bi in bis:
@@ -701,7 +704,7 @@ for vad_type in vad_types:
 # #                             learning_rate=lr,batch_size=bs,print_result=True,optimizer='Adadelta')
 #                 make_model_and_train_cross_validation_option(option,epoch_num,vad_type,metric='L1Loss',csv_path='./data_cut_only.csv',
 #                             save_dir='./dat_model_json/valid/',
-#                             learning_rate=lr,batch_size=bs,print_result=False,optimizer_name='Adadelta')
+#                             learning_rate=lr,batch_size=bs,print_result=False,optimizer_name='Adagrad')
 #                 cnt += 1
 #                 print('{}/{}'.format(cnt,ma),flush=True)
 
