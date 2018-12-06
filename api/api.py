@@ -5,6 +5,26 @@ import json,os,sys
 import numpy as np
 from analysis import make_pred_mean_pooling as analysis
 
+import torch
+import torch.nn as nn
+import torch.nn.functional as F
+import torch.optim as optim
+from torch.utils.data import Dataset, DataLoader
+
+import numpy as np
+import pandas as pd
+
+from sklearn import datasets
+from sklearn.model_selection import train_test_split
+from sklearn.utils import shuffle
+from sklearn.model_selection import KFold
+
+from nltk import word_tokenize
+from nltk.corpus import wordnet
+import gensim
+
+
+
 class ItemsResource:
 
     def __init__(self):
