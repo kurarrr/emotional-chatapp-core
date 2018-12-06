@@ -55,7 +55,7 @@ class ItemsResource:
         model_name_a = base_path + './{}_layer_{}_bi_{}_hd_{}_bs_{}_lr_{}_{}'.format(
             'Arousal',ops_a['num_layers'],bi_a,ops_a['hidden_size'],bs_a,lr_a,optimizer_a
         )
-        model_a = load_model(ops_a,model_name_a,embedding_dim,vocab_size,out_size,weights)
+        model_a = analysis.load_model(ops_a,model_name_a,embedding_dim,vocab_size,out_size,weights)
 
         ops_v = {
             'hidden_size': 240,
@@ -69,7 +69,7 @@ class ItemsResource:
         model_name_v = base_path + './{}_layer_{}_bi_{}_hd_{}_bs_{}_lr_{}_{}'.format(
             'Valence',ops_v['num_layers'],bi_v,ops_v['hidden_size'],bs_v,lr_v,optimizer_v
         )
-        model_v = load_model(ops_v,model_name_v,embedding_dim,vocab_size,out_size,weights)
+        model_v = analysis.load_model(ops_v,model_name_v,embedding_dim,vocab_size,out_size,weights)
         
         self.models = {
             'Valence' : model_v,
