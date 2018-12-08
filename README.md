@@ -17,9 +17,16 @@
 - 起動 : `gunicorn api:api -t 1000`
   - `-t` タイムアウトオプション(読み込みに時間がかかる) 
 
+- 定期的にリクエストを送って起こしてやる
+  - `crontab req.conf`
+  - 登録を消す `crontab -r`
+  - `http://staffblog.amelieff.jp/entry/2018/07/06/150851`
+
 
 ## アプリ
 
 - `cd webapp/webapp`  
 - ローカルテスト `firebase serve`  
 - デプロイ `firebase deploy`
+- 会話データの初期化
+  - firebaseのDatabaseコンソールで`webapp/data/all_data.json`をインポート
