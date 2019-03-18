@@ -1,0 +1,35 @@
+{
+  "-LPQINQezAopcMSTPoOB" : {
+    "Arousal" : 0.10924599319696426,
+    "Valence" : -0.033201914280653,
+    "effect" : {
+      "non-native" : "font-3405-ttf"
+    },
+    "name" : "R Yone",
+    "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+    "text" : "fuck fuck",
+    "userAttr" : "native"
+  },
+  "-LPQIRAJQhtcow3a4Qbo" : {
+    "Arousal" : 0.07590731978416443,
+    "Valence" : -1.6952166333794594E-5,
+    "effect" : {
+      "non-native" : "font-3405-ttf"
+    },
+    "name" : "R Yone",
+    "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+    "text" : "hogebhoge",
+    "userAttr" : "native"
+  },
+  "-LPQIX-XHAA9i00DrKxU" : {
+    "Arousal" : 0.0651378408074379,
+    "Valence" : -0.0733126699924469,
+    "effect" : {
+      "native" : "font-2448-ttf"
+    },
+    "name" : "R Yone",
+    "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+    "text" : "angry angry angry",
+    "userAttr" : "non-native"
+  }
+}
