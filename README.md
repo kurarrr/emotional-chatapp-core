@@ -5,6 +5,14 @@ Implementation for
 Ryota Yonekura, Saemi Choi, Ryota Yoshihashi, Katsufumi Matsui and Ari Hautasaari, “Automated Font Selection System based on Message Sentiment in English Text-Based Chat,” IEICE Technical Report, vol. 118, no. 502, IMQ2018-45, IE2018-129, MVE2018-76, pp. 131-136, March 2019.
 ```
 
+## Components
+.
+├── api         --- api and notebooks for VAD training and prediction
+├── scripts     --- scripts for download, etc
+└── webapp      --- firebase application for chat
+    ├── hoge
+    └── hogehoge
+
 ## API
 
 - python3.6,pytorch(aws deeplearning ami,pytorch_p36)
