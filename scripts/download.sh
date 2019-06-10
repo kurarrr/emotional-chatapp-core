@@ -1,5 +1,5 @@
 #!/bin/sh
-
+# download word2vec
 FILE_ID=0B7XkCwpI5KDYNlNUTTlSS21pQmM
 FILE_NAME=google_word2vec.bin.gz
 curl -sc /tmp/cookie "https://drive.google.com/uc?export=download&id=${FILE_ID}" > /dev/null
