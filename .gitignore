@@ -13,7 +13,7 @@ api/analysis/dat_model_json/*
 nohup.out
 .ipynb_checkpoints
 __pycache__
-webapp/webapp/firebase-debug.log
-webapp/webapp/.firebase
-webapp/webapp/functions/.eslintrc.json
-webapp/webapp/.firebaserc
+firebase-debug.log
+.firebase
+functions/.eslintrc.json
+.firebaserc
