@@ -2,7 +2,7 @@
 
 Implementation for
 ```
-Ryota Yonekura, Saemi Choi, Ryota Yoshihashi, Katsufumi Matsui and Ari Hautasaari, “Automated Font Selection System based on Message Sentiment in English Text-Based Chat,” IEICE Technical Report, vol. 118, no. 502, IMQ2018-45, IE2018-129, MVE2018-76, pp. 131-136, March 2019.
+“Automated Font Selection System based on Message Sentiment in English Text-Based Chat,” IEICE Technical Report, vol. 118, no. 502, IMQ2018-45, IE2018-129, MVE2018-76, pp. 131-136, March 2019.
 ```
 
 ## Components
@@ -36,10 +36,10 @@ Ryota Yonekura, Saemi Choi, Ryota Yoshihashi, Katsufumi Matsui and Ari Hautasaar
   - `http://staffblog.amelieff.jp/entry/2018/07/06/150851`
 
 
-## アプリ
+## webapp
 
 - `cd webapp/webapp`  
-- ローカルテスト `firebase serve`  
-- デプロイ `firebase deploy`
+- Run in local `firebase serve`  
+- Deploy `firebase deploy`
 - 会話データの初期化
   - firebaseのDatabaseコンソールで`webapp/data/all_data.json`をインポート
