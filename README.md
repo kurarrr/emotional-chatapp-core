@@ -22,20 +22,20 @@ Font data and trained model are excluded in this repository.
 - Corpus setting
 	- `http://nlp.stanford.edu/data/glove.840B.300d.zip`
   - `python ./api/transform.py`
-    - stanford_glove.txtが`api/analysis`配下にある状態で
-    - glove形式をword2vecに変換する
+    - put `stanford_glove.txt` in `api/analysis/`
+    - convert glove to word2vec
 
-- 起動 : `gunicorn api:api -t 1000`
-	- `-t` タイムアウトオプション(読み込みに時間がかかる) 
-
-- 定期的にリクエストを送って起こしてやる
-	- `crontab req.conf`
-	- 登録を消す `crontab -r`
-	- `http://staffblog.amelieff.jp/entry/2018/07/06/150851`
+-  Start server `gunicorn api:api -t 1000`
+	- You may have to set timeout option `-t` since it would be a long time.
+- Send requests periodically so that a server doesn't sleep.
+	- register `crontab req.conf`
+	- remove   `crontab -r`
+	- reference `http://staffblog.amelieff.jp/entry/2018/07/06/150851`
 
 
 ## webapp
 
+This is firebase 
 - `cd webapp/webapp`  
 - Run in local `firebase serve`  
 - Deploy `firebase deploy`
