@@ -10,6 +10,7 @@ api/analysis/stanford_glove.txt
 api/analysis/stanford_w2v.txt
 api/analysis/dat_model_json/*
 
+nohup.out
 .ipynb_checkpoints
 __pycache__
 webapp/webapp/firebase-debug.log
