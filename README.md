@@ -6,12 +6,10 @@ Implementation for
 ```
 
 ## Components
-.
-├── api         --- api and notebooks for VAD training and prediction
-├── scripts     --- scripts for download, etc
-└── webapp      --- firebase application for chat
-    ├── hoge
-    └── hogehoge
+.  
+├── api         --- api and notebooks for VAD training and prediction  
+├── scripts     --- scripts for download, etc  
+└── webapp      --- firebase application for chat  
 
 ## API
 
