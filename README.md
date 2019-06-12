@@ -35,7 +35,7 @@ Font data and trained model are excluded in this repository.
 
 ## webapp
 
-This is firebase 
+This webapp is based on firebase. 
 - `cd webapp/webapp`  
 - Run in local `firebase serve`  
 - Deploy `firebase deploy`
