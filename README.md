@@ -4,6 +4,8 @@ Implementation for a paper,
 `"Automated Font Selection System based on Message Sentiment in English Text-Based Chat"`  
 Font data and trained model are excluded in this repository.
 
+![capture](https://github.com/kurarrr/emotional-chatapp-core/blob/images/screenshot1.png)
+
 ## Components
 ```
 .  
